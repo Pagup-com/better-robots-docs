@@ -11,6 +11,7 @@ After installation, navigate to **Better Robots.txt → Settings** in your WordP
 ### General Configuration
 
 #### Robots.txt Mode
+
 - **Virtual (Free)**: Generate robots.txt dynamically (recommended)
 - **Physical (Pro)**: Create actual robots.txt file in root directory
 
@@ -19,7 +20,9 @@ Use Virtual mode for most sites. Physical mode is only needed for specific hosti
 :::
 
 #### Default User Agent
+
 Controls which crawlers your rules apply to:
+
 ```
 User-agent: *
 ```
@@ -27,9 +30,11 @@ User-agent: *
 ## Essential Directives
 
 ### Allow Directives
+
 These specify what crawlers CAN access:
 
 #### Common CSS/JS Access
+
 ```
 Allow: /wp-admin/admin-ajax.php
 Allow: /*/*.css$
@@ -37,6 +42,7 @@ Allow: /*/*.js$
 ```
 
 #### Media Files
+
 ```
 Allow: /wp-content/uploads/
 Allow: /*.png$
@@ -46,15 +52,18 @@ Allow: /*.gif$
 ```
 
 ### Disallow Directives
+
 These specify what crawlers CANNOT access:
 
 #### WordPress Core
+
 ```
 Disallow: /wp-admin/
 Disallow: /wp-includes/
 ```
 
 #### Sensitive Files
+
 ```
 Disallow: /wp-login.php
 Disallow: /wp-register.php
@@ -68,23 +77,28 @@ Disallow: /license.txt
 ### Block Specific Bots
 
 #### ChatGPT/OpenAI Bots
+
 1. Go to **Bot Management** section
 2. Enable **"Block ChatGPT Bot"**
 3. Save changes
 
 This blocks:
+
 - `GPTBot`
 - `ChatGPT-User`
 - `CCBot`
 
 #### Bad Bot Protection (Free Version)
+
 Basic protection against known malicious crawlers:
+
 1. Enable **"Basic Bad Bot Blocking"**
 2. Configure **"User Agent Blacklist"** if needed
 
 ## Sitemap Integration
 
 ### Manual Sitemap Support (Free Version)
+
 1. Go to **Sitemap Settings**
 2. Enter your sitemap URL manually if known:
    ```
@@ -93,7 +107,9 @@ Basic protection against known malicious crawlers:
 3. **Note**: Free version requires manual sitemap URL entry
 
 ### Auto-Detection (Pro Feature)
+
 The Pro version can automatically detect and include sitemaps from:
+
 - Yoast SEO
 - Rank Math
 - All in One SEO
@@ -103,6 +119,7 @@ The Pro version can automatically detect and include sitemaps from:
 ## Ads.txt Configuration
 
 ### Basic Setup
+
 Control access to ads verification files:
 
 1. Navigate to **Ads.txt Settings**
@@ -112,7 +129,9 @@ Control access to ads verification files:
    - **ads.txt file security**: Enable/Disable
 
 ### Recommended Settings
+
 For most sites:
+
 ```
 ads.txt: Allow
 app-ads.txt: Allow (if you have mobile app)
@@ -122,13 +141,17 @@ ads.txt file security: Enable
 ## Crawl Rate Control
 
 ### Basic Rate Limiting (Free)
+
 Set basic crawl delays:
+
 1. Go to **Crawl Settings**
 2. Configure **Crawl Delay** (in seconds)
 3. Recommended: 1-5 seconds for shared hosting
 
 ### Advanced Rate Control (Pro)
+
 Fine-tuned control per bot type:
+
 - Search engines: 0-1 second delay
 - AI crawlers: 5-10 second delay
 - Unknown bots: 10+ second delay
@@ -136,9 +159,11 @@ Fine-tuned control per bot type:
 ## Content Type Protection
 
 ### Common Content to Block
+
 Protect sensitive content types:
 
 #### WordPress Specific
+
 ```
 Disallow: */comments/feed/
 Disallow: */trackback/
@@ -147,6 +172,7 @@ Disallow: */disclaimer/
 ```
 
 #### Dynamic Parameters
+
 ```
 Disallow: *?attachment_id=
 Disallow: *?replytocom=
@@ -156,11 +182,13 @@ Disallow: *?share=
 ## Testing Your Configuration
 
 ### Manual Testing
+
 1. Visit `https://yoursite.com/robots.txt`
 2. Verify all your rules are present
 3. Check syntax using [robots.txt Tester](https://developers.google.com/search/docs/crawling-indexing/robots-txt)
 
 ### Google Search Console Testing
+
 1. Add your site to Google Search Console
 2. Use the **robots.txt Tester** tool
 3. Test important URLs and bots
@@ -168,12 +196,14 @@ Disallow: *?share=
 ## Best Practices
 
 ### DO
+
 - ✅ Test changes immediately after saving
 - ✅ Keep rules simple and clear
 - ✅ Monitor crawl stats in Google Search Console
 - ✅ Update settings when adding new features
 
 ### DON'T
+
 - ❌ Block CSS/JS files (affects rendering)
 - ❌ Block important content areas
 - ❌ Use overly complex wildcard patterns
@@ -182,12 +212,14 @@ Disallow: *?share=
 ## Troubleshooting Basic Issues
 
 ### robots.txt Not Updating
+
 1. Clear WordPress cache
 2. Clear browser cache
 3. Check if CDN is caching old version
 4. Verify settings were saved
 
 ### Rules Not Working
+
 1. Check syntax errors
 2. Verify correct User-agent targeting
 3. Test with Google's robots.txt tester
@@ -196,6 +228,7 @@ Disallow: *?share=
 ## Common Configuration Examples
 
 ### Blog Site Setup
+
 ```
 User-agent: *
 Allow: /*.css$
@@ -206,6 +239,7 @@ Sitemap: https://blog.com/sitemap.xml
 ```
 
 ### E-commerce Setup
+
 ```
 User-agent: *
 Allow: /wp-content/uploads/
@@ -220,7 +254,7 @@ Allow: /*.js$
 
 After configuring basic settings:
 
-- 📖 Learn about [Pro Features](/settings/pro)
+- 📖 Learn about [Global Settings](/settings/sitemaps)
 - 🎯 Explore [Advanced Configuration](/settings/advanced)
 - 💡 Check [Feature Examples](/examples)
 - ❓ Review our [FAQ](/faq)

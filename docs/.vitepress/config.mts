@@ -1,181 +1,264 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Better Robots.txt Docs",
   description: "Create Robots.txt the Pro Way",
-  base: '/',
+  base: "/",
 
   locales: {
     root: {
-      label: 'English',
-      lang: 'en'
+      label: "English",
+      lang: "en",
     },
     fr: {
-      label: 'Français',
-      lang: 'fr',
-      title: 'Better Robots.txt Docs',
-      description: 'Create Robots.txt the Pro Way',
+      label: "Français",
+      lang: "fr",
+      title: "Better Robots.txt Docs",
+      description: "Create Robots.txt the Pro Way",
       themeConfig: {
-        logo: '/logo.svg',
+        logo: "/logo.svg",
         nav: [
-          { text: 'Accueil', link: '/fr/' },
-          { text: 'À propos', link: '/fr/about' },
-          { text: 'Installation', link: '/fr/installation' },
-          { text: 'Démarrage rapide', link: '/fr/quick-start' },
-          { text: 'Fonctionnalités', link: '/fr/features' },
-          { text: 'Paramètres', link: '/fr/settings' }
+          { text: "Accueil", link: "/fr/" },
+          { text: "À propos", link: "/fr/about" },
+          { text: "Installation", link: "/fr/installation" },
+          { text: "Démarrage rapide", link: "/fr/quick-start" },
+          { text: "Fonctionnalités", link: "/fr/features" },
+          { text: "Paramètres", link: "/fr/settings" },
         ],
 
         sidebar: [
           {
-            text: 'Premiers pas',
+            text: "Premiers pas",
             items: [
-              { text: 'À propos', link: '/fr/about' },
-              { text: 'Installation', link: '/fr/installation' },
-              { text: 'Démarrage rapide', link: '/fr/quick-start' },
-              { text: 'Configuration de base', link: '/fr/basic-configuration' }
-            ]
-          },
-          {
-            text: 'Fonctionnalités',
-            items: [
-              { text: 'Aperçu des fonctionnalités', link: '/fr/features' },
+              { text: "À propos", link: "/fr/about" },
+              { text: "Installation", link: "/fr/installation" },
+              { text: "Démarrage rapide", link: "/fr/quick-start" },
               {
-                text: 'Paramètres',
-                items: [
-                  { text: 'Aperçu des paramètres', link: '/fr/settings' },
-                  { text: 'Paramètres version Pro', link: '/fr/settings/pro' },
-                  { text: 'Paramètres avancés', link: '/fr/settings/advanced' }
-                ]
-              }
-            ]
-          },
-          {
-            text: 'Guides',
-            items: [
-              {
-                text: 'Exemples',
-                items: [
-                  { text: 'Aperçu des exemples', link: '/fr/examples' },
-                  { text: 'Guide de migration', link: '/fr/examples/migration' }
-                ]
+                text: "Configuration de base",
+                link: "/fr/basic-configuration",
               },
-              { text: 'Bonnes pratiques', link: '/fr/best-practices' },
-              { text: 'Dépannage', link: '/fr/troubleshooting' },
-              { text: 'FAQ', link: '/fr/faq' }
-            ]
+            ],
           },
           {
-            text: 'Ressources',
+            text: "Fonctionnalités",
             items: [
-              { text: 'Journal des modifications', link: '/fr/changelog' }
-            ]
-          }
+              { text: "Aperçu des fonctionnalités", link: "/fr/features" },
+              {
+                text: "Paramètres",
+                items: [
+                  { text: "Aperçu des paramètres", link: "/fr/settings" },
+                  {
+                    text: "Plan Global (Sitemaps)",
+                    link: "/fr/settings/sitemaps",
+                  },
+                  {
+                    text: "Visibilité Moteur de Recherche",
+                    link: "/fr/settings/search-visibility",
+                  },
+                  {
+                    text: "Gouvernance IA & LLM",
+                    link: "/fr/settings/ai-governance",
+                  },
+                  {
+                    text: "Protection Outils SEO",
+                    link: "/fr/settings/seo-protection",
+                  },
+                  {
+                    text: "Protection Bots & Scrapers",
+                    link: "/fr/settings/bot-protection",
+                  },
+                  {
+                    text: "Contrôle Archives & Wayback",
+                    link: "/fr/settings/archive-control",
+                  },
+                  {
+                    text: "Protection Spam & Flux",
+                    link: "/fr/settings/spam-protection",
+                  },
+                  {
+                    text: "Optimisation E-commerce",
+                    link: "/fr/settings/ecommerce-optimization",
+                  },
+                  {
+                    text: "Ressources & Actifs",
+                    link: "/fr/settings/resources-assets",
+                  },
+                  {
+                    text: "Réseaux Sociaux",
+                    link: "/fr/settings/social-media",
+                  },
+                  {
+                    text: "Revenus Publicitaires",
+                    link: "/fr/settings/ads-revenue",
+                  },
+                  { text: "Règles Avancées", link: "/fr/settings/advanced" },
+                ],
+              },
+            ],
+          },
+          {
+            text: "Guides",
+            items: [
+              {
+                text: "Exemples",
+                items: [
+                  { text: "Aperçu des exemples", link: "/fr/examples" },
+                  {
+                    text: "Guide de migration",
+                    link: "/fr/examples/migration",
+                  },
+                ],
+              },
+              { text: "Bonnes pratiques", link: "/fr/best-practices" },
+              { text: "Dépannage", link: "/fr/troubleshooting" },
+              { text: "FAQ", link: "/fr/faq" },
+            ],
+          },
+          {
+            text: "Ressources",
+            items: [
+              { text: "Journal des modifications", link: "/fr/changelog" },
+            ],
+          },
         ],
 
         socialLinks: [
           {
-            icon: 'github',
-            link: 'https://github.com/sajjadalis/better-robots-docs'
+            icon: "github",
+            link: "https://github.com/sajjadalis/better-robots-docs",
           },
           {
             icon: {
-              svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><g fill="none"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15c.657 0 1.407.59 2.022 1.908c.217.466.406 1.002.559 1.592H7.419c.153-.59.342-1.126.56-1.592C8.592 3.59 9.342 3 10 3zM7.072 4.485A10.502 10.502 0 0 0 6.389 6.5H3.936a7.022 7.022 0 0 1 3.778-3.118c-.241.33-.456.704-.642 1.103zM6.192 7.5A15.97 15.97 0 0 0 6 10c0 .87.067 1.712.193 2.5H3.46A6.984 6.984 0 0 1 3 10c0-.88.163-1.724.46-2.5h2.733zm.197 6c.176.743.407 1.422.683 2.015c.186.399.401.773.642 1.103A7.022 7.022 0 0 1 3.936 13.5H6.39zm1.03 0h5.162a9.248 9.248 0 0 1-.56 1.592C11.408 16.41 10.658 17 10 17c-.657 0-1.407-.59-2.022-1.908A9.254 9.254 0 0 1 7.42 13.5zm5.375-1H7.206A14.87 14.87 0 0 1 7 10c0-.883.073-1.725.206-2.5h5.588c.133.775.206 1.617.206 2.5s-.073 1.725-.206 2.5zm.817 1h2.453a7.022 7.022 0 0 1-3.778 3.118c.241-.33.456-.704.642-1.103c.276-.593.507-1.272.683-2.015zm2.93-1h-2.734c.126-.788.193-1.63.193-2.5c0-.87-.067-1.712-.193-2.5h2.733c.297.776.46 1.62.46 2.5c0 .88-.163 1.724-.46 2.5zm-4.255-9.118A7.021 7.021 0 0 1 16.064 6.5H13.61a10.504 10.504 0 0 0-.683-2.015a6.635 6.635 0 0 0-.642-1.103z" fill="currentColor"></path></g></svg>'
+              svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><g fill="none"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15c.657 0 1.407.59 2.022 1.908c.217.466.406 1.002.559 1.592H7.419c.153-.59.342-1.126.56-1.592C8.592 3.59 9.342 3 10 3zM7.072 4.485A10.502 10.502 0 0 0 6.389 6.5H3.936a7.022 7.022 0 0 1 3.778-3.118c-.241.33-.456.704-.642 1.103zM6.192 7.5A15.97 15.97 0 0 0 6 10c0 .87.067 1.712.193 2.5H3.46A6.984 6.984 0 0 1 3 10c0-.88.163-1.724.46-2.5h2.733zm.197 6c.176.743.407 1.422.683 2.015c.186.399.401.773.642 1.103A7.022 7.022 0 0 1 3.936 13.5H6.39zm1.03 0h5.162a9.248 9.248 0 0 1-.56 1.592C11.408 16.41 10.658 17 10 17c-.657 0-1.407-.59-2.022-1.908A9.254 9.254 0 0 1 7.42 13.5zm5.375-1H7.206A14.87 14.87 0 0 1 7 10c0-.883.073-1.725.206-2.5h5.588c.133.775.206 1.617.206 2.5s-.073 1.725-.206 2.5zm.817 1h2.453a7.022 7.022 0 0 1-3.778 3.118c.241-.33.456-.704.642-1.103c.276-.593.507-1.272.683-2.015zm2.93-1h-2.734c.126-.788.193-1.63.193-2.5c0-.87-.067-1.712-.193-2.5h2.733c.297.776.46 1.62.46 2.5c0 .88-.163 1.724-.46 2.5zm-4.255-9.118A7.021 7.021 0 0 1 16.064 6.5H13.61a10.504 10.504 0 0 0-.683-2.015a6.635 6.635 0 0 0-.642-1.103z" fill="currentColor"></path></g></svg>',
             },
-            link: 'https://better-robots.com/'
-          }
+            link: "https://better-robots.com/",
+          },
         ],
 
         footer: {
-          message: '© 2025 Pagup. Better Robots.txt. Gestion avancée de robots.txt WordPress avec IA pour le SEO.'
+          message:
+            "© 2025 Pagup. Better Robots.txt. Gestion avancée de robots.txt WordPress avec IA pour le SEO.",
         },
 
         search: {
-          provider: 'local'
-        }
-      }
-    }
+          provider: "local",
+        },
+      },
+    },
   },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/logo.svg',
+    logo: "/logo.svg",
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'About', link: '/about' },
-      { text: 'Installation', link: '/installation' },
-      { text: 'Quick Start', link: '/quick-start' },
-      { text: 'Features', link: '/features' },
-      { text: 'Settings', link: '/settings' }
+      { text: "Home", link: "/" },
+      { text: "About", link: "/about" },
+      { text: "Installation", link: "/installation" },
+      { text: "Quick Start", link: "/quick-start" },
+      { text: "Features", link: "/features" },
+      { text: "Settings", link: "/settings" },
     ],
 
     sidebar: [
       {
-        text: 'Getting Started',
+        text: "Getting Started",
         items: [
-          { text: 'About', link: '/about' },
-          { text: 'Installation', link: '/installation' },
-          { text: 'Quick Start', link: '/quick-start' },
-          { text: 'Basic Configuration', link: '/basic-configuration' }
-        ]
+          { text: "About", link: "/about" },
+          { text: "Installation", link: "/installation" },
+          { text: "Quick Start", link: "/quick-start" },
+          { text: "Basic Configuration", link: "/basic-configuration" },
+        ],
       },
       {
-        text: 'Features',
+        text: "Features",
         items: [
-          { text: 'Features Overview', link: '/features' },
+          { text: "Features Overview", link: "/features" },
           {
-            text: 'Settings',
+            text: "Settings",
             items: [
-              { text: 'Settings Overview', link: '/settings' },
-              { text: 'Pro Version Settings', link: '/settings/pro' },
-              { text: 'Advanced Settings', link: '/settings/advanced' }
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Guides',
-        items: [
-          {
-            text: 'Examples',
-            items: [
-              { text: 'Examples Overview', link: '/examples' },
-              { text: 'Migration Guide', link: '/examples/migration' }
-            ]
+              { text: "Settings Overview", link: "/settings" },
+              {
+                text: "Global Settings (Sitemaps)",
+                link: "/settings/sitemaps",
+              },
+              {
+                text: "Search Engine Visibility",
+                link: "/settings/search-visibility",
+              },
+              { text: "AI & LLM Governance", link: "/settings/ai-governance" },
+              { text: "SEO Tool Protection", link: "/settings/seo-protection" },
+              {
+                text: "Bot & Scraper Protection",
+                link: "/settings/bot-protection",
+              },
+              {
+                text: "Archive & Wayback Control",
+                link: "/settings/archive-control",
+              },
+              {
+                text: "Spam & Feed Protection",
+                link: "/settings/spam-protection",
+              },
+              {
+                text: "E-commerce Optimization",
+                link: "/settings/ecommerce-optimization",
+              },
+              {
+                text: "Resources & Assets",
+                link: "/settings/resources-assets",
+              },
+              { text: "Social Media", link: "/settings/social-media" },
+              {
+                text: "Ads & Revenue Verification",
+                link: "/settings/ads-revenue",
+              },
+              { text: "Advanced Custom Rules", link: "/settings/advanced" },
+            ],
           },
-          { text: 'Best Practices', link: '/best-practices' },
-          { text: 'Troubleshooting', link: '/troubleshooting' },
-          { text: 'FAQ', link: '/faq' }
-        ]
+        ],
       },
       {
-        text: 'Resources',
+        text: "Guides",
         items: [
-          { text: 'Changelog', link: '/changelog' }
-        ]
-      }
+          {
+            text: "Examples",
+            items: [
+              { text: "Examples Overview", link: "/examples" },
+              { text: "Migration Guide", link: "/examples/migration" },
+            ],
+          },
+          { text: "Best Practices", link: "/best-practices" },
+          { text: "Troubleshooting", link: "/troubleshooting" },
+          { text: "FAQ", link: "/faq" },
+        ],
+      },
+      {
+        text: "Resources",
+        items: [{ text: "Changelog", link: "/changelog" }],
+      },
     ],
 
     socialLinks: [
       {
-        icon: 'github',
-        link: 'https://github.com/sajjadalis/better-robots-docs'
+        icon: "github",
+        link: "https://github.com/sajjadalis/better-robots-docs",
       },
       {
         icon: {
-          svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><g fill="none"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15c.657 0 1.407.59 2.022 1.908c.217.466.406 1.002.559 1.592H7.419c.153-.59.342-1.126.56-1.592C8.592 3.59 9.342 3 10 3zM7.072 4.485A10.502 10.502 0 0 0 6.389 6.5H3.936a7.022 7.022 0 0 1 3.778-3.118c-.241.33-.456.704-.642 1.103zM6.192 7.5A15.97 15.97 0 0 0 6 10c0 .87.067 1.712.193 2.5H3.46A6.984 6.984 0 0 1 3 10c0-.88.163-1.724.46-2.5h2.733zm.197 6c.176.743.407 1.422.683 2.015c.186.399.401.773.642 1.103A7.022 7.022 0 0 1 3.936 13.5H6.39zm1.03 0h5.162a9.248 9.248 0 0 1-.56 1.592C11.408 16.41 10.658 17 10 17c-.657 0-1.407-.59-2.022-1.908A9.254 9.254 0 0 1 7.42 13.5zm5.375-1H7.206A14.87 14.87 0 0 1 7 10c0-.883.073-1.725.206-2.5h5.588c.133.775.206 1.617.206 2.5s-.073 1.725-.206 2.5zm.817 1h2.453a7.022 7.022 0 0 1-3.778 3.118c.241-.33.456-.704.642-1.103c.276-.593.507-1.272.683-2.015zm2.93-1h-2.734c.126-.788.193-1.63.193-2.5c0-.87-.067-1.712-.193-2.5h2.733c.297.776.46 1.62.46 2.5c0 .88-.163 1.724-.46 2.5zm-4.255-9.118A7.021 7.021 0 0 1 16.064 6.5H13.61a10.504 10.504 0 0 0-.683-2.015a6.635 6.635 0 0 0-.642-1.103z" fill="currentColor"></path></g></svg>'
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20"><g fill="none"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15c.657 0 1.407.59 2.022 1.908c.217.466.406 1.002.559 1.592H7.419c.153-.59.342-1.126.56-1.592C8.592 3.59 9.342 3 10 3zM7.072 4.485A10.502 10.502 0 0 0 6.389 6.5H3.936a7.022 7.022 0 0 1 3.778-3.118c-.241.33-.456.704-.642 1.103zM6.192 7.5A15.97 15.97 0 0 0 6 10c0 .87.067 1.712.193 2.5H3.46A6.984 6.984 0 0 1 3 10c0-.88.163-1.724.46-2.5h2.733zm.197 6c.176.743.407 1.422.683 2.015c.186.399.401.773.642 1.103A7.022 7.022 0 0 1 3.936 13.5H6.39zm1.03 0h5.162a9.248 9.248 0 0 1-.56 1.592C11.408 16.41 10.658 17 10 17c-.657 0-1.407-.59-2.022-1.908A9.254 9.254 0 0 1 7.42 13.5zm5.375-1H7.206A14.87 14.87 0 0 1 7 10c0-.883.073-1.725.206-2.5h5.588c.133.775.206 1.617.206 2.5s-.073 1.725-.206 2.5zm.817 1h2.453a7.022 7.022 0 0 1-3.778 3.118c.241-.33.456-.704.642-1.103c.276-.593.507-1.272.683-2.015zm2.93-1h-2.734c.126-.788.193-1.63.193-2.5c0-.87-.067-1.712-.193-2.5h2.733c.297.776.46 1.62.46 2.5c0 .88-.163 1.724-.46 2.5zm-4.255-9.118A7.021 7.021 0 0 1 16.064 6.5H13.61a10.504 10.504 0 0 0-.683-2.015a6.635 6.635 0 0 0-.642-1.103z" fill="currentColor"></path></g></svg>',
         },
-        link: 'https://better-robots.com/'
-      }
+        link: "https://better-robots.com/",
+      },
     ],
 
     footer: {
-      message: '© 2025 Pagup. Better Robots.txt. AI-Ready, Advanced WordPress Robots.txt Management for SEO.'
+      message:
+        "© 2025 Pagup. Better Robots.txt. AI-Ready, Advanced WordPress Robots.txt Management for SEO.",
     },
 
     search: {
-      provider: 'local'
-    }
-  }
-})
+      provider: "local",
+    },
+  },
+});

@@ -11,6 +11,7 @@ Après installation, naviguez vers **Better Robots.txt → Paramètres** dans vo
 ### Configuration générale
 
 #### Mode robots.txt
+
 - **Virtuel (Gratuit)** : Générer robots.txt dynamiquement (recommandé)
 - **Physique (Pro)** : Créer un fichier robots.txt réel dans le répertoire racine
 
@@ -19,7 +20,9 @@ Utilisez le mode Virtuel pour la plupart des sites. Le mode Physique n'est néce
 :::
 
 #### User-agent par défaut
+
 Contrôle quels crawlers vos règles s'appliquent :
+
 ```
 User-agent: *
 ```
@@ -27,9 +30,11 @@ User-agent: *
 ## Directives essentielles
 
 ### Directives Allow
+
 Celles-ci spécifient ce que les crawlers PEUVENT accéder :
 
 #### Accès CSS/JS commun
+
 ```
 Allow: /wp-admin/admin-ajax.php
 Allow: /*/*.css$
@@ -37,6 +42,7 @@ Allow: /*/*.js$
 ```
 
 #### Fichiers média
+
 ```
 Allow: /wp-content/uploads/
 Allow: /*.png$
@@ -46,9 +52,11 @@ Allow: /*.gif$
 ```
 
 ### Directives Disallow
+
 Celles-ci spécifient ce que les crawlers NE PEUVENT PAS accéder :
 
 #### Zones d'administration
+
 ```
 Disallow: /wp-admin/
 Disallow: /wp-includes/
@@ -57,6 +65,7 @@ Disallow: /wp-register.php
 ```
 
 #### Fichiers système
+
 ```
 Disallow: /readme.html
 Disallow: /license.txt
@@ -64,6 +73,7 @@ Disallow: /xmlrpc.php
 ```
 
 #### Paramètres dynamiques
+
 ```
 Disallow: */disclaimer/*
 Disallow: *?attachment_id=
@@ -75,6 +85,7 @@ Disallow: *?preview=true
 ### Gestion des bots malveillants
 
 #### Bloquer les mauvais bots
+
 ```markdown
 ✅ Activer : "Bloquer les mauvais bots (recommandé par IA)"
 ✅ Inclut : Backlinks de spam, scrapers, harvesters d'e-mails
@@ -82,6 +93,7 @@ Disallow: *?preview=true
 ```
 
 #### Protection spécifique
+
 ```markdown
 ✅ ChatGPT Bot : Blocage optionnel
 ✅ Bots IA : Contrôle granulaire
@@ -91,6 +103,7 @@ Disallow: *?preview=true
 ### Autoriser les bons bots
 
 #### Moteurs de recherche principaux
+
 ```markdown
 ✅ Google : Autorisé par défaut
 ✅ Bing : Autorisé par défaut
@@ -99,6 +112,7 @@ Disallow: *?preview=true
 ```
 
 #### Bots des réseaux sociaux
+
 ```markdown
 ✅ Facebook : facebookexternalhit
 ✅ Twitter : Twitterbot
@@ -109,6 +123,7 @@ Disallow: *?preview=true
 ## Intégration de sitemap
 
 ### Détection automatique (Pro)
+
 ```markdown
 ✅ Yoast SEO : Intégration automatique
 ✅ Rank Math : Intégration automatique
@@ -117,6 +132,7 @@ Disallow: *?preview=true
 ```
 
 ### Référencement de sitemap manuel
+
 ```txt
 Sitemap: https://votresite.com/sitemap.xml
 Sitemap: https://votresite.com/sitemap_index.xml
@@ -125,6 +141,7 @@ Sitemap: https://votresite.com/sitemap_index.xml
 ## Paramètres e-commerce
 
 ### Optimisation WooCommerce
+
 ```markdown
 ✅ Bloquer : /panier/, /commande/, /mon-compte/
 ✅ Bloquer : add-to-cart, remove-from-cart
@@ -133,6 +150,7 @@ Sitemap: https://votresite.com/sitemap_index.xml
 ```
 
 ### Autres plateformes e-commerce
+
 ```markdown
 ✅ Easy Digital Downloads : Support complet
 ✅ WooCommerce Bookings : Optimisé
@@ -142,6 +160,7 @@ Sitemap: https://votresite.com/sitemap_index.xml
 ## Paramètres Ads.txt
 
 ### Fichiers publicitaires
+
 ```markdown
 ✅ ads.txt : Autoriser l'accès
 ✅ app-ads.txt : Autoriser l'accès
@@ -149,6 +168,7 @@ Sitemap: https://votresite.com/sitemap_index.xml
 ```
 
 ### Placement dans robots.txt
+
 ```txt
 Allow: /ads.txt
 Allow: /app-ads.txt
@@ -157,6 +177,7 @@ Allow: /app-ads.txt
 ## Configuration multisite
 
 ### Gestion réseau
+
 ```markdown
 ✅ Mode réseau : Contrôle centralisé
 ✅ Sous-sites : Règles individuelles
@@ -164,6 +185,7 @@ Allow: /app-ads.txt
 ```
 
 ### Paramètres par sous-site
+
 ```markdown
 ✅ Personnalisation : Par site
 ✅ Surcharges : règles uniques par site
@@ -173,18 +195,21 @@ Allow: /app-ads.txt
 ## Bonnes pratiques de configuration
 
 ### Priorités de sécurité
+
 1. **Toujours** bloquer `/wp-admin/`
 2. **Toujours** bloquer `/wp-includes/`
 3. **Jamais** autoriser l'accès `wp-config.php`
 4. **Toujours** protéger les fichiers de connexion
 
 ### Priorités SEO
+
 1. **Toujours** autoriser l'accès au sitemap
 2. **Toujours** autoriser les fichiers CSS/JS
 3. **Toujours** autoriser les images
 4. **Jamais** bloquer les pages de contenu
 
 ### Priorités de performance
+
 1. **Bloquer** les URLs avec paramètres inutiles
 2. **Bloquer** les pages de recherche si non indexées
 3. **Autoriser** les ressources critiques
@@ -193,6 +218,7 @@ Allow: /app-ads.txt
 ## Test et validation
 
 ### Vérification manuelle
+
 ```bash
 # Testez votre robots.txt
 curl -I https://votresite.com/robots.txt
@@ -202,6 +228,7 @@ curl -H "User-Agent: Googlebot" https://votresite.com/
 ```
 
 ### Outils de test
+
 - **Google Search Console** : Test des robots.txt
 - **Bing Webmaster Tools** : Validation des fichiers
 - **Screaming Frog** : Simulation de crawling
@@ -210,16 +237,19 @@ curl -H "User-Agent: Googlebot" https://votresite.com/
 ## Résolution des problèmes courants
 
 ### Fichier non trouvé
+
 1. Vérifiez les permissions des fichiers
 2. Confirmez les réglages de confidentialité WordPress
 3. Testez avec différents user-agents
 
 ### Règles non appliquées
+
 1. Videz tous les caches (site, CDN, navigateur)
 2. Vérifiez les conflits de plugins
 3. Testez avec l'outil Google Robots.txt Tester
 
 ### Erreurs de syntaxe
+
 1. Utilisez des validateurs robots.txt
 2. Vérifiez les caractères spéciaux
 3. Testez chaque directive individuellement
@@ -227,6 +257,7 @@ curl -H "User-Agent: Googlebot" https://votresite.com/
 ## Exemples de configuration
 
 ### Blog personnel minimal
+
 ```txt
 User-agent: *
 Allow: /wp-admin/admin-ajax.php
@@ -237,6 +268,7 @@ Disallow: /wp-includes/
 ```
 
 ### Site e-commerce complet
+
 ```txt
 User-agent: *
 Allow: /wp-admin/admin-ajax.php
@@ -252,6 +284,7 @@ Sitemap: https://votresite.com/sitemap.xml
 ```
 
 ### Site multisite
+
 ```txt
 User-agent: *
 Allow: /wp-admin/admin-ajax.php
@@ -264,7 +297,7 @@ Crawl-delay: 1
 
 ## Prochaines étapes
 
-- 📖 Explorez les [Paramètres avancés](/fr/settings/advanced)
+- 📖 Explorez les [Règles Avancées](/fr/settings/sitemaps)
 - 🎯 Consultez les [Exemples de configuration](/fr/examples)
 - 🛠️ Apprenez les [Bonnes pratiques](/fr/best-practices)
 - ❓ Vérifiez notre [FAQ](/fr/faq)

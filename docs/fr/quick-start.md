@@ -38,11 +38,13 @@ Disallow: /privacy-policy
 Activez ces paramètres gratuits importants :
 
 ### Bloquer le bot ChatGPT
+
 1. Allez dans **Paramètres** → **Gestion des bots**
 2. **Activez** "Bloquer le bot ChatGPT"
 3. **Sauvegardez les modifications**
 
 ### Autoriser les fichiers Ads.txt
+
 1. Faites défiler vers **Paramètres Ads.txt**
 2. **Sélectionnez** "Autoriser" pour ads.txt et app-ads.txt
 3. **Sauvegardez les modifications**
@@ -52,12 +54,14 @@ Activez ces paramètres gratuits importants :
 Pour des performances optimales, envisagez ces fonctionnalités Pro :
 
 ### Activer la détection de sitemap
+
 1. **Passez à Pro** (si ce n'est pas déjà fait)
 2. Allez dans **Intégration de sitemap**
 3. **Activez** "Détection automatique des sitemaps"
 4. **Sélectionnez** votre plugin SEO (Yoast, Rank Math, etc.)
 
 ### Bloquer les mauvais bots
+
 1. Naviguez vers **Protection des bots**
 2. **Activez** "Bloquer les mauvais bots (recommandé par IA)"
 3. **Activez** "Bloqueur de backlinks de spam"
@@ -75,12 +79,15 @@ Cela bloque les URLs inutiles comme `/cart/`, `/checkout/`, `add-to-cart` etc.
 ## Étape 6 : Testez votre configuration
 
 ### Google Search Console
+
 1. Ajoutez votre site à [Google Search Console](https://search.google.com/search-console/)
 2. Soumettez votre robots.txt pour test
 3. Vérifiez les problèmes de blocage
 
 ### Test manuel
+
 Testez les pages importantes :
+
 - Page d'accueil : Doit être accessible
 - Zones d'administration : Doivent être bloquées
 - Sitemap : Doit être référencé
@@ -88,6 +95,7 @@ Testez les pages importantes :
 ## Configurations rapides courantes
 
 ### Site de blog
+
 ```markdown
 ✅ Activer : Détection automatique de sitemap
 ✅ Activer : Blocage du bot ChatGPT
@@ -96,6 +104,7 @@ Testez les pages importantes :
 ```
 
 ### Site e-commerce
+
 ```markdown
 ✅ Activer : Tous les paramètres de blog
 ✅ Activer : Optimisation WooCommerce
@@ -104,6 +113,7 @@ Testez les pages importantes :
 ```
 
 ### Réseau multisite
+
 ```markdown
 ✅ Activer : Gestion multisite
 ✅ Configurer : Règles réseau
@@ -114,23 +124,26 @@ Testez les pages importantes :
 ## Dépannage des problèmes rapides
 
 ### robots.txt ne se met pas à jour
+
 1. **Videz le cache** (WordPress et navigateur)
 2. **Vérifiez** que les paramètres sont sauvegardés
 3. **Attendez** 5-10 minutes pour la propagation
 
 ### Conflit de plugin SEO
+
 1. **Désactivez** les autres plugins robots.txt
 2. **Vérifiez** les paramètres robots.txt de Yoast/Rank Math
 3. **Définissez** Better Robots.txt pour "remplacer"
 
 ### Erreur 404
+
 1. **Vérifiez** les paramètres de confidentialité WordPress
 2. **Vérifiez** la structure des permaliens
 3. **Assurez-vous** qu'aucun fichier robots.txt physique n'existe
 
 ## Prochaines étapes
 
-- 📖 Apprenez les [Paramètres avancés](/fr/settings/advanced)
+- 📖 Apprenez les [Règles Avancées](/fr/settings/sitemaps)
 - 🎯 Explorez [Exemples de fonctionnalités](/fr/examples)
 - 🛠️ Consultez les [Bonnes pratiques](/fr/best-practices)
 - ❓ Consultez notre [FAQ](/fr/faq)

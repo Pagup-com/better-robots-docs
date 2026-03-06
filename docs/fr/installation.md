@@ -57,11 +57,12 @@ Better Robots.txt utilise Freemius pour les fonctionnalités premium :
 
 ::: tip Pourquoi opter ?
 L'opt-in nous permet de :
+
 - Fournir des mises à jour automatiques
 - Offrir un support prioritaire
 - Envoyer des notifications de sécurité
 - Partager des annonces de fonctionnalités
-:::
+  :::
 
 ### 3. Vérifier l'installation
 
@@ -82,6 +83,7 @@ Pour vérifier que votre robots.txt fonctionne :
 **Problème** : WordPress affiche "L'installation a échoué : Impossible de créer le répertoire"
 
 **Solutions** :
+
 - Vérifiez les permissions des fichiers WordPress
 - Assurez-vous que `/wp-content/plugins/` est accessible en écriture (permissions 755)
 - Essayez la méthode d'installation manuelle
@@ -91,6 +93,7 @@ Pour vérifier que votre robots.txt fonctionne :
 **Problème** : Le site affiche un écran blanc après l'activation du plugin
 
 **Solutions** :
+
 1. **Augmentez la limite de mémoire PHP** dans `wp-config.php` :
    ```php
    define('WP_MEMORY_LIMIT', '256M');
@@ -104,6 +107,7 @@ Pour vérifier que votre robots.txt fonctionne :
 **Problème** : `votresite.com/robots.txt` renvoie une erreur 404
 
 **Solutions** :
+
 1. **Vérifiez les paramètres de confidentialité WordPress** :
    - Allez dans **Réglages → Lecture**
    - Assurez-vous que "Décourager les moteurs de recherche..." est **décoché**
@@ -124,6 +128,7 @@ Pour vérifier que votre robots.txt fonctionne :
 **Problème** : Les modifications dans les paramètres ne sauvegardent pas
 
 **Solutions** :
+
 1. **Videz le cache WordPress**
 2. **Vérifiez la compatibilité de la version PHP**
 3. **Vérifiez les permissions utilisateur** (doit être Administrateur)
@@ -177,7 +182,7 @@ Après une installation réussie :
 
 1. 📖 Lisez le [Guide de démarrage rapide](/fr/quick-start)
 2. ⚙️ Configurez vos [Paramètres de base](/fr/basic-configuration)
-3. 🚀 Explorez les [Fonctionnalités Pro](/fr/settings/pro) (si applicable)
+3. 🚀 Explorez les [Règles Avancées](/fr/settings/sitemaps)
 4. 🎯 Consultez nos [Exemples](/fr/examples) pour cas d'usage courants
 
 ---

@@ -57,11 +57,12 @@ Better Robots.txt uses Freemius for premium features:
 
 ::: tip Why Opt-In?
 Opting in allows us to:
+
 - Provide automatic updates
 - Offer priority support
 - Send security notifications
 - Share feature announcements
-:::
+  :::
 
 ### 3. Verify Installation
 
@@ -82,6 +83,7 @@ To verify your robots.txt is working:
 **Problem**: WordPress shows "Installation failed: Could not create directory"
 
 **Solutions**:
+
 - Check WordPress file permissions
 - Ensure `/wp-content/plugins/` is writable (755 permissions)
 - Try manual installation method
@@ -91,6 +93,7 @@ To verify your robots.txt is working:
 **Problem**: Website shows white screen after plugin activation
 
 **Solutions**:
+
 1. **Increase PHP memory limit** in `wp-config.php`:
    ```php
    define('WP_MEMORY_LIMIT', '256M');
@@ -104,6 +107,7 @@ To verify your robots.txt is working:
 **Problem**: `yoursite.com/robots.txt` returns 404 error
 
 **Solutions**:
+
 1. **Check WordPress privacy settings**:
    - Go to **Settings → Reading**
    - Ensure "Discourage search engines..." is **unchecked**
@@ -124,6 +128,7 @@ To verify your robots.txt is working:
 **Problem**: Changes in settings don't save
 
 **Solutions**:
+
 1. **Clear WordPress cache**
 2. **Check PHP version compatibility**
 3. **Verify user permissions** (must be Administrator)
@@ -176,8 +181,8 @@ If you encounter issues during installation:
 After successful installation:
 
 1. 📖 Read the [Quick Start Guide](/quick-start)
-2. ⚙️ Configure your [Basic Settings](/basic-configuration)
-3. 🚀 Explore [Pro Features](/settings/pro) (if applicable)
+2. ⚙️ Configurez your [Basic Settings](/basic-configuration)
+3. 🚀 Explore [Advanced Configuration](/settings/advanced)
 4. 🎯 Check our [Examples](/examples) for common use cases
 
 ---
