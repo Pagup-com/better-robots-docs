@@ -35,9 +35,9 @@ Poorly configured robots.txt files can harm your SEO. Our plugin ensures optimal
 
 ## Version Comparison
 
-<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem;">
+<div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
   <div style="padding: 1rem; border: 1px solid var(--vp-c-border); border-radius: 8px;">
-    <h3 style="margin-top: 0;">🆓 Free Version</h3>
+    <h3 style="margin-top: 0;">🟢 Free Version</h3>
     <ul>
       <li>Basic robots.txt generation</li>
       <li>Essential bot blocking</li>
@@ -47,7 +47,7 @@ Poorly configured robots.txt files can harm your SEO. Our plugin ensures optimal
     </ul>
   </div>
   <div style="padding: 1rem; border: 1px solid var(--vp-c-border); border-radius: 8px;">
-    <h3 style="margin-top: 0;">⭐ Pro Version</h3>
+    <h3 style="margin-top: 0;">🔵 SEO-PRO Version</h3>
     <ul>
       <li>All free features</li>
       <li>Advanced bot management</li>
@@ -55,10 +55,22 @@ Poorly configured robots.txt files can harm your SEO. Our plugin ensures optimal
       <li>WooCommerce optimization</li>
       <li>Multisite support</li>
       <li>Physical file generation</li>
+    </ul>
+  </div>
+  <div style="padding: 1rem; border: 1px solid var(--vp-c-border); border-radius: 8px;">
+    <h3 style="margin-top: 0;">🟣 Premium Version</h3>
+    <ul>
+      <li>All SEO-PRO features</li>
+      <li>Fortress preset defaults</li>
+      <li>Archive / Wayback blocking</li>
+      <li>Highest protection posture</li>
+      <li>For high-value sites</li>
       <li>Priority support</li>
     </ul>
   </div>
 </div>
+
+[View Full Pricing Details](/pricing)
 
 <style>
 .grid-container div {

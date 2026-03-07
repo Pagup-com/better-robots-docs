@@ -11,6 +11,7 @@ Common questions about Better Robots.txt plugin functionality and usage.
 ### Do I need a robots.txt file?
 
 **Yes**, most websites benefit from a robots.txt file because it:
+
 - Helps search engines understand your site structure
 - Prevents crawling of unnecessary files
 - Protects sensitive areas of your website
@@ -20,12 +21,14 @@ Common questions about Better Robots.txt plugin functionality and usage.
 ### What's the difference between virtual and physical robots.txt?
 
 **Virtual robots.txt**:
+
 - Generated dynamically by WordPress
 - Easy to update through plugin settings
 - No file system access required
 - Default in Better Robots.txt
 
 **Physical robots.txt**:
+
 - Actual file on your server
 - Better for CDNs and caching
 - Required for PageSpeed Insights optimization
@@ -34,6 +37,7 @@ Common questions about Better Robots.txt plugin functionality and usage.
 ### Will Better Robots.txt work with my SEO plugin?
 
 **Yes**, Better Robots.txt is designed to work alongside popular SEO plugins:
+
 - ✅ **Yoast SEO**: Auto-detects sitemaps
 - ✅ **Rank Math**: Full compatibility
 - ✅ **All in One SEO**: Native integration
@@ -41,25 +45,51 @@ Common questions about Better Robots.txt plugin functionality and usage.
 
 ### Is Better Robots.txt free?
 
-**Free version** includes:
-- Basic robots.txt generation
-- ChatGPT Bot blocking
-- Ads.txt support
-- Core SEO features
+We offer three plans: **Free**, **SEO-PRO**, and **Premium**.
 
-**Pro version** adds:
-- Advanced bot management
-- Sitemap auto-detection
-- WooCommerce optimization
-- Multisite support
-- Physical file generation
-- Priority support
+**Free version** includes:
+
+- Essential preset
+- Search visibility controls
+- Basic AI block
+- Basic bad bot protection
+- Virtual robots.txt mode
+- WordPress core protections
+- Crawl cleanup & trap controls
+- Basic WooCommerce cleanup
+- Asset & social crawler controls
+- ads.txt & app-ads.txt allowance
+
+**SEO-PRO version** adds:
+
+- AI-First preset
+- Custom mode (Expert)
+- Extended search visibility
+- Advanced bot-by-bot control
+- AI & LLM governance
+- Content usage signals
+- llms.txt generation
+- SEO tool protection
+- Full AI-curated bad bot list
+- Physical robots.txt mode
+- Feed crawler blocking
+- Advanced WooCommerce cleanup
+- Advanced output controls
+
+**Premium version** adds:
+
+- Fortress preset
+- Archive / Wayback blocking
+- Strongest preset defaults
+- Best for high-value or sensitive sites
+- Maximum protection posture
 
 ## Installation & Setup
 
 ### How do I install the plugin?
 
 **Three easy methods**:
+
 1. **WordPress.org**: Plugins → Add New → Search "Better Robots.txt"
 2. **Manual Upload**: Download and upload via FTP
 3. **Direct Download**: From WordPress.org and upload
@@ -69,6 +99,7 @@ Common questions about Better Robots.txt plugin functionality and usage.
 ### Do I need technical knowledge?
 
 **No technical knowledge required**! The plugin provides:
+
 - One-click setup for beginners
 - Default optimized settings
 - Clear explanations for each option
@@ -77,6 +108,7 @@ Common questions about Better Robots.txt plugin functionality and usage.
 ### What happens after activation?
 
 After activation:
+
 1. Plugin automatically generates initial robots.txt
 2. Settings page becomes available in WordPress dashboard
 3. You can immediately see your robots.txt at `yoursite.com/robots.txt`
@@ -85,6 +117,7 @@ After activation:
 ### Can I migrate from another robots.txt plugin?
 
 **Yes**, migration is straightforward:
+
 - Plugin detects existing configurations
 - Imports compatible settings
 - Provides migration recommendations
@@ -98,6 +131,7 @@ For most WordPress sites:
 
 ```markdown
 ✅ **Recommended Defaults**:
+
 - Keep default WordPress rules
 - Allow major search engines
 - Block ChatGPT Bot
@@ -118,6 +152,7 @@ For most WordPress sites:
 ### What crawl delay should I use?
 
 **Recommended crawl delays**:
+
 - **Shared hosting**: 1-2 seconds
 - **VPS/Dedicated**: 0.5-1 second
 - **High traffic sites**: 2-5 seconds
@@ -128,6 +163,7 @@ For most WordPress sites:
 **Two methods**:
 
 1. **Custom Rules Textarea**:
+
    ```txt
    User-agent: Googlebot
    Allow: /special-content/
@@ -141,6 +177,7 @@ For most WordPress sites:
 ### Can I exclude specific pages?
 
 **Yes**, multiple ways:
+
 - **Post Meta Box**: Built-in exclusion feature
 - **Custom Rules**: Add Disallow directives
 - **URL Patterns**: Block specific URL structures
@@ -150,12 +187,14 @@ For most WordPress sites:
 ### Will blocking bots hurt my SEO?
 
 **Properly configured robots.txt helps SEO**:
+
 - Focuses crawler attention on important content
 - Reduces server load for better performance
 - Prevents indexing of duplicate/thin content
 - Protects crawl budget
 
 **Avoid blocking**:
+
 - Major search engines (Google, Bing)
 - Important content pages
 - Sitemaps and CSS/JS files
@@ -163,11 +202,13 @@ For most WordPress sites:
 ### How long until search engines notice changes?
 
 **Typical timelines**:
+
 - **Google**: Usually within 24-48 hours
 - **Bing**: 2-3 days
 - **Other engines**: Varies, up to a week
 
 **Speed up detection**:
+
 - Submit sitemap in Search Console
 - Use "Fetch as Google" feature
 - Monitor crawling activity
@@ -175,6 +216,7 @@ For most WordPress sites:
 ### Should I block AI/ChatGPT bots?
 
 **Consider these factors**:
+
 - ✅ **Block if**: Protect original content, prevent training data usage
 - ✅ **Allow if**: Want AI visibility, content discovery
 - ⚠️ **Mixed**: Allow limited access with specific rules
@@ -182,6 +224,7 @@ For most WordPress sites:
 ### How do I check if my robots.txt is working?
 
 **Testing methods**:
+
 1. **Direct URL**: Visit `yoursite.com/robots.txt`
 2. **Search Console**: robots.txt testing tool
 3. **Manual testing**: Different user agents
@@ -192,6 +235,7 @@ For most WordPress sites:
 ### Is the Pro version worth it?
 
 **Pro version provides**:
+
 - 🎯 **Advanced bot management**: Better protection
 - 🛒 **E-commerce optimization**: WooCommerce support
 - 🌐 **Multisite support**: Network management
@@ -200,6 +244,7 @@ For most WordPress sites:
 - 📞 **Priority support**: Direct help
 
 **ROI**:
+
 - Improved SEO performance
 - Reduced server costs
 - Better security
@@ -208,6 +253,7 @@ For most WordPress sites:
 ### How do I upgrade to Pro?
 
 **Simple upgrade process**:
+
 1. Go to **Better Robots.txt → Settings**
 2. Click "Upgrade to Pro" button
 3. Choose pricing plan
@@ -217,6 +263,7 @@ For most WordPress sites:
 ### Can I try Pro before buying?
 
 **Yes**, Pro features include:
+
 - **14-day free trial**
 - Full feature access
 - No credit card required
@@ -225,6 +272,7 @@ For most WordPress sites:
 ### What happens if I cancel Pro subscription?
 
 **When you cancel**:
+
 - Keep using current Pro features until subscription ends
 - Site remains functional with free features
 - Settings are preserved
@@ -235,6 +283,7 @@ For most WordPress sites:
 ### What PHP version is required?
 
 **Minimum requirements**:
+
 - **WordPress**: 4.1 or higher
 - **PHP**: 7.4 or higher
 - **Memory**: 64MB PHP memory limit
@@ -243,6 +292,7 @@ For most WordPress sites:
 ### Will the plugin slow down my site?
 
 **No, the plugin is optimized**:
+
 - Efficient code structure
 - Minimal database queries
 - Smart caching mechanisms
@@ -251,6 +301,7 @@ For most WordPress sites:
 ### Does it work with multisite?
 
 **Yes, multisite support includes**:
+
 - Network-wide activation
 - Individual site configuration
 - Cross-site rule management
@@ -259,7 +310,8 @@ For most WordPress sites:
 
 ### Can I use it with CDNs?
 
-**Yes**, CDN compatibility**:
+**Yes**, CDN compatibility\*\*:
+
 - Virtual mode works with most CDNs
 - Physical file mode (Pro) optimal for CDNs
 - Cloudflare, CloudFront, MaxCDN supported
@@ -270,6 +322,7 @@ For most WordPress sites:
 ### My robots.txt shows 404 error
 
 **Common solutions**:
+
 1. Check WordPress privacy settings
 2. Resave permalink structure
 3. Check for conflicting plugins
@@ -279,6 +332,7 @@ For most WordPress sites:
 ### Settings aren't saving
 
 **Troubleshooting steps**:
+
 1. Verify admin permissions
 2. Increase PHP memory limit
 3. Clear WordPress and plugin caches
@@ -288,6 +342,7 @@ For most WordPress sites:
 ### robots.txt content is wrong
 
 **Debugging checklist**:
+
 1. Review plugin settings
 2. Check for physical robots.txt file
 3. Test with different user agents
@@ -297,6 +352,7 @@ For most WordPress sites:
 ### Performance issues after installation
 
 **Performance optimization**:
+
 1. Adjust crawl delay settings
 2. Enable physical file generation (Pro)
 3. Review bot blocking rules
@@ -308,6 +364,7 @@ For most WordPress sites:
 ### What payment methods are accepted?
 
 **Accepted payment methods**:
+
 - Credit/Debit cards (Visa, MasterCard, American Express)
 - PayPal
 - Bank transfer (annual plans)
@@ -315,6 +372,7 @@ For most WordPress sites:
 ### Is there a money-back guarantee?
 
 **Yes**, Pro version includes:
+
 - **30-day money-back guarantee**
 - No questions asked
 - Full refund process
@@ -323,18 +381,19 @@ For most WordPress sites:
 ### How do I get support?
 
 **Support channels**:
+
 1. **Free users**: WordPress.org support forums
 2. **Pro users**: Priority support email
 3. **Documentation**: Comprehensive guides
 4. **Video tutorials**: Step-by-step instructions
 
-### Can I use Pro on multiple sites?
+### Can I use Pro or Premium on multiple sites?
 
 **License options**:
-- **Personal**: 1 site
-- **Business**: 3 sites
-- **Agency**: 10 sites
-- **Unlimited**: Unlimited sites
+
+- **Single Site**: 1 site
+- **3 Sites**: up to 3 sites
+- **5 Sites**: up to 5 sites
 
 ---
 

@@ -25,6 +25,7 @@ export default defineConfig({
           { text: "Démarrage rapide", link: "/fr/quick-start" },
           { text: "Fonctionnalités", link: "/fr/features" },
           { text: "Paramètres", link: "/fr/settings" },
+          { text: "Tarifs", link: "/fr/pricing" },
         ],
 
         sidebar: [
@@ -158,6 +159,7 @@ export default defineConfig({
       { text: "Quick Start", link: "/quick-start" },
       { text: "Features", link: "/features" },
       { text: "Settings", link: "/settings" },
+      { text: "Pricing", link: "/pricing" },
     ],
 
     sidebar: [

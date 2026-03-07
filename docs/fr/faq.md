@@ -11,6 +11,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Ai-je besoin d'un fichier robots.txt ?
 
 **Oui**, la plupart des sites web bénéficient d'un fichier robots.txt car il :
+
 - Aide les moteurs de recherche à comprendre la structure de votre site
 - Empêche l'exploration de fichiers inutiles
 - Protège les zones sensibles de votre site web
@@ -20,12 +21,14 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Quelle est la différence entre robots.txt virtuel et physique ?
 
 **robots.txt virtuel** :
+
 - Généré dynamiquement par WordPress
 - Facile à mettre à jour via les paramètres du plugin
 - Aucun accès au système de fichiers requis
 - Par défaut dans Better Robots.txt
 
 **robots.txt physique** :
+
 - Fichier réel sur votre serveur
 - Mieux pour les CDN et la mise en cache
 - Requiert l'accès au système de fichiers
@@ -34,6 +37,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Est-ce que ce plugin est compatible avec mon hébergeur ?
 
 **Oui**, Better Robots.txt est compatible avec :
+
 - La plupart des hébergeurs WordPress partagés
 - Hébergements VPS et dédiés
 - Services cloud (AWS, DigitalOcean, etc.)
@@ -72,41 +76,69 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Puis-je utiliser mes règles personnalisées existantes ?
 
 **Oui**, vous pouvez :
+
 - Importer des règles depuis un fichier robots.txt existant
 - Ajouter des règles personnalisées dans la zone de texte
 - Utiliser des variables dynamiques
 - Créer des règles spécifiques par user-agent
 
-## Fonctionnalités gratuites vs Pro
+## Fonctionnalités Gratuite, SEO-PRO et Premium
 
-### Quelles sont les fonctionnalités gratuites ?
+### Quelles sont les fonctionnalités de la version Gratuite ?
 
-- **Génération robots.txt de base** : Règles essentielles WordPress
-- **Blocage ChatGPT Bot** : Protection contre le scraping IA
-- **Support Ads.txt** : Accès aux fichiers de vérification publicitaire
-- **Interface conviviale** : Configuration simple
-- **Mises à jour de sécurité** : Maintenance régulière
+La **version Gratuite** comprend :
 
-### Quelles sont les fonctionnalités Pro ?
+- Preset Essentiel
+- Contrôles de visibilité de recherche
+- Blocage IA de base
+- Protection de base contre les mauvais bots
+- Mode virtuel robots.txt
+- Protections de base WordPress
+- Nettoyage d'exploration et contrôles de pièges
+- Nettoyage WooCommerce de base
+- Contrôles d'actifs et de robots sociaux
+- Allocation ads.txt et app-ads.txt
 
-- **Génération de fichiers physiques** : robots.txt réel
-- **Détection automatique de sitemaps** : Intégration SEO
-- **Blocage avancé de bots** : Liste maintenue automatiquement
-- **Optimisation WooCommerce** : Spécialisé e-commerce
-- **Support multisite** : Gestion réseau
-- **Support prioritaire** : Assistance premium
+### Quelles sont les fonctionnalités de la version SEO-PRO ?
 
-### Comment passer à la version Pro ?
+La **version SEO-PRO** ajoute :
+
+- Preset IA en premier
+- Mode personnalisé (Expert)
+- Visibilité de recherche étendue
+- Contrôle avancé bot par bot
+- Gouvernance IA et LLM
+- Signaux d'utilisation du contenu
+- Génération llms.txt
+- Protection des outils SEO
+- Liste complète des mauvais bots gérée par l'IA
+- Mode physique robots.txt
+- Blocage des crawlers de flux
+- Nettoyage WooCommerce avancé
+- Contrôles de sortie avancés
+
+### Quelles sont les fonctionnalités de la version Premium ?
+
+La **version Premium** ajoute :
+
+- Preset Forteresse
+- Blocage Archive / Wayback
+- Paramètres par défaut les plus stricts
+- Idéal pour les sites de grande valeur ou sensibles
+- Posture de protection maximale
+
+### Comment passer aux versions SEO-PRO ou Premium ?
 
 1. Allez dans Better Robots.txt → Mises à jour
-2. Cliquez sur "Passer à Pro"
+2. Cliquez sur "Passer à SEO-PRO" ou "Passer à Premium"
 3. Suivez les instructions de paiement
-4. Activez les fonctionnalités Pro
+4. Activez les fonctionnalités avancées
 5. Configurez les nouvelles options
 
-### Puis-je annuler la version Pro ?
+### Puis-je annuler mon abonnement ?
 
 **Oui**, vous pouvez :
+
 - Annuler à tout moment
 - Continuer à utiliser les fonctionnalités gratuites
 - Exporter vos paramètres avant annulation
@@ -117,6 +149,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Mon robots.txt ne se met pas à jour
 
 **Solutions possibles** :
+
 1. Videz le cache WordPress
 2. Videz le cache de votre navigateur
 3. Vérifiez les permissions de fichiers
@@ -126,12 +159,14 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### J'obtiens une erreur 404
 
 **Causes courantes** :
+
 - WordPress en mode "Décourager les moteurs de recherche"
 - Permissions de fichiers incorrectes
 - Fichier robots.txt physique existant
 - Problèmes de structure de permaliens
 
 **Solutions** :
+
 1. Allez dans Réglages → Lecture
 2. Décochez "Décourager les moteurs de recherche..."
 3. Sauvegardez les permaliens (Réglages → Permaliens)
@@ -140,6 +175,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Les règles ne s'appliquent pas
 
 **Étapes de dépannage** :
+
 1. Vérifiez la syntaxe des règles
 2. Testez avec l'outil Google Robots.txt Tester
 3. Confirmez que les règles sont sauvegardées
@@ -148,6 +184,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Conflit avec d'autres plugins SEO
 
 **Résolution** :
+
 1. Désactivez temporairement les autres plugins robots.txt
 2. Configurez votre plugin SEO pour ignorer robots.txt
 3. Utilisez le mode de remplacement dans Better Robots.txt
@@ -158,6 +195,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Est-ce que ce plugin améliore mon SEO ?
 
 **Oui**, il aide votre SEO en :
+
 - Optimisant le budget d'exploration
 - Empêchant l'indexation du contenu dupliqué
 - Protégeant contre les scrapers de contenu
@@ -167,6 +205,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Comment savoir si ça fonctionne ?
 
 **Méthodes de vérification** :
+
 1. Visitez `votresite.com/robots.txt`
 2. Utilisez Google Search Console
 3. Testez avec Bing Webmaster Tools
@@ -176,12 +215,14 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Quel est l'impact sur les performances ?
 
 **Avantages** :
+
 - Réduction des requêtes inutiles
 - Moins de charge serveur
 - Mise en cache efficace
 - Génération rapide
 
 **Considérations** :
+
 - Traitement supplémentaire minime
 - Cache WordPress requis
 - Compatible avec les caches CDN
@@ -189,6 +230,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Dois-je bloquer les bots IA ?
 
 **Considérez** :
+
 - **Contenu original** : Peut vouloir bloquer
 - **Marketing** : Peut vouloir autoriser
 - **Secteur** : Certains secteurs bloquent systématiquement
@@ -199,6 +241,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Est-ce sûr pour mon site ?
 
 **Oui**, le plugin est sécurisé car il :
+
 - Utilise les API WordPress standard
 - Valide toutes les entrées utilisateur
 - Maintient les permissions de fichiers
@@ -208,6 +251,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Comment protège-t-il mon contenu ?
 
 **Mécanismes de protection** :
+
 - Blocage des zones d'administration
 - Protection des fichiers sensibles
 - Contrôle d'accès granulaire
@@ -217,6 +261,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Puis-je bloquer les mauvais bots ?
 
 **Oui**, vous pouvez bloquer :
+
 - Scrapers de contenu
 - Harvesters d'e-mails
 - Outils de copie de site
@@ -228,6 +273,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Comment obtenir de l'aide ?
 
 **Options de support** :
+
 - **Forum WordPress.org** : Support communautaire gratuit
 - **Documentation** : Guides détaillés
 - **Support premium** : Prioritaire pour les utilisateurs Pro
@@ -236,6 +282,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Quelles informations fournir pour le support ?
 
 **Informations utiles** :
+
 - Version WordPress et PHP
 - Version du plugin
 - Configuration actuelle robots.txt
@@ -245,6 +292,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Comment signaler un bug ?
 
 **Procédure** :
+
 1. Recherchez les rapports existants
 2. Créez un nouveau ticket sur GitHub
 3. Décrivez le problème en détail
@@ -256,6 +304,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Puis-je utiliser des variables dans les règles ?
 
 **Oui**, variables supportées :
+
 - `%SITE_URL%` : URL de votre site
 - `%UPLOAD_DIR%` : Répertoire d'upload
 - `%THEME_DIR%` : Répertoire du thème
@@ -264,6 +313,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Comment gérer les sites multisites ?
 
 **Options multisite** :
+
 - **Contrôle centralisé** : Une configuration pour tous
 - **Par site** : Configurations individuelles
 - **Hybride** : Règles globales + spécifiques
@@ -272,6 +322,7 @@ Questions courantes sur la fonctionnalité et l'utilisation du plugin Better Rob
 ### Puis-je sauvegarder mes paramètres ?
 
 **Oui**, options de sauvegarde :
+
 - Export JSON des paramètres
 - Sauvegarde automatique
 - Versioning des configurations
