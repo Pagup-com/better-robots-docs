@@ -1,47 +1,23 @@
-# Spam & Feed Protection <span class="pro-badge">Pro Feature</span>
+# Spam, Feeds & Crawl Traps
 
-**Location:** Settings ➔ Spam & Feed Protection
+**Location:** `Step 7 - Spam, Feeds & Crawl Traps`
 
-Reduce server load, stop trackback abuse, and prevent RSS feed scraping by explicitly defining feed accessibility.
+This step groups five cleanup toggles:
 
-## RSS & Atom Feeds
+- `Block Feed Crawlers`
+- `Block Author Archives`
+- `Block Comment Spam Params`
+- `Block WordPress Search URLs`
+- `Block Common Trap Parameters`
 
-WordPress automatically generates multiple XML and JSON feeds for your site, posts, and comments. While useful for legitimate syndicators and readers, they are also frequently targeted by scrapers who steal your content or consume server bandwidth.
+## What These Toggles Cover
 
-**Options:**
+- feed URLs
+- author archives
+- comment-spam parameters
+- WordPress search URLs
+- common crawl-trap parameters
 
-- **Allow** - Allows bots to crawl your RSS and Atom feeds.
-- **Disallow** - Prevents indexing of all `/feed/` URLs.
+## Plan Notes
 
-## Search & Trackback Results
-
-Malicious bots often generate thousands of random searches on your site, attempting to index search result pages or exploit trackback URLs for spam.
-
-**Options:**
-
-- **Protect Search Results** - Highly recommended. Disallows all `?s=` URLs.
-- **Protect Trackbacks** - Disallows `/trackback/` URLs to reduce comment spam.
-
-## The Spam Firewall
-
-The **Spam Firewall** identifies and blocks known malicious comment spammers, email harvesters, and vulnerability scanners that bypass standard bot filters.
-
-**Options:**
-
-- **Enable Spam Firewall** - Automatically blocks dozens of known spam IP networks and bot signatures by injecting targeted `Disallow:` patterns into your `robots.txt`.
-
-## Generated Output Example
-
-```txt
-# Spam & Feed Protection
-User-agent: *
-Disallow: /feed/
-Disallow: /trackback/
-Disallow: /?s=
-Disallow: /search/
-# ... SPAM FIREWALL DISALLOW LIST ...
-```
-
----
-
-**Next Module:** [E-commerce Optimization](/settings/ecommerce-optimization)
+- Advanced spam and crawl-trap protection depends on plan level

@@ -1,31 +1,17 @@
-# Ads & Revenue Verification
+# Ads & Revenue
 
-**Location:** Settings ➔ Ads & Revenue Verification
+**Location:** `Step 11 - Ads & Revenue`
 
-Ensure your ad partners can verify your inventory by allowing access to your `ads.txt` and `app-ads.txt` files.
+This step controls the allow rules for the ad-verification files.
 
-## Why is ads.txt important?
+## Available Toggles
 
-`ads.txt` (Authorized Digital Sellers) is an IAB Tech Lab initiative that helps ensure your digital ad inventory is only sold through authorized channels.
+- **Allow verification file (ads.txt)**
+- **Allow app verification file (app-ads.txt)**
 
-Google AdSense, Mediavine, AdThrive, and nearly every major ad network require Googlebot and associated crawlers to read this file.
+## How It Works
 
-**If this file is blocked by your `robots.txt`, your ads might stop showing.**
+- If `ads.txt` is enabled, the plugin allows access to `/ads.txt`
+- If `app-ads.txt` is enabled, the plugin allows access to `/app-ads.txt`
 
-## Options
-
-- **Allow Access:** (Recommended) Automatically adds rules to ensure `ads.txt` is crawlable.
-- **Disable:** Does nothing relative to ads.txt.
-
-## Generated Output Example
-
-```txt
-# Ads & Revenue Verification
-User-agent: *
-Allow: /ads.txt
-Allow: /app-ads.txt
-```
-
----
-
-**Next Module:** [Advanced Custom Rules](/settings/advanced)
+These are simple allow rules under `User-agent: *`.

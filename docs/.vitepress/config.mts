@@ -180,18 +180,21 @@ export default defineConfig({
             text: "Settings",
             items: [
               { text: "Settings Overview", link: "/settings" },
-              {
-                text: "Global Settings (Sitemaps)",
-                link: "/settings/sitemaps",
-              },
+              { text: "Mode Selection", link: "/settings/mode-selection" },
               {
                 text: "Search Engine Visibility",
                 link: "/settings/search-visibility",
               },
-              { text: "AI & LLM Governance", link: "/settings/ai-governance" },
-              { text: "SEO Tool Protection", link: "/settings/seo-protection" },
               {
-                text: "Bot & Scraper Protection",
+                text: "AI & LLM Governance",
+                link: "/settings/ai-governance",
+              },
+              {
+                text: "SEO Tool Protection",
+                link: "/settings/seo-protection",
+              },
+              {
+                text: "Bad Bots Protection",
                 link: "/settings/bot-protection",
               },
               {
@@ -199,7 +202,11 @@ export default defineConfig({
                 link: "/settings/archive-control",
               },
               {
-                text: "Spam & Feed Protection",
+                text: "Global Settings",
+                link: "/settings/sitemaps",
+              },
+              {
+                text: "Spam, Feeds & Crawl Traps",
                 link: "/settings/spam-protection",
               },
               {
@@ -210,12 +217,17 @@ export default defineConfig({
                 text: "Resources & Assets",
                 link: "/settings/resources-assets",
               },
-              { text: "Social Media", link: "/settings/social-media" },
               {
-                text: "Ads & Revenue Verification",
+                text: "Social Media Crawlers",
+                link: "/settings/social-media",
+              },
+              {
+                text: "Ads & Revenue",
                 link: "/settings/ads-revenue",
               },
-              { text: "Advanced Custom Rules", link: "/settings/advanced" },
+              { text: "LLMS.txt File", link: "/settings/llms-txt" },
+              { text: "Advanced Settings", link: "/settings/advanced" },
+              { text: "Review & Save", link: "/settings/review-save" },
             ],
           },
         ],

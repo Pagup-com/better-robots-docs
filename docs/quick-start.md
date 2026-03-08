@@ -1,146 +1,67 @@
 # Quick Start Guide
 
-Get Better Robots.txt up and running in minutes with this step-by-step guide.
+This guide follows the plugin's setup wizard.
 
-## Step 1: Activate & Access Settings
+## 1. Open the Wizard
 
-1. **Navigate to** **Better Robots.txt** → **Settings** in your WordPress dashboard
-2. **Accept defaults** for now (you can customize later)
-3. **Click** **Save Changes**
+In WordPress, go to **Better Robots.txt** and open the settings screen.
 
-Your basic robots.txt is now configured!
+If the plugin detects a physical `/robots.txt` file in your site root, resolve that first. Virtual mode cannot take over until that file is removed.
 
-## Step 2: Check Your robots.txt
+## 2. Choose a Mode
 
-Visit `https://yoursite.com/robots.txt` to see your new robots.txt file:
+The first screen is **Mode Selection**. The available modes are:
 
-```txt
-User-agent: *
-Allow: /wp-admin/admin-ajax.php
-Allow: /*/*.css
-Allow: /*/*.js
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /readme.html
-Disallow: /license.txt
-Disallow: /xmlrpc.php
-Disallow: /wp-login.php
-Disallow: /wp-register.php
-Disallow: */disclaimer/*
-Disallow: *?attachment_id=
-Disallow: /privacy-policy
+- `Mode 1: Essential`
+- `Mode 2: AI-First`
+- `Mode 3: Fortress`
+- `Mode 0: Custom`
 
-# This robots.txt file was created by Better Robots.txt (Index & Rank Booster by Pagup) Plugin
-```
+Then click **Configure**.
 
-## Step 3: Essential Free Features
+## 3. Walk Through the 14 Numbered Steps
 
-Enable these important free settings:
+1. `Search Engine Visibility`
+   Pick `Minimal Visibility`, `Recommended Visibility`, `Extended Visibility`, or `Custom Control`.
+2. `AI & LLM Governance`
+   Decide whether to block AI training bots and whether AI search engines should be blocked or allowed.
+3. `SEO Tool Protection`
+   Turn the SEO crawler groups on or off if your plan supports them.
+4. `Bad Bots Protection`
+   Enable the curated bad-bot list.
+5. `Archive & Wayback Control`
+   Leave archiving allowed, or block archive services on Premium.
+6. `Global Settings`
+   Choose `Virtual` or `Physical` robots.txt, add a sitemap URL, enable sitemap auto-detection, and review the core WordPress protection toggles.
+7. `Spam, Feeds & Crawl Traps`
+   Configure feed blocking, archive blocking, and crawl-trap cleanup.
+8. `E-commerce Optimization`
+   Choose the WooCommerce cleanup level that fits your store.
+9. `Resources & Assets`
+   Decide whether CSS/JS and images should receive explicit allow rules.
+10. `Social Media Crawlers`
+    Control whether social preview crawlers are blocked.
+11. `Ads & Revenue`
+    Keep `ads.txt` and `app-ads.txt` accessible if you use ad-network verification.
+12. `LLMS.txt File`
+    On Pro or Premium, enable the virtual file and enter the file contents.
+13. `Advanced Settings`
+    Add custom directives, optionally consolidate user-agents, and set crawl delay if your plan supports it.
+14. `Review & Save`
+    Refresh the preview and verify the generated output.
 
-### Block ChatGPT Bot
-1. Go to **Settings** → **Bot Management**
-2. **Enable** "Block ChatGPT Bot"
-3. **Save Changes**
+## 4. Save Your Changes
 
-### Allow Ads.txt Files
-1. Scroll to **Ads.txt Settings**
-2. **Select** "Allow" for both ads.txt and app-ads.txt
-3. **Save Changes**
+Use the sticky **Save Changes** bar at the bottom of the screen. The final step shows the preview, but the save action is global.
 
-## Step 4: Recommended Pro Features
+## 5. Verify the Result
 
-For optimal performance, consider these Pro features:
+- Check `https://yoursite.com/robots.txt`
+- If you enabled `llms.txt`, check `https://yoursite.com/llms.txt`
+- Confirm that your expected sitemap line appears
+- Confirm that any blocked sections or bots are present in the output
 
-### Enable Sitemap Detection
-1. **Upgrade to Pro** (if not already)
-2. Go to **Sitemap Integration**
-3. **Enable** "Auto-detect sitemaps"
-4. **Select** your SEO plugin (Yoast, Rank Math, etc.)
+## Publish-Safe Notes
 
-### Block Bad Bots
-1. Navigate to **Bot Protection**
-2. **Enable** "Block Bad Bots (AI Recommended)"
-3. **Enable** "Spam Backlink Blocker"
-
-## Step 5: WooCommerce Optimization (If Applicable)
-
-If you run an online store:
-
-1. Go to **E-commerce Settings**
-2. **Enable** "WooCommerce Optimization"
-3. **Save Changes**
-
-This blocks unnecessary URLs like `/cart/`, `/checkout/`, `add-to-cart` etc.
-
-## Step 6: Test Your Configuration
-
-### Google Search Console
-1. Add your site to [Google Search Console](https://search.google.com/search-console/)
-2. Submit your robots.txt for testing
-3. Check for any blocking issues
-
-### Manual Testing
-Test important pages:
-- Homepage: Should be accessible
-- Admin areas: Should be blocked
-- Sitemap: Should be referenced
-
-## Common Quick Configurations
-
-### Blog Site
-```markdown
-✅ Enable: Sitemap auto-detection
-✅ Enable: ChatGPT Bot blocking
-✅ Enable: Ads.txt allowance
-✅ Disable: WooCommerce (if not used)
-```
-
-### E-commerce Site
-```markdown
-✅ Enable: All blog settings
-✅ Enable: WooCommerce optimization
-✅ Enable: Bad bot blocking
-✅ Consider: Physical file generation
-```
-
-### Multisite Network
-```markdown
-✅ Enable: Multisite management
-✅ Configure: Network rules
-✅ Enable: Cross-site protection
-✅ Test: Each subsite individually
-```
-
-## Troubleshooting Quick Issues
-
-### robots.txt Not Updating
-1. **Clear cache** (WordPress and browser)
-2. **Check** settings are saved
-3. **Wait** 5-10 minutes for propagation
-
-### SEO Plugin Conflict
-1. **Disable** other robots.txt plugins
-2. **Check** Yoast/Rank Math robots.txt settings
-3. **Set** Better Robots.txt to "override"
-
-### 404 Error
-1. **Check** WordPress privacy settings
-2. **Verify** permalink structure
-3. **Ensure** no physical robots.txt exists
-
-## Next Steps
-
-- 📖 Learn about [Advanced Settings](/settings/advanced)
-- 🎯 Explore [Feature Examples](/examples)
-- 🛠️ Review [Best Practices](/best-practices)
-- ❓ Check our [FAQ](/faq)
-
-## Need Help?
-
-- **Documentation**: Browse these guides
-- **Support**: [WordPress.org Forum](https://wordpress.org/support/plugin/better-robots-txt/)
-- **Premium**: Priority support for Pro users
-
----
-
-**Congratulations!** 🎉 Your WordPress site now has an optimized robots.txt file that will help improve your SEO and protect your content.
+- The preview lives inside `Step 14 - Review & Save`.
+- `llms.txt` is only served when the file is enabled **and** the content field is not empty.

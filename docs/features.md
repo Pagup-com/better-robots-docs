@@ -1,46 +1,52 @@
 # Features Overview
 
-Better Robots.txt provides comprehensive features for WordPress `robots.txt` management and SEO optimization, entirely rebuilt for the V3 Master Plan.
+This page summarizes the features available in the guided setup flow.
 
-## Modern UI & Settings Framework
+## Setup Flow
 
-The Master Plan V3 introduces a completely separated Vue.js frontend powered by Pinia and Vue Router. This drastically improves performance, state management, and the overall administrative experience in WordPress.
+- A dedicated `Mode Selection` screen
+- `14` numbered configuration steps
+- A generated `robots.txt` preview inside `Step 14 - Review & Save`
+- A sticky `Save Changes` bar available throughout the flow
 
-- **Real-time Preview Panel:** Instantly see how your changes will affect the `robots.txt` output before you save.
-- **Smart Validation:** The UI identifies conflicting rules (like allowing and disallowing the same path) and warns you.
+## Modes
 
-## 13 Comprehensive Modules
+- `Mode 1: Essential`
+  Free preset
+- `Mode 2: AI-First`
+  Pro preset
+- `Mode 3: Fortress`
+  Premium preset
+- `Mode 0: Custom`
+  Manual configuration
 
-Settings are now categorized into 13 distinct modules, allowing you to quickly secure and optimize different aspects of your platform.
+## What the Plugin Currently Generates
 
-### 🤖 Intelligent bots.txt Generation
+- Base WordPress allow/disallow rules
+- Optional sitemap lines from a manual URL
+- Optional sitemap auto-detection
+- Search-engine visibility presets
+- AI training-bot blocking
+- AI search-engine blocking or allowance
+- SEO tool crawler blocking
+- Curated bad-bot blocking
+- Archive-service blocking on Premium
+- WooCommerce cleanup rules
+- CSS/JS and image allow rules
+- Social-media crawler blocking
+- `ads.txt` and `app-ads.txt` allow rules
+- Custom rules and optional crawl delay
+- Optional consolidation of output by `User-agent`
+- Optional SSA header links
+- Optional virtual `llms.txt` on Pro and Premium
 
-- **Smart Default Rules:** Pre-configured with WordPress-specific optimizations.
-- **Virtual File System:** No physical file required (unless chosen).
-- **Physical Output (Pro):** Create a real `robots.txt` file for caching and CDN compatibility.
+## Important Notes
 
-### 🧠 AI & Bot Governance
+- The preview is part of `Step 14 - Review & Save`
+- The `llms.txt` feature lets you publish your own file content at `/llms.txt`
+- The plugin includes a default Better Robots.txt signature that can be shown or hidden
 
-- **ChatGPT Bot Blocker:** Prevents content scraping by AI models.
-- **Full LLM Protection (Pro):** Complete control over Claude, Meta AI, Google Extended, and Perplexity.
-- **`llms.txt` Standard (Pro):** Automatically generates the new standard file to communicate with AI agents.
+## Where to Go Next
 
-### 🛡️ Competitive Protection (Pro)
-
-- **Backlink Protector:** Blocks Ahrefs, Semrush, and Moz from snooping on your SEO strategy.
-- **Archive Blocking:** Prevents the Wayback Machine from permanently capturing your time-sensitive content.
-
-### 🗺️ SEO & Sitemaps Integration
-
-- **Auto-detection:** Automatically finds and includes sitemaps from Yoast, Rank Math, All in One SEO, and native WordPress.
-- **Ads.txt Support:** Ensures ad verification files are accessible by Googlebot and partners.
-
-### 🛒 E-commerce & Scalability (Pro)
-
-- **WooCommerce Optimization:** Prevents crawling of cart, checkout, and account pages to save crawl budget.
-- **Spam Firewall:** Automatically injects rules to block known spam networks and malicious IPs.
-- **Multisite Support:** Centralized control over your entire WordPress network.
-
----
-
-**Next:** Explore our detailed [Settings Overview](/settings) or view the [Installation Guide](/installation).
+- Use [Quick Start](/quick-start) for the real setup sequence.
+- Use [Settings Overview](/settings) for the exact order and titles of every stage.

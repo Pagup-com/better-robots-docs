@@ -1,37 +1,12 @@
-# Social Media Control <span class="pro-badge">Pro Feature</span>
+# Social Media Crawlers
 
-**Location:** Settings ➔ Social Media
+**Location:** `Step 10 - Social Media Crawlers`
 
-Control how social networks access and preview your content when a user shares a link.
+This step currently exposes a single toggle:
 
-## Social Network Crawlers
+- **Block Social Media Crawlers**
 
-When someone pastes your URL into Facebook, Twitter, or LinkedIn, a crawler visits your site to generate a rich preview card (image, title, description).
+## How It Works
 
-If you block these crawlers, your shared links will look broken or plain, reducing click-through rates.
-
-### Supported Platforms:
-
-- **Facebook** (facebookexternalhit)
-- **Twitter** (Twitterbot)
-- **LinkedIn** (LinkedInBot)
-- **Pinterest** (Pinterestbot)
-
-You can choose to Allow or Disallow individual social networks.
-
-**Recommendation:** Allow all of them.
-
-## Generating Output Example
-
-```txt
-# Social Media Optimization
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-```
-
----
-
-**Next Module:** [Ads & Revenue Verification](/settings/ads-revenue)
+- Turn it on to block social-media preview crawlers
+- Leave it off to allow normal preview fetching

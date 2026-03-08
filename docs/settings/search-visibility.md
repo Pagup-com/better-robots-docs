@@ -1,44 +1,29 @@
 # Search Engine Visibility
 
-**Location:** Settings ➔ Search Engine Visibility
+**Location:** `Step 1 - Search Engine Visibility`
 
-This module allows you to granularly control which major search engines are allowed or disallowed from crawling your website.
+This step controls the visibility preset used for search-engine allow rules.
 
-## Major Search Engines
+## Available Presets
 
-By default, the plugin optimizes your `robots.txt` file for standard visibility, but you can explicitly block or allow major search engine crawlers.
+- **Minimal Visibility**
+  Google, Bing, and DuckDuckGo
+- **Recommended Visibility**
+  Major worldwide search engines
+- **Extended Visibility**
+  A broader list that includes additional regional and privacy-focused engines
+- **Custom Control**
+  Shows the per-bot UI
 
-| Bot             | Purpose        | Default  | Our Recommendation                                        |
-| --------------- | -------------- | -------- | --------------------------------------------------------- |
-| **Googlebot**   | Google Search  | ✅ Allow | **Allow**. Essential for Google Search presence.          |
-| **Bingbot**     | Microsoft Bing | ✅ Allow | **Allow**. Essential for Bing traffic.                    |
-| **Yahoo Slurp** | Yahoo Search   | ✅ Allow | **Allow**. Standard search visibility.                    |
-| **DuckDuckBot** | DuckDuckGo     | ✅ Allow | **Allow**. Good for privacy-focused traffic.              |
-| **Yandex**      | Russian Search | ✅ Allow | **Depends**. Block if you don't target Russian audiences. |
-| **Baidu**       | Chinese Search | ✅ Allow | **Depends**. Block if you don't target Chinese audiences. |
+## Available Presets
 
-## Why Block Search Engines?
+Search-engine access follows the selected preset:
 
-You might want to explicitly turn off (block) certain search engines to:
+- `minimal`
+- `recommended`
+- `extended`
 
-- **Save Crawl Budget:** If you only care about Google and Bing, blocking Baidu and Yandex saves your server resources.
-- **Regional Targeting:** If your business is strictly local to North America, foreign search engines offer no SEO value.
+## Plan Notes
 
-## Generated Output Example
-
-If you **Allow** Google, Bing, and DuckDuckGo, but **Disallow** Yandex and Baidu, your output will look like this:
-
-```txt
-# Search Engine Visibility
-User-agent: Yandex
-Disallow: /
-
-User-agent: Baiduspider
-Disallow: /
-```
-
-_(Note: Allowed bots typically don't require an explicit `Allow: /` unless `User-agent: _`is set to`Disallow: /`, but Better Robots.txt intelligently manages this syntax for you.)\*
-
----
-
-**Next Module:** [AI & LLM Governance](/settings/ai-governance)
+- Free users can use `Minimal` and `Recommended`
+- `Extended` and `Custom` are for higher plans

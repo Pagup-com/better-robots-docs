@@ -1,38 +1,45 @@
 # Settings Overview
 
-Better Robots.txt Master Plan V3 completely reorganizes `robots.txt` configuration into 13 logical, powerful modules. This allows you to manage everything from search engine visibility to AI bot governance with pinpoint accuracy.
+The setup wizard has:
 
-## The 13 Configuration Modules
+- `Mode Selection`
+- `14` numbered steps
+- a `Preview` panel inside `Step 14 - Review & Save`
 
-Each module controls a specific aspect of your site's crawling and indexing behavior.
+## Actual Flow Order
 
-1. **[Global Settings (Sitemaps)](/settings/sitemaps)**
-   Detects and appends your XML sitemaps to tell search engines where your content is.
+1. **[Mode Selection](/settings/mode-selection)**
+   Choose one of the four modes: `Mode 1: Essential`, `Mode 2: AI-First`, `Mode 3: Fortress`, or `Mode 0: Custom`.
 2. **[Search Engine Visibility](/settings/search-visibility)**
-   Granular control over major search engines like Google, Bing, Yandex, and Baidu.
+   Select the visibility preset that controls which search engines receive explicit allow rules.
 3. **[AI & LLM Governance](/settings/ai-governance)**
-   Block ChatGPT, Claude, Perplexity, and other AI scrapers from harvesting your content.
-4. **[SEO Tool Protection](/settings/seo-protection)** <span class="pro-badge">Pro Feature</span>
-   Hide your backlink profile by blocking crawlers like Ahrefs and Semrush.
-5. **[Bot & Scraper Protection](/settings/bot-protection)**
-   Block malicious scripts, known scrapers, and reduce server load with crawl delays.
+   Configure AI training protection and the AI search policy.
+4. **[SEO Tool Protection](/settings/seo-protection)**
+   Block SEO crawler groups such as Semrush, DotBot, Ahrefs, and similar tools.
+5. **[Bad Bots Protection](/settings/bot-protection)**
+   Enable the curated bad-bot list, with an expanded list on higher plans.
 6. **[Archive & Wayback Control](/settings/archive-control)**
-   Prevent the Internet Archive and plagiarism detectors from saving permanent copies of your site.
-7. **[Spam & Feed Protection](/settings/spam-protection)** <span class="pro-badge">Pro Feature</span>
-   Stop feed scrapers, block trackback abuse, and enable the Spam Firewall.
-8. **[E-commerce Optimization](/settings/ecommerce-optimization)** <span class="pro-badge">Pro Feature</span>
-   Save crawl budget by preventing search engines from indexing WooCommerce carts and checkouts.
-9. **[Resources & Assets](/settings/resources-assets)**
-   Ensure CSS/JS files can be crawled for rendering, and control image indexing.
-10. **[Social Media Control](/settings/social-media)** <span class="pro-badge">Pro Feature</span>
-    Allow Facebook, Twitter, and LinkedIn to generate rich preview cards.
-11. **[Ads & Revenue Verification](/settings/ads-revenue)**
-    Ensure ad networks can reach your `ads.txt` and `app-ads.txt` files to verify your inventory.
-12. **[Advanced Custom Rules](/settings/advanced)**
-    Add manual `User-agent`, `Allow`, and `Disallow` directives for specialized control, and enable physical file generation.
-13. **Import & Export Settings**
-    Easily migrate your configuration between environments or save backups of your setup.
+   Allow archiving or block archive services on Premium.
+7. **[Global Settings](/settings/sitemaps)**
+   Manage `virtual` vs `physical` robots.txt, sitemaps, footer signature, SSA links, and core WordPress protection rules.
+8. **[Spam, Feeds & Crawl Traps](/settings/spam-protection)**
+   Control feed blocking, author archives, comment spam parameters, search URLs, and trap parameters.
+9. **[E-commerce Optimization](/settings/ecommerce-optimization)**
+   Choose `No Cleanup`, `Basic Cleanup`, or `Advanced Cleanup` for WooCommerce-heavy sites.
+10. **[Resources & Assets](/settings/resources-assets)**
+    Allow CSS/JS and image crawling rules.
+11. **[Social Media Crawlers](/settings/social-media)**
+    Control whether social preview crawlers are blocked.
+12. **[Ads & Revenue](/settings/ads-revenue)**
+    Allow `ads.txt` and `app-ads.txt`.
+13. **[LLMS.txt File](/settings/llms-txt)**
+    Enable and populate a virtual `/llms.txt` file on Pro or Premium.
+14. **[Advanced Settings](/settings/advanced)**
+    Add custom rules, enable user-agent consolidation, and set crawl delay.
+15. **[Review & Save](/settings/review-save)**
+    Refresh the generated preview, copy it if needed, then save from the sticky `Save Changes` bar.
 
----
+## Important Notes
 
-**Next:** Deep dive into the first module, [Global Settings (Sitemaps)](/settings/sitemaps).
+- The final `robots.txt` preview is part of `Step 14 - Review & Save`
+- A physical `/robots.txt` file in the site root can block the virtual output
