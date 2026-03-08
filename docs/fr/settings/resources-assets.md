@@ -1,5 +1,15 @@
-# Documentation française en cours d'audit
+# Ressources et fichiers
 
-Consultez la version anglaise auditée :
+**Emplacement :** `Étape 9 - Ressources et fichiers`
 
-- [Resources & Assets](/settings/resources-assets)
+Cette étape contrôle deux groupes de règles `Allow`.
+
+## Interrupteurs disponibles
+
+- **Allow CSS & JS Files**
+- **Allow Images**
+
+## Fonctionnement
+
+- Lorsque CSS/JS est activé, l’extension ajoute des règles `Allow` pour les principaux modèles de feuilles de style et de scripts
+- Lorsque les images sont activées, l’extension ajoute des règles `Allow` pour les chemins d’images

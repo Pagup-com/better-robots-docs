@@ -22,10 +22,10 @@ export default defineConfig({
           { text: "Accueil", link: "/fr/" },
           { text: "À propos", link: "/fr/about" },
           { text: "Installation", link: "/fr/installation" },
-          { text: "Démarrage rapide", link: "/fr/quick-start" },
           { text: "Fonctionnalités", link: "/fr/features" },
-          { text: "Paramètres", link: "/fr/settings" },
           { text: "Tarifs", link: "/fr/pricing" },
+          { text: "Démarrage rapide", link: "/fr/quick-start" },
+          { text: "Paramètres", link: "/fr/settings" },
         ],
 
         sidebar: [
@@ -50,11 +50,11 @@ export default defineConfig({
                 items: [
                   { text: "Aperçu des paramètres", link: "/fr/settings" },
                   {
-                    text: "Plan Global (Sitemaps)",
-                    link: "/fr/settings/sitemaps",
+                    text: "Sélection du mode",
+                    link: "/fr/settings/mode-selection",
                   },
                   {
-                    text: "Visibilité Moteur de Recherche",
+                    text: "Visibilité des moteurs de recherche",
                     link: "/fr/settings/search-visibility",
                   },
                   {
@@ -62,38 +62,53 @@ export default defineConfig({
                     link: "/fr/settings/ai-governance",
                   },
                   {
-                    text: "Protection Outils SEO",
+                    text: "Protection contre les outils SEO",
                     link: "/fr/settings/seo-protection",
                   },
                   {
-                    text: "Protection Bots & Scrapers",
+                    text: "Protection contre les mauvais robots",
                     link: "/fr/settings/bot-protection",
                   },
                   {
-                    text: "Contrôle Archives & Wayback",
+                    text: "Contrôle de l’archivage et de Wayback",
                     link: "/fr/settings/archive-control",
                   },
                   {
-                    text: "Protection Spam & Flux",
+                    text: "Paramètres globaux",
+                    link: "/fr/settings/sitemaps",
+                  },
+                  {
+                    text: "Spam, flux et pièges d’exploration",
                     link: "/fr/settings/spam-protection",
                   },
                   {
-                    text: "Optimisation E-commerce",
+                    text: "Optimisation e-commerce",
                     link: "/fr/settings/ecommerce-optimization",
                   },
                   {
-                    text: "Ressources & Actifs",
+                    text: "Ressources et fichiers",
                     link: "/fr/settings/resources-assets",
                   },
                   {
-                    text: "Réseaux Sociaux",
+                    text: "Robots des réseaux sociaux",
                     link: "/fr/settings/social-media",
                   },
                   {
-                    text: "Revenus Publicitaires",
+                    text: "Publicités et revenus",
                     link: "/fr/settings/ads-revenue",
                   },
-                  { text: "Règles Avancées", link: "/fr/settings/advanced" },
+                  {
+                    text: "Fichier LLMS.txt",
+                    link: "/fr/settings/llms-txt",
+                  },
+                  {
+                    text: "Paramètres avancés",
+                    link: "/fr/settings/advanced",
+                  },
+                  {
+                    text: "Vérification et enregistrement",
+                    link: "/fr/settings/review-save",
+                  },
                 ],
               },
             ],
@@ -156,10 +171,10 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "About", link: "/about" },
       { text: "Installation", link: "/installation" },
-      { text: "Quick Start", link: "/quick-start" },
       { text: "Features", link: "/features" },
-      { text: "Settings", link: "/settings" },
       { text: "Pricing", link: "/pricing" },
+      { text: "Quick Start", link: "/quick-start" },
+      { text: "Settings", link: "/settings" },
     ],
 
     sidebar: [

@@ -1,5 +1,12 @@
-# Documentation française en cours d'audit
+# Robots des réseaux sociaux
 
-Consultez la version anglaise auditée :
+**Emplacement :** `Étape 10 - Robots des réseaux sociaux`
 
-- [Social Media Crawlers](/settings/social-media)
+Cette étape expose actuellement un seul interrupteur :
+
+- **Block Social Media Crawlers**
+
+## Fonctionnement
+
+- Activez-le pour bloquer les robots d’aperçu des réseaux sociaux
+- Laissez-le désactivé pour autoriser la récupération normale des aperçus

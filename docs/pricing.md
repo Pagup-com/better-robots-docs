@@ -18,14 +18,15 @@ This page shows feature availability by plan. For current commercial pricing, us
 | Search presets: `Minimal`, `Recommended` | Yes | Yes | Yes |
 | Search preset: `Extended` | No | Yes | Yes |
 | AI training protection | Yes | Yes | Yes |
-| AI search policy | Yes | Yes | Yes |
+| AI search policy: `Block All AI Search` | Yes | Yes | Yes |
+| AI search policy: `Allow AI Search Engines` | No | Yes | Yes |
 | SEO tool crawler toggles | No | Yes | Yes |
 | Bad bots basic list | Yes | Yes | Yes |
 | Bad bots full list | No | Yes | Yes |
 | Archive blocking | No | No | Yes |
 | Global settings and sitemap lines | Yes | Yes | Yes |
 | Physical robots.txt file | No | Yes | Yes |
-| Spam / feed / crawl-trap output | No | Yes | Yes |
+| Spam / feed / crawl-trap output | Partial | Yes | Yes |
 | E-commerce basic cleanup | Yes | Yes | Yes |
 | E-commerce advanced cleanup | No | Yes | Yes |
 | Resources & assets rules | Yes | Yes | Yes |

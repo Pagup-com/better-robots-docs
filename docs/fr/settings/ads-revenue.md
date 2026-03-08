@@ -1,5 +1,17 @@
-# Documentation française en cours d'audit
+# Publicités et revenus
 
-Consultez la version anglaise auditée :
+**Emplacement :** `Étape 11 - Publicités et revenus`
 
-- [Ads & Revenue](/settings/ads-revenue)
+Cette étape contrôle les règles `Allow` pour les fichiers de vérification publicitaire.
+
+## Interrupteurs disponibles
+
+- **Allow verification file (ads.txt)**
+- **Allow app verification file (app-ads.txt)**
+
+## Fonctionnement
+
+- Si `ads.txt` est activé, l’extension autorise l’accès à `/ads.txt`
+- Si `app-ads.txt` est activé, l’extension autorise l’accès à `/app-ads.txt`
+
+Ce sont de simples règles `Allow` sous `User-agent: *`.
