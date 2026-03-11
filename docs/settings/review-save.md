@@ -1,31 +1,29 @@
+---
+title: "Review & Save"
+description: "Step 14 of the Better Robots.txt wizard: inspect the generated output before saving."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Review & Save
 
-**Location:** `Step 14 - Review & Save`
+**Location:** Step 14 — Review & Save
 
-This is the final numbered step in the wizard.
+This is the final stage of the settings flow.
 
-## What the Step Does
+## What happens here
 
-- Generates a preview of the current `robots.txt`
-- Lets you refresh the preview
-- Lets you copy the preview to the clipboard
+- the plugin generates the current `robots.txt` preview
+- you can refresh the preview
+- you can copy the output
+- you validate before publishing
 
-## Important Detail
+## Why it matters
 
-The preview is part of this step. There is no separate `robots.txt Preview` step in the sidebar.
+This is one of the strongest product differences in Better Robots.txt.
+It gives beginners reassurance and gives advanced users a final verification point.
 
-## How Saving Works
+## Important detail
 
-The actual save action is handled by the sticky footer at the bottom of the page:
-
-- `Save Changes`
-- `Discard` when there are unsaved edits
-
-The review step helps you verify the output before using that global save action.
-
-## What to Check Before Saving
-
-- Expected sitemap lines are present
-- Expected bot blocks or allows are present
-- Custom rules appear as expected
-- The output still makes sense when consolidated by `User-agent`, if that option is enabled
+Saving is still handled by the global sticky action bar.
+The preview lives inside this final step.

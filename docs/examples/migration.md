@@ -1,3 +1,10 @@
+---
+title: "Migration Guide"
+description: "How to migrate an existing robots.txt setup to Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Migration Guide
 
 Use this guide when replacing another robots.txt setup with Better Robots.txt.

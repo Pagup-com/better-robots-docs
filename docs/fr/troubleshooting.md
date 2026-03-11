@@ -1,3 +1,10 @@
+---
+title: "Dépannage"
+description: "Résolution des problèmes fréquents de Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Dépannage
 
 ## `robots.txt` ne se charge pas comme prévu

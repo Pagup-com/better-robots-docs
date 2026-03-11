@@ -1,3 +1,10 @@
+---
+title: "Bonnes pratiques"
+description: "Recommandations pratiques pour configurer Better Robots.txt proprement."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Bonnes pratiques
 
 Utilisez ces recommandations lorsque vous configurez Better Robots.txt via l’assistant actuel.

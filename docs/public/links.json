@@ -1,0 +1,15 @@
+{
+  "home": "https://better-robots.com/",
+  "features": "https://better-robots.com/features/",
+  "pricing": "https://better-robots.com/pricing/",
+  "download": "https://better-robots.com/download/",
+  "quick_start": "https://better-robots.com/quick-start/",
+  "wizard": "https://better-robots.com/wizard/",
+  "governance": "https://better-robots.com/governance/",
+  "contact": "https://better-robots.com/contact/",
+  "demo": "https://better-robots.com/demo/",
+  "fr_home": "https://better-robots.com/fr/",
+  "plugin_directory": "https://wordpress.org/plugins/better-robots-txt/",
+  "canonical_plugin_repository": "https://github.com/GautierDorval/better-robots-txt",
+  "documentation_repository": "https://github.com/Pagup-com/better-robots-docs"
+}

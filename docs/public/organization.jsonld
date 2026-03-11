@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pagup",
+  "url": "https://better-robots.com",
+  "sameAs": [
+    "https://github.com/Pagup-com/better-robots-docs",
+    "https://github.com/GautierDorval/better-robots-txt"
+  ],
+  "email": "suppor@better-robots.com"
+}

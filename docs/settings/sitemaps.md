@@ -1,3 +1,10 @@
+---
+title: "Global Settings"
+description: "Global settings, sitemap lines, and core rules in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Global Settings
 
 **Location:** `Step 6 - Global Settings`

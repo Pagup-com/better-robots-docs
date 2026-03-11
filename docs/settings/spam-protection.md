@@ -1,3 +1,10 @@
+---
+title: "Spam, Feeds & Crawl Traps"
+description: "Spam, feeds, and crawl trap settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Spam, Feeds & Crawl Traps
 
 **Location:** `Step 7 - Spam, Feeds & Crawl Traps`

@@ -1,3 +1,10 @@
+---
+title: "Advanced Settings"
+description: "Advanced settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Advanced Settings
 
 **Location:** `Step 13 - Advanced Settings`

@@ -1,32 +1,31 @@
+---
+title: "Sélection du mode"
+description: "Étape 0 de l’assistant Better Robots.txt : choisissez Essential, AI-First, Fortress ou Custom."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Sélection du mode
 
-**Emplacement :** Premier écran de l’assistant de configuration
+**Emplacement :** premier écran avant les étapes numérotées
 
-La sélection du mode arrive avant les étapes numérotées.
+La sélection du mode détermine le chemin global de configuration.
 
-## Modes disponibles
+## Presets disponibles
 
-- **Mode 1: Essential**
-  Préréglage gratuit pour une configuration simple et moins complexe.
-- **Mode 2: AI-First**
-  Préréglage Pro centré sur la gouvernance IA plus les protections SEO standard.
-- **Mode 3: Fortress**
-  Préréglage Premium avec les valeurs par défaut les plus restrictives.
-- **Mode 0: Custom**
-  Configuration manuelle, module par module.
+- **Essential** — preset Gratuit pour le point de départ le plus sûr
+- **AI-First** — preset Pro pour les sites qui veulent une gouvernance IA plus profonde
+- **Fortress** — preset Premium pour le setup le plus orienté protection
+- **Custom** — chemin manuel Pro / Premium pour les utilisateurs qui veulent un contrôle module par module
 
-## Ce qui se passe lorsque vous sélectionnez un mode
+## Ce qui se passe ensuite
 
-Le store applique immédiatement un préréglage pour `Mode 1`, `Mode 2` et `Mode 3`.
+Une fois le preset choisi, l’extension applique une configuration de départ puis ouvre le reste de l’assistant pour permettre les ajustements.
 
-- `Mode 1` applique le préréglage Free
-- `Mode 2` applique le préréglage Pro
-- `Mode 3` applique le préréglage Premium
-- `Mode 0` conserve la structure de paramètres manuels
+## Pourquoi cette étape compte
 
-Après avoir choisi un mode, cliquez sur **Configure** pour entrer dans les étapes numérotées.
+Cette étape réduit la friction pour les débutants tout en gardant du contrôle pour les experts.
 
-## Notes
-
-- Le texte d’accueil indique qu’une configuration est possible en trois clics, mais l’assistant complet affiche toujours toutes les étapes numérotées après avoir cliqué sur **Configure**.
-- La prévisualisation finale n’est pas ici. Elle apparaît plus tard dans `Étape 14 - Vérification et enregistrement`.
+## Pages liées
+- [Tarifs](/fr/pricing)
+- [Démarrage rapide](/fr/quick-start)

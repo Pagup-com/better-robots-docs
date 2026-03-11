@@ -1,25 +1,34 @@
+---
+title: "Optimisation e-commerce"
+description: "Étape 8 de l’assistant Better Robots.txt : nettoyage WooCommerce et réduction du crawl de faible valeur."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Optimisation e-commerce
 
-**Emplacement :** `Étape 8 - Optimisation e-commerce`
+**Emplacement :** Étape 8 — Optimisation e-commerce
 
-Cette étape est destinée au nettoyage de l’exploration orienté WooCommerce.
+Cette étape est conçue pour WooCommerce et les sites de boutique qui doivent réduire les chemins de crawl de faible valeur.
 
-## Choix disponibles
+## Choix
 
 - **Basic Cleanup**
-  Bloque les sections privées ou réservées à la boutique comme le panier, la validation de commande et le compte
 - **Advanced Cleanup**
-  Ajoute un nettoyage plus large des paramètres et des filtres WooCommerce
 - **No Cleanup**
-  N’émet aucune règle de nettoyage WooCommerce
 
-## Fonctionnement
+## Éditions
 
-- `Basic Cleanup` ajoute les règles standard de nettoyage e-commerce
-- `Advanced Cleanup` ajoute le nettoyage standard plus un nettoyage plus large des paramètres et des filtres
-- `No Cleanup` laisse ces règles de nettoyage spécifiques à la boutique désactivées
+- Gratuit : Basic Cleanup
+- Pro / Premium : Advanced Cleanup
 
-## Notes sur les offres
+## Ce que cette étape cible
 
-- `Basic Cleanup` fonctionne sur toutes les offres
-- `Advanced Cleanup` revient à `Basic Cleanup` lorsque l’accès Pro/Premium n’est pas disponible
+- panier
+- commande
+- compte
+- routes de boutique à filtres ou paramètres lourds
+
+## Pourquoi cela compte
+
+Les URLs de boutique peuvent créer très vite du bruit de crawl. Cette étape aide à garder une sortie plus intentionnelle.

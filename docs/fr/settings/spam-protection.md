@@ -1,3 +1,10 @@
+---
+title: "Spam, flux et pièges d’exploration"
+description: "Réglages spam, flux et pièges d’exploration dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Spam, flux et pièges d’exploration
 
 **Emplacement :** `Étape 7 - Spam, flux et pièges d’exploration`

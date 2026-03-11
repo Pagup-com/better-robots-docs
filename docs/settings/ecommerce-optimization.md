@@ -1,25 +1,34 @@
+---
+title: "E-commerce Optimization"
+description: "Step 8 of the Better Robots.txt wizard: WooCommerce cleanup and low-value crawl reduction."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # E-commerce Optimization
 
-**Location:** `Step 8 - E-commerce Optimization`
+**Location:** Step 8 — E-commerce Optimization
 
-This step is for WooCommerce-oriented crawl cleanup.
+This step is designed for WooCommerce and store-like sites that need to reduce low-value crawl paths.
 
-## Available Choices
+## Choices
 
 - **Basic Cleanup**
-  Blocks the standard private/store-only sections such as cart, checkout, and account pages
 - **Advanced Cleanup**
-  Adds broader WooCommerce parameter and filter cleanup
 - **No Cleanup**
-  Emits no WooCommerce cleanup rules
 
-## How It Works
+## Editions
 
-- `Basic Cleanup` adds the standard e-commerce cleanup rules
-- `Advanced Cleanup` adds the standard cleanup plus broader parameter and filter cleanup
-- `No Cleanup` leaves these store-specific cleanup rules off
+- Free: Basic Cleanup
+- Pro / Premium: Advanced Cleanup
 
-## Plan Notes
+## What this step targets
 
-- `Basic Cleanup` works on all plans
-- `Advanced Cleanup` is reduced back to `Basic Cleanup` when Pro/Premium access is not available
+- cart
+- checkout
+- account
+- filter-heavy or parameter-heavy store routes
+
+## Why it matters
+
+Store URLs can create crawl noise quickly. This step helps keep the output more intentional.

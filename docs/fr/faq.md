@@ -1,38 +1,35 @@
-# Questions fréquentes
+---
+title: "FAQ"
+description: "Questions fréquentes sur Better Robots.txt, les éditions, les contrôles IA et la configuration."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
 
-## Quel est le vrai flux de configuration ?
+# FAQ
 
-Il y a un écran `Sélection du mode` suivi de `14` étapes numérotées. La prévisualisation `robots.txt` se trouve dans `Étape 14 - Vérification et enregistrement`.
+## Better Robots.txt est-il gratuit ou payant ?
+Il existe une édition gratuite et des éditions payantes.
+L’interface indique les fonctionnalités Gratuit, Pro ou Premium lorsque c’est pertinent.
 
-## La prévisualisation est-elle une étape séparée ?
+## Toutes les captures montrent-elles la version gratuite ?
+Non.
+Ce site peut montrer des captures Gratuit, Pro et Premium. L’interface du plugin indique la disponibilité du plan.
 
-Non. La prévisualisation fait partie de l’étape finale.
+## Faut-il Pro ou Premium pour utiliser le plugin ?
+Non.
+La version gratuite est utile à elle seule. Pro et Premium ajoutent une gouvernance plus profonde et des options de protection plus larges.
 
-## Quelle est la différence entre un robots.txt virtuel et physique ?
+## Le plugin garantit-il que les crawlers obéiront ?
+Non.
+Better Robots.txt publie des règles et des signaux. Le respect dépend toujours du crawler.
 
-- **Virtual**
-  WordPress sert `robots.txt` dynamiquement
-- **Physical**
-  L’extension écrit un vrai fichier à la racine du site
+## Puis-je prévisualiser le fichier final avant d’enregistrer ?
+Oui.
+La prévisualisation finale fait partie de **Review & Save**.
 
-Le mode physique est disponible sur les offres Pro et Premium.
+## Puis-je garder les moteurs de recherche autorisés tout en limitant d’autres bots ?
+Oui.
+C’est l’une des raisons principales d’utiliser le plugin.
 
-## Est-ce que `llms.txt` génère automatiquement son propre contenu ?
-
-Non. Vous devez être sur Pro ou Premium, activer le fichier et saisir vous-même son contenu.
-
-## Quels réglages comptent le plus pour le contrôle de l’IA ?
-
-Les principaux réglages IA sont :
-
-- la protection contre l’entraînement IA
-- la politique de recherche IA
-- le `llms.txt` optionnel
-
-## Pourquoi mon robots.txt virtuel n’apparaît-il pas ?
-
-Vérifiez d’abord ces points :
-
-- un fichier `/robots.txt` physique à la racine du site peut bloquer le fichier virtuel
-- l’écran de paramètres affiche un avertissement lorsque cela arrive
-- si vous attendez la sortie virtuelle de l’extension, assurez-vous que le site est public dans **Réglages → Lecture**
+## Par où commencer ?
+Utilisez [Démarrage rapide](/fr/quick-start), puis comparez les éditions sur [Tarifs](/fr/pricing).

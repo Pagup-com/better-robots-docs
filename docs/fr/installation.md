@@ -1,39 +1,35 @@
+---
+title: "Installation"
+description: "Installez Better Robots.txt et vérifiez la première sortie."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Installation
 
-## Prérequis
-
-- WordPress avec un accès administrateur
-- PHP `7.4+`
-
-## Installation depuis WordPress.org
+## Installer depuis WordPress.org
 
 1. Allez dans **Extensions → Ajouter**
-2. Recherchez `Better Robots.txt`
-3. Installez et activez l’extension
+2. Recherchez **Better Robots.txt**
+3. Installez puis activez l’extension
+4. Ouvrez l’écran Better Robots.txt dans WordPress
+5. Choisissez un preset puis suivez l’assistant
 
-## Premier lancement
+## Première vérification
 
-Après l’activation :
+Après l’enregistrement :
+- vérifiez `https://votresite.com/robots.txt`
+- vérifiez `https://votresite.com/llms.txt` si vous l’avez activé
+- confirmez les lignes de sitemap et les règles crawler attendues
 
-1. Ouvrez **Better Robots.txt**
-2. Choisissez un mode sur l’écran `Sélection du mode`
-3. Cliquez sur **Configure**
-4. Parcourez les étapes numérotées
-5. Vérifiez la prévisualisation dans `Étape 14 - Vérification et enregistrement`
-6. Enregistrez depuis le pied de page collant
+## Notes importantes
 
-## Vérification importante du fichier physique
+- Un fichier `robots.txt` physique peut prendre le dessus sur la sortie virtuelle
+- La prévisualisation finale est visible dans **Review & Save**
+- La disponibilité de certaines fonctionnalités dépend du plan ; utilisez [Tarifs](/fr/pricing) si nécessaire
 
-Si votre site possède déjà un fichier `/robots.txt` physique à la racine web, le mode virtuel peut être bloqué. L’écran des paramètres affiche un avertissement lorsque cela se produit.
+## Liens
 
-## Vérifier l’installation
-
-- Visitez `https://votresite.com/robots.txt`
-- Si vous avez activé `llms.txt`, visitez `https://votresite.com/llms.txt`
-
-## Si quelque chose semble incorrect
-
-- Réenregistrez les permaliens dans **Réglages → Permaliens**
-- Assurez-vous que **Réglages → Lecture → Visibilité pour les moteurs de recherche** n’empêche pas l’indexation
-- Vérifiez s’il existe un fichier `/robots.txt` physique
-- Vérifiez la prévisualisation dans l’étape finale avant d’enregistrer
+- [Télécharger l’extension](https://wordpress.org/plugins/better-robots-txt/)
+- [Démarrage rapide](/fr/quick-start)
+- [Vue d’ensemble des paramètres](/fr/settings)

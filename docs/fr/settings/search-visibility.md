@@ -1,3 +1,10 @@
+---
+title: "Visibilité des moteurs de recherche"
+description: "Options de visibilité des moteurs de recherche dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Visibilité des moteurs de recherche
 
 **Emplacement :** `Étape 1 - Visibilité des moteurs de recherche`

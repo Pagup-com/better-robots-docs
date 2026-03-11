@@ -1,52 +1,49 @@
-# Aperçu des fonctionnalités
+---
+title: "Fonctionnalités"
+description: "Vue d’ensemble des fonctionnalités de Better Robots.txt pour la recherche, l’IA, les bots, WooCommerce et la sortie finale."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
 
-Cette page résume les fonctionnalités disponibles dans le flux de configuration guidé.
+# Fonctionnalités
 
-## Flux de configuration
+Better Robots.txt est organisé par domaines de contrôle concrets, pas comme un simple éditeur de fichier brut.
 
-- un écran dédié `Sélection du mode`
-- `14` étapes de configuration numérotées
-- une prévisualisation générée de `robots.txt` dans `Étape 14 - Vérification et enregistrement`
-- une barre collante `Save Changes` disponible tout au long du flux
+## Visibilité des moteurs de recherche
+Choisissez un niveau de visibilité ou un contrôle plus avancé pour décider jusqu’où exposer le site aux moteurs de recherche.
 
-## Modes
+## Gouvernance IA & LLM
+Définissez comment traiter les bots d’entraînement IA et les systèmes de recherche IA.
+Vous pouvez aussi publier une guidance machine-readable comme `llms.txt`.
 
-- `Mode 1: Essential`
-  Préréglage gratuit
-- `Mode 2: AI-First`
-  Préréglage Pro
-- `Mode 3: Fortress`
-  Préréglage Premium
-- `Mode 0: Custom`
-  Configuration manuelle
+## Protection contre les outils SEO
+Limitez les crawlers d’outils comme Semrush, DotBot, Ahrefs et autres agents similaires lorsque le plan le permet.
 
-## Ce que l’extension génère actuellement
+## Protection contre les mauvais robots
+Activez une blocklist organisée, avec une version plus large dans les éditions supérieures.
 
-- les règles WordPress de base `Allow/Disallow`
-- des lignes de sitemap optionnelles à partir d’une URL manuelle
-- l’auto-détection optionnelle de sitemap
-- les préréglages de visibilité des moteurs de recherche
-- le blocage des robots d’entraînement IA
-- le blocage ou l’autorisation des moteurs de recherche IA
-- le blocage des robots d’outils SEO
-- le blocage organisé des mauvais robots
-- le blocage des services d’archive sur Premium
-- les règles de nettoyage WooCommerce
-- les règles `Allow` pour CSS/JS et images
-- le blocage des robots de réseaux sociaux
-- les règles `Allow` pour `ads.txt` et `app-ads.txt`
-- les règles personnalisées et le crawl delay optionnel
-- la consolidation optionnelle de la sortie par `User-agent`
-- les liens d’en-tête SSA optionnels
-- le `llms.txt` virtuel optionnel sur Pro et Premium
+## Contrôle de l’archivage et de Wayback
+Choisissez si des services d’archives peuvent stocker des copies publiques du site.
 
-## Notes importantes
+## Spam, flux et pièges d’exploration
+Réduisez le crawl de faible valeur sur les flux, la recherche interne, les paramètres de spam et les pièges.
 
-- La prévisualisation fait partie de `Étape 14 - Vérification et enregistrement`
-- La fonctionnalité `llms.txt` vous permet de publier votre propre contenu de fichier sur `/llms.txt`
-- L’extension inclut une signature Better Robots.txt par défaut qui peut être affichée ou masquée
+## Nettoyage WooCommerce
+Évitez que le panier, la commande, le compte, ou des paramètres dynamiques inutiles consomment le budget de crawl.
 
-## Où aller ensuite
+## Ressources et fichiers
+Décidez si CSS, JavaScript et images doivent recevoir des règles `Allow` explicites.
 
-- Utilisez [Démarrage rapide](/fr/quick-start) pour la vraie séquence de configuration.
-- Utilisez [Aperçu des paramètres](/fr/settings) pour l’ordre exact et les titres de chaque étape.
+## Robots des réseaux sociaux
+Autorisez ou limitez les bots de prévisualisation selon vos besoins de partage.
+
+## Publicités et revenus
+Gardez `ads.txt` et `app-ads.txt` accessibles quand vous en avez besoin.
+
+## Review & Save
+Prévisualisez la sortie générée avant de la publier.
+
+## Éditions
+Certaines fonctionnalités sont disponibles partout, d’autres sont réservées aux plans Pro ou Premium.
+Utilisez la page tarifs pour comparer clairement Gratuit, Pro et Premium :
+[Comparer les plans](/fr/pricing)

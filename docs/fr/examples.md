@@ -1,3 +1,10 @@
+---
+title: "Exemples"
+description: "Exemples et cas d’usage pour Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Exemples et cas d’usage
 
 Ces exemples suivent le flux de paramètres affiché dans l’extension.

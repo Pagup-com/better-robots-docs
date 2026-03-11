@@ -1,3 +1,10 @@
+---
+title: "Protection contre les outils SEO"
+description: "Réglages de protection contre les outils SEO dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Protection contre les outils SEO
 
 **Emplacement :** `Étape 3 - Protection contre les outils SEO`

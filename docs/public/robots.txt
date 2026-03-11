@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://better-robots.com/sitemap.xml

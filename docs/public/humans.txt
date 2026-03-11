@@ -1,0 +1,15 @@
+/* TEAM */
+Product owner: Gautier Dorval
+Technical implementation support: Sajjad Ali
+Support: suppor@better-robots.com
+
+/* SITE */
+Website: https://better-robots.com
+Documentation repository: https://github.com/Pagup-com/better-robots-docs
+Canonical plugin repository: https://github.com/GautierDorval/better-robots-txt
+Plugin directory: https://wordpress.org/plugins/better-robots-txt/
+
+/* STACK */
+Generator: VitePress
+Deployment: GitHub Pages
+Purpose: Human-friendly and machine-first product documentation

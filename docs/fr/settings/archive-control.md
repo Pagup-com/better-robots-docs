@@ -1,3 +1,10 @@
+---
+title: "Contrôle de l’archivage et de Wayback"
+description: "Contrôles d’archivage et de Wayback dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Contrôle de l’archivage et de Wayback
 
 **Emplacement :** `Étape 5 - Contrôle de l’archivage et de Wayback`

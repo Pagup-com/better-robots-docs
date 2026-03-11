@@ -1,3 +1,10 @@
+---
+title: "Search Engine Visibility"
+description: "Search engine visibility options in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Search Engine Visibility
 
 **Location:** `Step 1 - Search Engine Visibility`

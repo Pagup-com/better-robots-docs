@@ -1,3 +1,10 @@
+---
+title: "Resources & Assets"
+description: "Resources and assets settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Resources & Assets
 
 **Location:** `Step 9 - Resources & Assets`

@@ -1,33 +1,28 @@
+---
+title: "Fichier LLMS.txt"
+description: "Étape 12 de l’assistant Better Robots.txt : publier un fichier llms.txt optionnel."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Fichier LLMS.txt
 
-**Emplacement :** `Étape 12 - Fichier LLMS.txt`
+**Emplacement :** Étape 12 — Fichier LLMS.txt
 
-Cette étape gère un fichier virtuel `/llms.txt` optionnel.
+Cette étape gère le fichier virtuel `/llms.txt` optionnel.
 
-## Ce que l’étape inclut
+## Ce que cela inclut
 
-- Un interrupteur Pro/Premium pour activer le fichier virtuel
-- Une zone de texte pour le contenu du fichier
-- Un lien affichant l’URL `/llms.txt` obtenue lorsqu’il est activé
+- un interrupteur pour activer le fichier
+- un champ de contenu pour le corps du fichier
+- la route résultante quand il est activé
 
-## Quand il devient disponible
+## Éditions
 
-`/llms.txt` devient disponible lorsque toutes les conditions suivantes sont vraies :
-
-- Vous êtes sur `Pro` ou `Premium`
-- `Enable llms.txt Virtual File` est activé
-- Le champ `LLMS.txt Content` n’est pas vide
-
-Si le champ de contenu est vide, la route existe dans le code mais aucun contenu de fichier n’est servi.
+- Gratuit : non disponible
+- Pro : disponible
+- Premium : disponible
 
 ## Note importante
 
-Vous rédigez vous-même le contenu du `llms.txt` dans cette étape.
-
-## Utilisation conseillée
-
-Utilisez cette étape si vous voulez un fichier dédié, lisible par machine, qui explique comment les systèmes IA doivent interagir avec votre site.
-
-## Suite
-
-Continuez vers [Paramètres avancés](/fr/settings/advanced) ou terminez avec [Vérification et enregistrement](/fr/settings/review-save).
+Le fichier n’est pas rédigé automatiquement pour vous. Vous fournissez le contenu, puis Better Robots.txt le publie à `/llms.txt` quand il est activé et rempli.

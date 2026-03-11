@@ -1,15 +1,24 @@
+---
+title: "Journal des modifications"
+description: "Notes publiques sur la génération actuelle du plugin et du site Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Journal des modifications
 
-Cet ensemble de documentation a été audité par rapport au flux de configuration réel et au comportement actuel de l’extension.
+## 6.9.1
+- refonte majeure du produit
+- nouvel onboarding basé sur des presets
+- flux guidé de paramètres en 14 étapes
+- prévisualisation finale Review & Save
+- distinction Gratuit / Pro / Premium plus claire
+- gouvernance IA & LLM élargie
+- meilleurs contrôles bad bots, archives, WooCommerce et sortie
 
-## Portée de l’audit documentaire
-
-La documentation actuelle reflète désormais :
-
-- le véritable ordre des étapes affiché dans l’assistant de configuration
-- le comportement actuel de l’extension
-- l’ordre actuel de navigation VitePress
-
-## Note sur l’historique des versions
-
-Un changelog historique version par version n’est pas reproduit ici, car l’ancienne page contenait des entrées non vérifiées. Jusqu’à la reconstruction de cet historique, cette page se concentre sur le comportement actuellement documenté de l’extension.
+## Couche site
+- nouvelles pages tarifs et téléchargement
+- nouvelle section gouvernance
+- nouvelle page démo
+- nouveaux fichiers publics machine-readable
+- amélioration du SEO, robots, sitemap et JSON-LD

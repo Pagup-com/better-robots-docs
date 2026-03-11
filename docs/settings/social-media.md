@@ -1,3 +1,10 @@
+---
+title: "Social Media Crawlers"
+description: "Social media crawler settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Social Media Crawlers
 
 **Location:** `Step 10 - Social Media Crawlers`

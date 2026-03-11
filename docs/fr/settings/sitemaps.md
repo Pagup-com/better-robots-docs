@@ -1,3 +1,10 @@
+---
+title: "Paramètres globaux"
+description: "Paramètres globaux, lignes sitemap et règles de base dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Paramètres globaux
 
 **Emplacement :** `Étape 6 - Paramètres globaux`

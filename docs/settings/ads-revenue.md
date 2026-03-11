@@ -1,3 +1,10 @@
+---
+title: "Ads & Revenue"
+description: "Ads and revenue settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Ads & Revenue
 
 **Location:** `Step 11 - Ads & Revenue`

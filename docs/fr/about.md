@@ -1,27 +1,56 @@
+---
+title: "À propos de Better Robots.txt"
+description: "Ce que Better Robots.txt est, ce qu’il n’est pas, et pourquoi la nouvelle version est différente."
+pageType: "about"
+ogImage: "/og/home.jpg"
+---
+
 # À propos de Better Robots.txt
 
-Better Robots.txt est une extension WordPress pour générer et gérer `robots.txt` avec un flux de configuration guidé.
+Better Robots.txt est une extension WordPress dédiée à la configuration guidée de `robots.txt`, à la gouvernance du crawl, et aux signaux d’usage prêts pour l’ère de l’IA.
 
-## Ce sur quoi la version actuelle se concentre
+Elle remplace l’approche “textarea brut” par un workflow plus lisible, plus sûr, et plus utile pour les débutants comme pour les utilisateurs avancés.
 
-- les préréglages de visibilité des moteurs de recherche
-- la gouvernance de l’entraînement IA et de la recherche IA
-- le blocage des robots SEO
-- la protection contre les mauvais robots
-- le blocage d’archivage sur Premium
-- le nettoyage d’exploration WooCommerce
-- les règles `Allow` pour CSS, JS et images
-- le blocage des robots de réseaux sociaux
-- les règles `Allow` pour `ads.txt` et `app-ads.txt`
-- le `llms.txt` optionnel
-- les règles personnalisées, le crawl delay et la consolidation de sortie
+## Ce que la version actuelle met en avant
 
-## Comment l’interface actuelle est organisée
+- une configuration par presets avec parcours Gratuit, Pro et Premium
+- des niveaux de visibilité pour les moteurs de recherche
+- des contrôles de gouvernance IA et LLM
+- la protection contre les outils SEO et les mauvais robots
+- la gestion de l’archivage et de Wayback
+- le nettoyage WooCommerce
+- les règles pour les ressources, réseaux sociaux, et `ads.txt`
+- `llms.txt` optionnel et des fichiers de gouvernance machine-first
+- une étape finale Review & Save avant publication
 
-- un écran `Sélection du mode`
-- `14` étapes numérotées
-- une prévisualisation finale dans `Étape 14 - Vérification et enregistrement`
+## Ce qui rend le produit différent
 
-## Portée de la documentation
+Better Robots.txt n’est pas positionné comme un simple éditeur de fichier.
 
-Cette documentation est écrite pour les utilisateurs de l’extension et suit le flux de configuration réel affiché dans l’écran de paramètres de l’extension.
+Le produit sert à prendre des décisions explicites sur :
+- ce que les moteurs de recherche doivent voir
+- ce que les systèmes IA peuvent faire
+- quels robots d’outils ou de scraping doivent être limités
+- quelle quantité de crawl inutile le site doit tolérer
+- ce qui sera publié à la fin
+
+## Ce que c’est
+
+- un workflow guidé `robots.txt` pour WordPress
+- une manière de réduire le gaspillage de crawl
+- un pont entre hygiène SEO et signaux de politique à l’ère de l’IA
+- une extension qui privilégie la clarté, la revue et les décisions explicites
+
+## Ce que ce n’est pas
+
+- pas un firewall
+- pas une couche d’anti-scraping forcée
+- pas un moteur de conformité juridique
+- pas une garantie que tous les bots obéiront
+
+Pour un enforcement plus fort, il faut le combiner avec des contrôles infrastructurels.
+
+## Référence technique canonique
+
+- Répertoire WordPress : https://wordpress.org/plugins/better-robots-txt/
+- Repo canonique du plugin : https://github.com/GautierDorval/better-robots-txt

@@ -1,22 +1,30 @@
+---
+title: "Bad Bots Protection"
+description: "Step 4 of the Better Robots.txt wizard: curated bad bot lists and stronger protection on paid editions."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Bad Bots Protection
 
-**Location:** `Step 4 - Bad Bots Protection`
+**Location:** Step 4 — Bad Bots Protection
 
-This step enables the curated bad-bot blocklist.
+This step enables the curated bad-bot lists used by Better Robots.txt.
 
-## Available Controls
+## Controls
 
 - **Enable Bad Bots Protection**
-  Turns the blocklist on
 - **Use Full AI-Curated List**
-  Expands the list beyond the basic set
 
-## How It Works
+## Editions
 
-- If protection is disabled, no bad-bot rules are added
-- If protection is enabled, the plugin uses the selected protection list
+- Free: basic list
+- Pro / Premium: fuller, broader list
 
-## Plan Notes
+## What this changes
 
-- The basic list works on all plans
-- The full list is available on higher plans
+Turning this step on adds explicit crawler blocks for unwanted or low-value agents.
+
+## Why it matters
+
+This is one of the clearest ways to reduce crawler noise, low-value scraping, and unnecessary server hits without shutting down all discovery.

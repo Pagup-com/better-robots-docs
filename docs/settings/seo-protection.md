@@ -1,3 +1,10 @@
+---
+title: "SEO Tool Protection"
+description: "SEO tool protection settings in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # SEO Tool Protection
 
 **Location:** `Step 3 - SEO Tool Protection`

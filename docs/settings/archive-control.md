@@ -1,3 +1,10 @@
+---
+title: "Archive & Wayback Control"
+description: "Archive and Wayback controls in Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Archive & Wayback Control
 
 **Location:** `Step 5 - Archive & Wayback Control`

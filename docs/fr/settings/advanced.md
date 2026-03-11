@@ -1,3 +1,10 @@
+---
+title: "Paramètres avancés"
+description: "Paramètres avancés dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Paramètres avancés
 
 **Emplacement :** `Étape 13 - Paramètres avancés`

@@ -1,0 +1,19 @@
+{
+  "name": "Better Robots.txt",
+  "website": "https://better-robots.com",
+  "plugin_directory": "https://wordpress.org/plugins/better-robots-txt/",
+  "canonical_plugin_repository": "https://github.com/GautierDorval/better-robots-txt",
+  "documentation_repository": "https://github.com/Pagup-com/better-robots-docs",
+  "video": "https://vimeo.com/1169756981",
+  "support": {
+    "email": "suppor@better-robots.com",
+    "contact_page": "https://better-robots.com/contact/"
+  },
+  "downloads": {
+    "free": "https://wordpress.org/plugins/better-robots-txt/",
+    "pro": "https://checkout.freemius.com/plugin/2345/plan/3584/",
+    "pro_trial": "https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid",
+    "premium": "https://checkout.freemius.com/plugin/2345/plan/41928/",
+    "premium_trial": "https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid"
+  }
+}

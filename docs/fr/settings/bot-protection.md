@@ -1,22 +1,30 @@
+---
+title: "Protection contre les mauvais robots"
+description: "Étape 4 de l’assistant Better Robots.txt : listes organisées de mauvais robots et protection renforcée sur les éditions payantes."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Protection contre les mauvais robots
 
-**Emplacement :** `Étape 4 - Protection contre les mauvais robots`
+**Emplacement :** Étape 4 — Protection contre les mauvais robots
 
-Cette étape active la liste organisée de blocage des mauvais robots.
+Cette étape active les listes organisées de mauvais robots utilisées par Better Robots.txt.
 
-## Contrôles disponibles
+## Contrôles
 
 - **Enable Bad Bots Protection**
-  Active la liste de blocage
 - **Use Full AI-Curated List**
-  Étend la liste au-delà de l’ensemble de base
 
-## Fonctionnement
+## Éditions
 
-- Si la protection est désactivée, aucune règle de mauvais robots n’est ajoutée
-- Si la protection est activée, l’extension utilise la liste de protection sélectionnée
+- Gratuit : liste basique
+- Pro / Premium : liste plus large
 
-## Notes sur les offres
+## Ce que cela change
 
-- La liste de base fonctionne sur toutes les offres
-- La liste complète est disponible sur les offres supérieures
+Activer cette étape ajoute des blocages explicites pour des agents indésirables ou de faible valeur.
+
+## Pourquoi cela compte
+
+C’est l’un des moyens les plus directs de réduire le bruit crawler, le scraping de faible valeur, et des hits serveur inutiles sans couper toute découverte.

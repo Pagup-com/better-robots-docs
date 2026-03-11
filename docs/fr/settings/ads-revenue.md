@@ -1,3 +1,10 @@
+---
+title: "Publicités et revenus"
+description: "Réglages publicités et revenus dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Publicités et revenus
 
 **Emplacement :** `Étape 11 - Publicités et revenus`

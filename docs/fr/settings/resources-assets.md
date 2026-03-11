@@ -1,3 +1,10 @@
+---
+title: "Ressources et fichiers"
+description: "Réglages ressources et fichiers dans Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Ressources et fichiers
 
 **Emplacement :** `Étape 9 - Ressources et fichiers`
