@@ -293,10 +293,6 @@ export default defineConfig({
       themeConfig: {
         nav: frNav,
         sidebar: frSidebar,
-        editLink: {
-          pattern: 'https://github.com/Pagup-com/better-robots-docs/edit/master/docs/:path',
-          text: 'Modifier cette page sur GitHub'
-        }
       }
     }
   },
@@ -348,9 +344,5 @@ export default defineConfig({
       copyright: '© 2026 Pagup'
     },
     outline: { level: [2, 3] },
-    editLink: {
-      pattern: 'https://github.com/Pagup-com/better-robots-docs/edit/master/docs/:path',
-      text: 'Edit this page on GitHub'
-    }
   }
 })
