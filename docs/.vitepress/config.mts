@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 const SITE_URL = 'https://better-robots.com'
-const SUPPORT_EMAIL = 'suppor@better-robots.com'
+const SUPPORT_EMAIL = 'support@better-robots.com'
 const DEFAULT_OG = '/og/home.jpg'
 const GITHUB_REPO = 'https://github.com/Pagup-com/better-robots-docs'
 const PLUGIN_REPO = 'https://github.com/GautierDorval/better-robots-txt'
