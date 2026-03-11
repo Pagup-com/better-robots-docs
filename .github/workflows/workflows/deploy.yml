@@ -48,7 +48,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Validate content
-        run: pnpm validate-content
+        run: node scripts/validate-content.mjs
 
       - name: Build
         run: pnpm docs:build
