@@ -1,21 +1,31 @@
-# Better Robots.txt Documentation
+# Better Robots.txt website
 
-This directory contains the VitePress documentation for Better Robots.txt.
+This repository powers the public website for Better Robots.txt at https://better-robots.com.
 
-## Scope
+## Purpose
 
-The public documentation is written around the plugin's setup flow and user-facing behavior.
+- product pages
+- documentation
+- pricing and download flows
+- governance pages
+- machine-readable public files published from `docs/public/`
 
-## Local Development
+## Related repositories
+
+- Canonical plugin repository: https://github.com/GautierDorval/better-robots-txt
+- WordPress plugin page: https://wordpress.org/plugins/better-robots-txt/
+
+## Local development
 
 ```bash
 pnpm install
 pnpm docs:dev
 ```
 
-## Key Pages
+## Build
 
-- `docs/index.md`
-- `docs/quick-start.md`
-- `docs/settings.md`
-- `docs/settings/*.md`
+```bash
+pnpm docs:build
+```
+
+The build generates `sitemap.xml` and ensures `.nojekyll` exists in the output.
