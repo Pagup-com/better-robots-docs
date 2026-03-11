@@ -39,4 +39,4 @@ Like `robots.txt`, these signals are primarily meaningful with compliant systems
 
 ## Contact
 
-Questions about this policy can be sent to [suppor@better-robots.com](mailto:suppor@better-robots.com).
+Questions about this policy can be sent to [support@better-robots.com](mailto:support@better-robots.com).

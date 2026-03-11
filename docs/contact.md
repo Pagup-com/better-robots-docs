@@ -11,7 +11,7 @@ Use this page for support and contact routing related to Better Robots.txt.
 
 ## Support email
 
-- Email: [suppor@better-robots.com](mailto:suppor@better-robots.com)
+- Email: [support@better-robots.com](mailto:support@better-robots.com)
 
 ## What to use support for
 

@@ -1,7 +1,7 @@
 /* TEAM */
 Product owner: Gautier Dorval
 Technical implementation support: Sajjad Ali
-Support: suppor@better-robots.com
+Support: support@better-robots.com
 
 /* SITE */
 Website: https://better-robots.com

@@ -11,7 +11,7 @@ Utilisez cette page pour le support et le routage de contact liés à Better Rob
 
 ## Email de support
 
-- Email : [suppor@better-robots.com](mailto:suppor@better-robots.com)
+- Email : [support@better-robots.com](mailto:support@better-robots.com)
 
 ## Quand utiliser ce support
 

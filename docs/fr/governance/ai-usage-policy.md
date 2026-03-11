@@ -39,4 +39,4 @@ Comme `robots.txt`, ces signaux sont surtout utiles avec les systèmes conformes
 
 ## Contact
 
-Les questions liées à cette politique peuvent être envoyées à [suppor@better-robots.com](mailto:suppor@better-robots.com).
+Les questions liées à cette politique peuvent être envoyées à [support@better-robots.com](mailto:support@better-robots.com).
