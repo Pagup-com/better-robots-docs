@@ -1,8 +1,7 @@
 {
   "name": "better-robots-docs",
   "private": true,
-  "type": "module",
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=20"
   },
@@ -10,7 +9,7 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs && node scripts/postbuild.mjs",
     "docs:preview": "vitepress preview docs",
-    "validate-content": "node scripts/validate-content.mjs"
+    "validate:content": "node scripts/validate-content.mjs"
   },
   "devDependencies": {
     "vitepress": "2.0.0-alpha.13"

@@ -1,4 +1,4 @@
-import fs from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import path from 'node:path'
 
 const required = [
@@ -6,25 +6,38 @@ const required = [
   'docs/fr/index.md',
   'docs/pricing.md',
   'docs/fr/pricing.md',
-  'docs/download.md',
-  'docs/fr/download.md',
   'docs/contact.md',
   'docs/fr/contact.md',
-  'docs/governance/index.md',
-  'docs/fr/governance/index.md',
+  'docs/presets.md',
+  'docs/fr/presets.md',
+  'docs/robots-txt-examples.md',
+  'docs/fr/robots-txt-examples.md',
   'docs/public/robots.txt',
-  'docs/public/llms.txt',
   'docs/public/.well-known/ai-governance.json',
-  'docs/public/product.jsonld'
+  'docs/public/llms.txt',
+  'docs/public/humans.txt',
+  'docs/public/product.jsonld',
+  'docs/public/organization.jsonld'
 ]
 
 let failed = false
 for (const file of required) {
-  if (!fs.existsSync(path.resolve(file))) {
+  if (!existsSync(file)) {
     console.error(`Missing required file: ${file}`)
     failed = true
   }
 }
 
+const config = 'docs/.vitepress/config.mts'
+if (existsSync(config)) {
+  const text = readFileSync(config, 'utf8')
+  for (const snippet of ['support@better-robots.com', 'better-robots.com', 'robots-txt-examples', 'presets']) {
+    if (!text.includes(snippet)) {
+      console.error(`Config is missing expected snippet: ${snippet}`)
+      failed = true
+    }
+  }
+}
+
 if (failed) process.exit(1)
-console.log('Content validation passed')
+console.log('Content validation passed.')
