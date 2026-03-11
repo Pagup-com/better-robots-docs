@@ -1,3 +1,10 @@
+---
+title: "Basic Configuration"
+description: "A safer starting configuration for Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Basic Configuration
 
 This page covers a safe starting setup for most sites.

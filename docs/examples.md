@@ -1,3 +1,10 @@
+---
+title: "Examples"
+description: "Examples and use cases for Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Examples & Use Cases
 
 These examples follow the settings flow shown in the plugin.

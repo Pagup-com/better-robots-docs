@@ -1,52 +1,49 @@
-# Features Overview
+---
+title: "Features"
+description: "Feature overview for Better Robots.txt across search, AI, bots, WooCommerce, and output control."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
 
-This page summarizes the features available in the guided setup flow.
+# Features
 
-## Setup Flow
+Better Robots.txt is organized around practical control areas rather than a single raw file editor.
 
-- A dedicated `Mode Selection` screen
-- `14` numbered configuration steps
-- A generated `robots.txt` preview inside `Step 14 - Review & Save`
-- A sticky `Save Changes` bar available throughout the flow
+## Search engine visibility
+Choose between visibility levels or advanced control to decide how broadly you want to expose the site to search crawlers.
 
-## Modes
+## AI & LLM governance
+Define how AI training bots and AI search systems should be treated.
+You can also publish optional machine-readable guidance such as `llms.txt`.
 
-- `Mode 1: Essential`
-  Free preset
-- `Mode 2: AI-First`
-  Pro preset
-- `Mode 3: Fortress`
-  Premium preset
-- `Mode 0: Custom`
-  Manual configuration
+## SEO tool protection
+Restrict SEO crawlers such as Semrush, DotBot, Ahrefs, and similar agents when your plan allows it.
 
-## What the Plugin Currently Generates
+## Bad bot protection
+Enable a curated blocklist and, on higher editions, expand the list further.
 
-- Base WordPress allow/disallow rules
-- Optional sitemap lines from a manual URL
-- Optional sitemap auto-detection
-- Search-engine visibility presets
-- AI training-bot blocking
-- AI search-engine blocking or allowance
-- SEO tool crawler blocking
-- Curated bad-bot blocking
-- Archive-service blocking on Premium
-- WooCommerce cleanup rules
-- CSS/JS and image allow rules
-- Social-media crawler blocking
-- `ads.txt` and `app-ads.txt` allow rules
-- Custom rules and optional crawl delay
-- Optional consolidation of output by `User-agent`
-- Optional SSA header links
-- Optional virtual `llms.txt` on Pro and Premium
+## Archive & Wayback control
+Choose whether archive services may store public copies of the site.
 
-## Important Notes
+## Spam, feeds, and crawl traps
+Reduce low-value crawling from feed endpoints, search URLs, comment spam parameters, and trap parameters.
 
-- The preview is part of `Step 14 - Review & Save`
-- The `llms.txt` feature lets you publish your own file content at `/llms.txt`
-- The plugin includes a default Better Robots.txt signature that can be shown or hidden
+## WooCommerce cleanup
+Keep cart, checkout, account, and parameter-heavy store routes from consuming unnecessary crawl budget.
 
-## Where to Go Next
+## Resources & assets
+Decide whether CSS, JavaScript, and image rules should be explicitly allowed.
 
-- Use [Quick Start](/quick-start) for the real setup sequence.
-- Use [Settings Overview](/settings) for the exact order and titles of every stage.
+## Social media crawlers
+Allow or restrict social preview bots based on your sharing goals.
+
+## Ads & revenue
+Keep `ads.txt` and `app-ads.txt` verification paths accessible when you need them.
+
+## Review & Save
+Preview the generated output before publishing it.
+
+## Editions
+Some features are available in all editions, while others are reserved for Pro or Premium.
+Use the pricing page to compare Free, Pro, and Premium clearly:
+[Compare plans](/pricing)

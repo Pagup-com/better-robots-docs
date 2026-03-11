@@ -1,67 +1,44 @@
-# Quick Start Guide
+---
+title: "Quick Start"
+description: "The fastest safe path through Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
 
-This guide follows the plugin's setup wizard.
+# Quick Start
 
-## 1. Open the Wizard
+This is the fastest safe path through Better Robots.txt.
 
-In WordPress, go to **Better Robots.txt** and open the settings screen.
+## Step 1 — Choose an edition
+- **Free** for the Essential path
+- **Pro** for AI-First and deeper governance
+- **Premium** for Fortress and the strictest protection-first setup
 
-If the plugin detects a physical `/robots.txt` file in your site root, resolve that first. Virtual mode cannot take over until that file is removed.
+## Step 2 — Pick a preset
+- **Essential** for most sites
+- **AI-First** if AI governance matters early
+- **Fortress** if protection is the priority
+- **Custom** if you already know what to configure manually
 
-## 2. Choose a Mode
+## Step 3 — Walk through the critical stages
+At minimum, review:
+- Search Engine Visibility
+- AI & LLM Governance
+- Global Settings
+- E-commerce Optimization (if relevant)
+- Review & Save
 
-The first screen is **Mode Selection**. The available modes are:
+## Step 4 — Verify before publish
+Use **Review & Save** to confirm the generated output before saving.
 
-- `Mode 1: Essential`
-- `Mode 2: AI-First`
-- `Mode 3: Fortress`
-- `Mode 0: Custom`
+## Step 5 — Validate the result
+Check:
+- `/robots.txt`
+- `/llms.txt` if enabled
+- sitemap lines
+- expected crawler rules
 
-Then click **Configure**.
-
-## 3. Walk Through the 14 Numbered Steps
-
-1. `Search Engine Visibility`
-   Pick `Minimal Visibility`, `Recommended Visibility`, `Extended Visibility`, or `Custom Control`.
-2. `AI & LLM Governance`
-   Decide whether to block AI training bots and whether AI search engines should be blocked or allowed.
-3. `SEO Tool Protection`
-   Turn the SEO crawler groups on or off if your plan supports them.
-4. `Bad Bots Protection`
-   Enable the curated bad-bot list.
-5. `Archive & Wayback Control`
-   Leave archiving allowed, or block archive services on Premium.
-6. `Global Settings`
-   Choose `Virtual` or `Physical` robots.txt, add a sitemap URL, enable sitemap auto-detection, and review the core WordPress protection toggles.
-7. `Spam, Feeds & Crawl Traps`
-   Configure feed blocking, archive blocking, and crawl-trap cleanup.
-8. `E-commerce Optimization`
-   Choose the WooCommerce cleanup level that fits your store.
-9. `Resources & Assets`
-   Decide whether CSS/JS and images should receive explicit allow rules.
-10. `Social Media Crawlers`
-    Control whether social preview crawlers are blocked.
-11. `Ads & Revenue`
-    Keep `ads.txt` and `app-ads.txt` accessible if you use ad-network verification.
-12. `LLMS.txt File`
-    On Pro or Premium, enable the virtual file and enter the file contents.
-13. `Advanced Settings`
-    Add custom directives, optionally consolidate user-agents, and set crawl delay if your plan supports it.
-14. `Review & Save`
-    Refresh the preview and verify the generated output.
-
-## 4. Save Your Changes
-
-Use the sticky **Save Changes** bar at the bottom of the screen. The final step shows the preview, but the save action is global.
-
-## 5. Verify the Result
-
-- Check `https://yoursite.com/robots.txt`
-- If you enabled `llms.txt`, check `https://yoursite.com/llms.txt`
-- Confirm that your expected sitemap line appears
-- Confirm that any blocked sections or bots are present in the output
-
-## Publish-Safe Notes
-
-- The preview lives inside `Step 14 - Review & Save`.
-- `llms.txt` is only served when the file is enabled **and** the content field is not empty.
+## Recommended next pages
+- [Installation](/installation)
+- [Pricing](/pricing)
+- [Wizard Overview](/wizard/)

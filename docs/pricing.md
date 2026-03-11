@@ -1,42 +1,71 @@
-# Plans & Feature Availability
+---
+title: "Pricing"
+description: "Free, Pro, and Premium comparison with conversion links for Better Robots.txt."
+pageType: "docs"
+ogImage: "/og/pricing.jpg"
+---
 
-This page shows feature availability by plan. For current commercial pricing, use the plugin website or checkout flow.
+# Pricing
 
-## Modes
+Better Robots.txt is available in **Free**, **Pro**, and **Premium** editions.
 
-| Mode | Availability |
-| --- | --- |
-| `Mode 1: Essential` | Free |
-| `Mode 2: AI-First` | Pro |
-| `Mode 3: Fortress` | Premium |
-| `Mode 0: Custom` | Available in the UI |
+The free edition is useful on its own. Pro and Premium extend the workflow with deeper AI governance, broader crawler controls, and stronger protection-oriented options.
 
-## Current Output-Level Availability
+<div class="br-button-row">
+  <a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Download Free</a>
+  <a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid">Start Pro Trial</a>
+  <a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid">Start Premium Trial</a>
+</div>
 
-| Feature | Free | Pro | Premium |
+## Which edition is right for you?
+
+<div class="br-grid br-grid-3">
+  <div class="br-card">
+    <h3>Free</h3>
+    <p>Best for most WordPress sites starting with a guided robots.txt workflow.</p>
+  </div>
+  <div class="br-card">
+    <h3>Pro</h3>
+    <p>Best for publishers, agencies, and users who want stronger AI and crawler governance.</p>
+  </div>
+  <div class="br-card">
+    <h3>Premium</h3>
+    <p>Best for protection-first setups that want the strongest archive, bot, and policy controls.</p>
+  </div>
+</div>
+
+## Edition comparison
+
+<div class="br-pricing-table">
+
+| Area | Free | Pro | Premium |
 | --- | --- | --- | --- |
-| Search presets: `Minimal`, `Recommended` | Yes | Yes | Yes |
-| Search preset: `Extended` | No | Yes | Yes |
-| AI training protection | Yes | Yes | Yes |
-| AI search policy: `Block All AI Search` | Yes | Yes | Yes |
-| AI search policy: `Allow AI Search Engines` | No | Yes | Yes |
-| SEO tool crawler toggles | No | Yes | Yes |
-| Bad bots basic list | Yes | Yes | Yes |
-| Bad bots full list | No | Yes | Yes |
-| Archive blocking | No | No | Yes |
-| Global settings and sitemap lines | Yes | Yes | Yes |
-| Physical robots.txt file | No | Yes | Yes |
-| Spam / feed / crawl-trap output | Partial | Yes | Yes |
-| E-commerce basic cleanup | Yes | Yes | Yes |
-| E-commerce advanced cleanup | No | Yes | Yes |
-| Resources & assets rules | Yes | Yes | Yes |
-| Social-media crawler blocking | Yes | Yes | Yes |
-| `ads.txt` and `app-ads.txt` rules | Yes | Yes | Yes |
-| `llms.txt` virtual file | No | Yes | Yes |
-| Custom rules | Yes | Yes | Yes |
+| Guided setup wizard | Yes | Yes | Yes |
+| Essential preset | Yes | Yes | Yes |
+| AI-First preset | No | Yes | Yes |
+| Fortress preset | No | No | Yes |
+| Custom mode | No | Yes | Yes |
+| Search engine visibility presets | Yes | Yes | Yes |
+| Extended search visibility | No | Yes | Yes |
+| AI & LLM governance | Basic | Extended | Strongest |
+| SEO tool protection | Basic | Extended | Extended |
+| Bad bot protection | Basic list | Full list | Full list |
+| Archive / Wayback blocking | No | No | Yes |
+| WooCommerce cleanup | Basic | Advanced | Advanced |
+| llms.txt virtual file | No | Yes | Yes |
+| Physical robots.txt mode | No | Yes | Yes |
 | Crawl delay | No | Yes | Yes |
-| Consolidate user-agents | Yes | Yes | Yes |
+| Output consolidation | Yes | Yes | Yes |
+| Review & Save preview | Yes | Yes | Yes |
 
-## Important Note
+</div>
 
-Feature availability can vary by plan. If you need a specific paid feature, compare it against the settings pages before purchase.
+## Conversion links
+
+- **Free**: [Download from WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
+- **Pro**: [Buy Pro](https://checkout.freemius.com/plugin/2345/plan/3584/) · [Start Pro Trial](https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid)
+- **Premium**: [Buy Premium](https://checkout.freemius.com/plugin/2345/plan/41928/) · [Start Premium Trial](https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid)
+
+## Important note
+
+Screenshots on this website may show **Free**, **Pro**, and **Premium** features. Where relevant, plan availability is labeled directly inside the plugin interface.

@@ -1,3 +1,10 @@
+---
+title: "Best Practices"
+description: "Practical recommendations for configuring Better Robots.txt safely."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Best Practices
 
 Use these recommendations when configuring Better Robots.txt through the current setup wizard.

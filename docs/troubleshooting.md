@@ -1,3 +1,10 @@
+---
+title: "Troubleshooting"
+description: "Troubleshooting common Better Robots.txt issues."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Troubleshooting
 
 ## `robots.txt` does not load as expected

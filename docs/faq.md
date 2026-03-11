@@ -1,38 +1,35 @@
-# Frequently Asked Questions
+---
+title: "FAQ"
+description: "Frequently asked questions about Better Robots.txt, editions, AI controls, and setup."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
 
-## What is the real setup flow?
+# FAQ
 
-There is a `Mode Selection` screen followed by `14` numbered steps. The `robots.txt` preview is inside `Step 14 - Review & Save`.
+## Is Better Robots.txt free or paid?
+There is a free edition and paid editions.
+The interface labels features as Free, Pro, or Premium where relevant.
 
-## Is the preview its own step?
+## Are all screenshots from the free version?
+No.
+This website may show screenshots from Free, Pro, and Premium. The plugin interface itself labels plan availability.
 
-No. The preview is part of the final step.
+## Do I need Pro or Premium to use the plugin?
+No.
+The free edition is useful on its own. Pro and Premium add deeper governance and broader protection options.
 
-## What is the difference between virtual and physical robots.txt?
+## Does the plugin guarantee that crawlers will obey?
+No.
+Better Robots.txt publishes rules and signals. Compliance still depends on the crawler.
 
-- **Virtual**
-  WordPress serves `robots.txt` dynamically
-- **Physical**
-  The plugin writes an actual file to the site root
+## Can I preview the final file before saving?
+Yes.
+The final preview is part of **Review & Save**.
 
-Physical mode is available on Pro and Premium plans.
+## Can I keep search engines allowed while restricting other bots?
+Yes.
+That is one of the main reasons to use the plugin.
 
-## Does `llms.txt` auto-generate its own content?
-
-No. You must be on Pro or Premium, enable the file, and enter the content yourself.
-
-## Which settings matter most for AI control?
-
-The main AI settings are:
-
-- AI training protection
-- AI search policy
-- optional `llms.txt`
-
-## Why is my virtual robots.txt not appearing?
-
-Check these first:
-
-- a physical `/robots.txt` file in the site root can block the virtual file
-- the settings screen shows a warning when that happens
-- if you expect the plugin's virtual output, make sure the site is public in **Settings → Reading**
+## Where do I start?
+Use [Quick Start](/quick-start), then compare editions on [Pricing](/pricing).

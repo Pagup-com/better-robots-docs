@@ -1,39 +1,35 @@
+---
+title: "Installation"
+description: "Install Better Robots.txt and verify the first output."
+pageType: "docs"
+ogImage: "/og/home.jpg"
+---
+
 # Installation
-
-## Requirements
-
-- WordPress with administrator access
-- PHP `7.4+`
 
 ## Install from WordPress.org
 
 1. Go to **Plugins → Add New**
-2. Search for `Better Robots.txt`
+2. Search for **Better Robots.txt**
 3. Install and activate the plugin
+4. Open the Better Robots.txt screen in WordPress
+5. Choose a preset and continue through the wizard
 
-## First Launch
+## First verification
 
-After activation:
+After saving:
+- check `https://yoursite.com/robots.txt`
+- check `https://yoursite.com/llms.txt` if you enabled it
+- confirm sitemap lines and expected crawler rules
 
-1. Open **Better Robots.txt**
-2. Choose a mode on the `Mode Selection` screen
-3. Click **Configure**
-4. Walk through the numbered steps
-5. Review the preview in `Step 14 - Review & Save`
-6. Save from the sticky footer
+## Important notes
 
-## Important Physical File Check
+- A physical `robots.txt` file may override the virtual output
+- The final preview is shown in **Review & Save**
+- Plan availability matters for some modules, so use [Pricing](/pricing) when in doubt
 
-If your site already has a physical `/robots.txt` file in the web root, virtual mode can be blocked. The settings screen shows a warning when that happens.
+## Links
 
-## Verify the Installation
-
-- Visit `https://yoursite.com/robots.txt`
-- If you enabled `llms.txt`, visit `https://yoursite.com/llms.txt`
-
-## If Something Looks Wrong
-
-- Re-save permalinks in **Settings → Permalinks**
-- Make sure **Settings → Reading → Search Engine Visibility** is not discouraging indexing
-- Check for a physical `/robots.txt` file
-- Check the preview in the final step before saving
+- [Download the plugin](https://wordpress.org/plugins/better-robots-txt/)
+- [Quick Start](/quick-start)
+- [Settings Overview](/settings)

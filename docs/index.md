@@ -1,54 +1,154 @@
 ---
 layout: home
+title: "Better Robots.txt"
+description: "Guided robots.txt setup for SEO, AI governance, and crawler control for WordPress."
+pageType: "home"
+ogImage: "/og/home.jpg"
 
 hero:
   name: "Better Robots.txt"
   text: "Guided robots.txt setup for SEO, AI governance, and crawler control"
-  tagline: "Guided robots.txt setup for WordPress sites"
+  tagline: "Replace the blank robots.txt workflow with a safer, structured setup you can review before publishing."
   image:
-    src: /logo.svg
+    src: /icon-128x128.png
     alt: Better Robots.txt
   actions:
     - theme: brand
-      text: Quick Start
-      link: /quick-start
-    - theme: alt
-      text: Settings Flow
-      link: /settings
-    - theme: alt
-      text: Download Plugin
+      text: Download Free
       link: https://wordpress.org/plugins/better-robots-txt/
+    - theme: alt
+      text: Compare Plans
+      link: /pricing
+    - theme: alt
+      text: Watch Demo
+      link: /demo
 
 features:
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M8.5 3a5.5 5.5 0 1 0 3.473 9.766l3.63 3.631a.75.75 0 1 0 1.06-1.06l-3.631-3.63A5.5 5.5 0 0 0 8.5 3zm-4 5.5a4 4 0 1 1 8 0a4 4 0 0 1-8 0z"/></svg>'
-    title: Search Engine Visibility
-    details: Control which search engines receive explicit allow rules, from minimal visibility to broader coverage.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M10 2a3 3 0 0 1 3 3v.22a3.501 3.501 0 0 1 1.78 4.995A3.5 3.5 0 0 1 13.5 17h-7A3.5 3.5 0 0 1 5.22 10.215A3.501 3.501 0 0 1 7 5.22V5a3 3 0 0 1 3-3zm0 1.5A1.5 1.5 0 0 0 8.5 5v.75a.75.75 0 0 1-.49.704A2 2 0 0 0 6.75 8.33a.75.75 0 0 1-.193.86A2 2 0 0 0 7.5 15.5h5a2 2 0 0 0 .943-3.81a.75.75 0 0 1-.193-.86a2 2 0 0 0-1.26-2.876a.75.75 0 0 1-.49-.704V5A1.5 1.5 0 0 0 10 3.5zm-1.25 5a.75.75 0 0 1 .75.75v1h1v-1a.75.75 0 0 1 1.5 0v1.19a2 2 0 1 1-3.5 0V9.25a.75.75 0 0 1 .75-.75z"/></svg>'
-    title: AI & LLM Governance
-    details: Configure AI training protection, AI search policy, content signals, and optional llms.txt guidance.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M11.086 2.914a2 2 0 1 1 2.828 2.828l-1.2 1.2l2.544 2.544a1.5 1.5 0 0 1 0 2.121l-3.65 3.65a1.5 1.5 0 0 1-2.12 0L6.942 12.71l-1.2 1.2a2 2 0 1 1-2.828-2.828l8.172-8.172zM12.854 4.5a.5.5 0 1 0-.708-.707a.5.5 0 0 0 .708.707zM4.975 12.146a.5.5 0 1 0-.707.708a.5.5 0 0 0 .707-.708z"/></svg>'
-    title: SEO Tool Protection
-    details: Block SEO analysis crawlers such as Semrush, DotBot, Ahrefs, and other competitive research bots.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M10 2.5l5 2v4.18c0 3.213-1.922 6.115-4.877 7.36a.75.75 0 0 1-.246.055a.75.75 0 0 1-.246-.056C6.922 14.795 5 11.893 5 8.68V4.5l5-2zm-1.53 4.97a.75.75 0 0 0-1.06 1.06L8.94 10.06L7.41 11.59a.75.75 0 1 0 1.06 1.06L10 11.12l1.53 1.53a.75.75 0 0 0 1.06-1.06L11.06 10.06l1.53-1.53a.75.75 0 1 0-1.06-1.06L10 9l-1.53-1.53z"/></svg>'
-    title: Bad Bots Protection
-    details: Enable the curated bad-bot list to reduce scraping, spam crawling, and other unwanted automated traffic.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M10 3a7 7 0 1 0 7 7a.75.75 0 0 0-1.5 0A5.5 5.5 0 1 1 10 4.5V7a.75.75 0 0 0 1.28.53l2-2a.75.75 0 0 0 0-1.06l-2-2A.75.75 0 0 0 10 3v0zm.75 3.25a.75.75 0 0 0-1.5 0V10c0 .199.079.39.22.53l2.5 2.5a.75.75 0 1 0 1.06-1.06l-2.28-2.28V6.25z"/></svg>'
-    title: Archive & Wayback Control
-    details: Decide whether archive services may keep copies of your site or whether they should be blocked.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M3 4.75A1.75 1.75 0 0 1 4.75 3h10.5A1.75 1.75 0 0 1 17 4.75v1.69a2.75 2.75 0 0 0-1.5-.44V4.75a.25.25 0 0 0-.25-.25H4.75a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h4.44c.103.543.364 1.03.734 1.42a.73.73 0 0 1-.18.08H4.75A1.75 1.75 0 0 1 3 13.25V4.75zm8.75 3.75a3.25 3.25 0 1 1 0 6.5a3.25 3.25 0 0 1 0-6.5zm-1.03 1.97a.75.75 0 0 0-1.06 1.06l1.56 1.56a.75.75 0 0 0 1.06 0l2.06-2.06a.75.75 0 1 0-1.06-1.06l-1.53 1.53l-1.03-1.03z"/></svg>'
-    title: Spam, Feeds & Crawl Traps
-    details: Reduce low-value crawling with feed rules, comment-spam cleanup, search blocking, and crawl-trap controls.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M3.5 4a.75.75 0 0 0 0 1.5h.54l1.46 6.087A1.75 1.75 0 0 0 7.202 13H13.8a1.75 1.75 0 0 0 1.701-1.337l1.05-4.2A1.25 1.25 0 0 0 15.34 6H5.886l-.18-.75A1.75 1.75 0 0 0 4.004 4H3.5zm3.702 7.5a.25.25 0 0 1-.243-.191L6.246 8H15.02l-.975 3.898a.25.25 0 0 1-.243.192H7.202zM8 15.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3z"/></svg>'
-    title: E-commerce Optimization
-    details: Add WooCommerce cleanup rules to limit duplicate crawl paths and parameter-heavy store URLs.
-  - icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="25" height="25" fill="currentColor"><path d="M10 2.75a.75.75 0 0 1 .75.75v.69a5.82 5.82 0 0 1 1.447.6l.488-.488a.75.75 0 1 1 1.06 1.06l-.487.488c.251.453.452.94.598 1.452h.694a.75.75 0 0 1 0 1.5h-.694a5.83 5.83 0 0 1-.598 1.452l.488.488a.75.75 0 1 1-1.06 1.06l-.488-.487a5.82 5.82 0 0 1-1.447.6v.69a.75.75 0 0 1-1.5 0v-.69a5.82 5.82 0 0 1-1.447-.6l-.488.487a.75.75 0 1 1-1.06-1.06l.488-.488a5.83 5.83 0 0 1-.599-1.452H5.45a.75.75 0 0 1 0-1.5h.694c.146-.512.347-.999.599-1.452l-.489-.488a.75.75 0 1 1 1.06-1.06l.489.488c.453-.252.94-.453 1.447-.6V3.5A.75.75 0 0 1 10 2.75zm0 3A2.75 2.75 0 1 0 10 11.25a2.75 2.75 0 0 0 0-5.5zm-5.75 8.5a.75.75 0 0 1 .75.75v.25h10v-.25a.75.75 0 0 1 1.5 0v1A.75.75 0 0 1 15.75 17h-11.5A.75.75 0 0 1 3.5 16v-1a.75.75 0 0 1 .75-.75z"/></svg>'
-    title: Global Output Controls
-    details: Manage sitemap lines, virtual vs physical robots.txt, footer signature settings, and core WordPress protection rules.
+  - icon: "🧭"
+    title: "Guided 14-step workflow"
+    details: "Move from preset selection to final preview with a clear step-by-step setup, not a blank textarea."
+  - icon: "🤖"
+    title: "AI-ready governance"
+    details: "Control AI training and AI search behavior, publish llms.txt, and expose machine-readable guidance."
+  - icon: "🛡️"
+    title: "Bot control by category"
+    details: "Manage search engines, AI crawlers, SEO tools, bad bots, archives, social crawlers, and more."
+  - icon: "✅"
+    title: "Review before publish"
+    details: "Use the Review & Save step to inspect the generated output before it goes live."
 ---
 
-<style>
-.VPHero .text {
-  font-size: 28px !important;
-  line-height: 34px !important;
-}
-</style>
+<div class="br-badge-row">
+  <span class="br-badge free">Free</span>
+  <span class="br-badge pro">Pro</span>
+  <span class="br-badge premium">Premium</span>
+  <span class="br-badge">WordPress</span>
+  <span class="br-badge">AI-ready</span>
+</div>
+
+<div class="br-hero-banner">
+  <img src="/better-robots-banner-redesign-v1-1544x500.jpg" alt="Better Robots.txt banner" />
+</div>
+
+## Why Better Robots.txt is different
+
+<div class="br-grid br-grid-3">
+  <div class="br-card">
+    <h3>Not a simple editor</h3>
+    <p>Better Robots.txt turns a raw file into a guided workflow with presets, explanations, and a final preview.</p>
+  </div>
+  <div class="br-card">
+    <h3>Built for beginners and experts</h3>
+    <p>Beginners can start with a preset. Advanced users can control WordPress rules, AI policy, bots, output, and custom directives.</p>
+  </div>
+  <div class="br-card">
+    <h3>AI-ready without hype</h3>
+    <p>Publish clear usage signals and policy files while staying honest about what is declarative and what is not hard enforcement.</p>
+  </div>
+</div>
+
+## Editions at a glance
+
+<div class="br-grid br-grid-3">
+  <div class="br-card">
+    <h3>Free</h3>
+    <p>Start with the guided wizard, Essential preset, core WordPress protections, basic cleanup, and final preview.</p>
+    <p><a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Download Free</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Pro</h3>
+    <p>Add AI-First, deeper AI &amp; LLM controls, llms.txt, SEO tool protection, and broader crawl governance.</p>
+    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid">Start Pro Trial</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Premium</h3>
+    <p>Unlock Fortress, stronger archive and anti-scraping options, broader bad bot coverage, and stricter setups.</p>
+    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid">Start Premium Trial</a></p>
+  </div>
+</div>
+
+## See the workflow in action
+
+<div class="br-button-row">
+  <a class="br-button primary" href="/demo">Watch the demo</a>
+  <a class="br-button ghost" href="/wizard/">Browse the wizard</a>
+</div>
+
+## Screenshots
+
+<div class="br-shot-grid">
+  <figure class="br-shot">
+    <img src="/screenshots/step-0-mode-selection.jpg" alt="Step 0 – preset selection" />
+    <figcaption><strong>Step 0</strong> — Preset selection with Free, Pro, and Premium paths.</figcaption>
+  </figure>
+  <figure class="br-shot">
+    <img src="/screenshots/step-2-ai-governance.jpg" alt="Step 2 – AI and LLM governance" />
+    <figcaption><strong>Step 2</strong> — AI &amp; LLM governance with training, search, and content-usage controls.</figcaption>
+  </figure>
+  <figure class="br-shot">
+    <img src="/screenshots/step-8-ecommerce-optimization.jpg" alt="Step 8 – e-commerce optimization" />
+    <figcaption><strong>Step 8</strong> — WooCommerce cleanup for lower-value crawl paths.</figcaption>
+  </figure>
+  <figure class="br-shot">
+    <img src="/screenshots/step-14-review-save.jpg" alt="Step 14 – review and save" />
+    <figcaption><strong>Step 14</strong> — Final preview before saving.</figcaption>
+  </figure>
+</div>
+
+## Trusted, practical, and transparent
+
+<div class="br-trust">
+  <div class="br-card"><strong>6,000+</strong><span>Active installations on WordPress.org</span></div>
+  <div class="br-card"><strong>4.5/5</strong><span>Average public rating</span></div>
+  <div class="br-card"><strong>6.9.4</strong><span>Tested up to on WordPress.org</span></div>
+  <div class="br-card"><strong>EN + FR</strong><span>Website and docs in both languages</span></div>
+</div>
+
+## What Better Robots.txt is — and is not
+
+<div class="br-two-col">
+  <div class="br-card">
+    <h3>What it is</h3>
+    <ul>
+      <li>A guided robots.txt workflow for WordPress</li>
+      <li>A crawl-control layer for search, AI, bots, and archives</li>
+      <li>A bridge between SEO hygiene and AI-era policy signaling</li>
+      <li>A way to review the generated output before publishing</li>
+    </ul>
+  </div>
+  <div class="br-card">
+    <h3>What it is not</h3>
+    <ul>
+      <li>Not a firewall</li>
+      <li>Not a hard anti-scraping enforcement engine</li>
+      <li>Not a guarantee that every bot will obey the rules</li>
+      <li>Not a replacement for infrastructure-level protection</li>
+    </ul>
+  </div>
+</div>
+
+<div class="br-button-row">
+  <a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Download Free</a>
+  <a class="br-button secondary" href="/pricing">Compare Plans</a>
+  <a class="br-button ghost" href="/governance/">Read Governance</a>
+</div>
