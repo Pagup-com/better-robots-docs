@@ -1,35 +1,33 @@
 ---
-title: "Contact"
-description: "Support and contact information for Better Robots.txt."
-pageType: "contact"
-ogImage: "/og/home.jpg"
+title: Contact
+description: Contact Better Robots.txt support in English or French for installation, setup, editions, and documentation questions.
+schemaType: ContactPage
 ---
 
 # Contact
 
-Use this page for support and contact routing related to Better Robots.txt.
+If you need help with Better Robots.txt, the main support address is:
 
-## Support email
+**support@better-robots.com**
 
-- Email: [support@better-robots.com](mailto:support@better-robots.com)
+## What support covers
 
-## What to use support for
-
-- plugin installation or update issues
-- questions about Free / Pro / Premium editions
-- setup questions about the wizard
-- pricing and trial questions
-- documentation issues on this website
+- Installation questions
+- Edition questions (Free / Pro / Premium)
+- Documentation issues
+- Setup clarification
+- Guidance on where to start
 
 ## What support does not replace
 
-- server administration
-- CDN or firewall configuration
-- plugin behavior from unrelated third-party tools
+- Custom server administration
+- Full SEO consulting
+- WAF or infrastructure hardening
+- Legal advice on AI or data use
 
 ## Useful links
 
-- [WordPress.org plugin page](https://wordpress.org/plugins/better-robots-txt/)
-- [Canonical plugin repository](https://github.com/GautierDorval/better-robots-txt)
-- [Pricing](/pricing)
-- [Quick Start](/quick-start)
+- [Download the plugin on WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
+- [Read the pricing page](/pricing)
+- [See robots.txt examples](/robots-txt-examples)
+- [Read the AI usage policy](/governance/ai-usage-policy)

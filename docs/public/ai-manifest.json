@@ -1,15 +1,10 @@
 {
   "name": "Better Robots.txt",
-  "website": "https://better-robots.com",
-  "plugin_directory": "https://wordpress.org/plugins/better-robots-txt/",
-  "canonical_plugin_repository": "https://github.com/GautierDorval/better-robots-txt",
-  "documentation_repository": "https://github.com/Pagup-com/better-robots-docs",
-  "video": "https://vimeo.com/1169756981",
-  "support": {
-    "email": "support@better-robots.com",
-    "contact_page": "https://better-robots.com/contact/"
-  },
-  "downloads": {
+  "url": "https://better-robots.com/",
+  "description": "Official product and documentation surface for Better Robots.txt.",
+  "support": "mailto:support@better-robots.com",
+  "download": "https://wordpress.org/plugins/better-robots-txt/",
+  "plans": {
     "free": "https://wordpress.org/plugins/better-robots-txt/",
     "pro": "https://checkout.freemius.com/plugin/2345/plan/3584/",
     "pro_trial": "https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid",

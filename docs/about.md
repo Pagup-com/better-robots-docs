@@ -1,56 +1,43 @@
 ---
-title: "About Better Robots.txt"
-description: "What Better Robots.txt is, what it is not, and why the new version is different."
-pageType: "about"
-ogImage: "/og/home.jpg"
+title: About Better Robots.txt
+description: Understand what Better Robots.txt is, what it is not, and why the new version is built around guided crawl governance.
+schemaType: TechArticle
 ---
 
-# About Better Robots.txt
+# Better Robots.txt is not just an editor
 
-Better Robots.txt is a WordPress plugin for guided robots.txt setup, crawler governance, and AI-ready usage signals.
+Better Robots.txt is a WordPress plugin that turns robots.txt from a raw file into a guided crawl governance workflow.
 
-It is designed to replace the default “blank textarea” approach with a workflow that is easier to understand, safer to review, and more useful for both beginners and advanced users.
+Instead of asking users to write directives manually, the plugin helps them choose a policy, understand the trade-offs, and preview the final output before publishing.
 
-## What the current version focuses on
-
-- Preset-based setup with Free, Pro, and Premium paths
-- Search engine visibility by policy level
-- AI and LLM governance controls
-- SEO tool protection and bad bot protection
-- Archive and Wayback handling
-- WooCommerce crawl cleanup
-- Resources, social crawlers, and ads.txt rules
-- Optional llms.txt and machine-readable governance files
-- Final Review & Save before publishing
-
-## What makes it different
-
-Better Robots.txt is not positioned as a simple file editor.
-
-It is positioned as a crawl-control workflow that helps you decide:
-- what search engines should see
-- what AI systems should be allowed to do
-- which tool crawlers and bad bots should be limited
-- how much low-value crawl noise your site should tolerate
-- what final output should be published
-
-## What it is
+## What the plugin is
 
 - A guided robots.txt workflow for WordPress
-- A way to reduce crawl waste
-- A bridge between search hygiene and AI-era policy signaling
-- A plugin that favors clarity, review, and explicit decisions
+- A way to differentiate search engines, AI crawlers, SEO tools, archive bots, bad bots, and social preview bots
+- A practical bridge between SEO hygiene, crawl control, and AI-era policy signalling
+- A tool that stays useful for beginners while offering deeper controls in Pro and Premium
 
-## What it is not
+## What the plugin is not
 
 - Not a firewall
+- Not a WAF
 - Not a hard anti-scraping enforcement layer
 - Not a legal compliance engine
-- Not a guarantee that every bot will obey the published rules
+- Not a guarantee that every crawler will obey the published rules
 
-For harder enforcement, combine the plugin with infrastructure-level controls.
+The plugin helps you state intent clearly. It does not replace infrastructure-level security.
 
-## Canonical technical reference
+## Why the new version matters
 
-- Plugin directory: https://wordpress.org/plugins/better-robots-txt/
-- Canonical plugin repository: https://github.com/GautierDorval/better-robots-txt
+The new Better Robots.txt is built around:
+
+- **Presets** so users can start safely
+- **Review before publish** so users can inspect the result
+- **Edition clarity** so Free, Pro, and Premium stay understandable
+- **AI-ready governance** so site owners can express training, answer-generation, and crawler preferences more clearly
+
+## Trusted, but explicit about limits
+
+Better Robots.txt is trusted by thousands of WordPress sites, but it intentionally avoids magical claims.
+
+The plugin helps you publish a stronger policy. It does not claim to force every bot or model to comply.

@@ -1,24 +1,27 @@
 ---
-title: "Journal des modifications"
-description: "Notes publiques sur la génération actuelle du plugin et du site Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Journal des changements
+description: Suivre les principaux changements de documentation et de site pour Better Robots.txt.
+schemaType: TechArticle
 ---
 
-# Journal des modifications
+# Journal des changements
 
-## 6.9.1
-- refonte majeure du produit
-- nouvel onboarding basé sur des presets
-- flux guidé de paramètres en 14 étapes
-- prévisualisation finale Review & Save
-- distinction Gratuit / Pro / Premium plus claire
-- gouvernance IA & LLM élargie
-- meilleurs contrôles bad bots, archives, WooCommerce et sortie
+## Orientation actuelle
 
-## Couche site
-- nouvelles pages tarifs et téléchargement
-- nouvelle section gouvernance
-- nouvelle page démo
-- nouveaux fichiers publics machine-readable
-- amélioration du SEO, robots, sitemap et JSON-LD
+Ce site documente l’expérience actuelle de Better Robots.txt construite autour :
+
+- des préréglages
+- d’un setup guidé
+- d’une meilleure clarté Free / Pro / Premium
+- d’une gouvernance orientée IA
+- de la prévisualisation avant publication
+- d’une documentation publique plus riche
+
+## Rafraîchissement documentaire 6.9.x
+
+- homepage repositionnée autour de la gouvernance guidée du crawl
+- éditions clarifiées
+- préréglages documentés
+- exemples ajoutés
+- pages contact et gouvernance ajoutées
+- fichiers machine-first publiés à la racine

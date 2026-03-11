@@ -1,11 +1,20 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "Pagup",
-  "url": "https://better-robots.com",
-  "sameAs": [
-    "https://github.com/Pagup-com/better-robots-docs",
-    "https://github.com/GautierDorval/better-robots-txt"
+  "name": "Better Robots.txt",
+  "url": "https://better-robots.com/",
+  "logo": "https://better-robots.com/Logo-BetterRobots-256.png",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@better-robots.com",
+      "url": "https://better-robots.com/contact/"
+    }
   ],
-  "email": "support@better-robots.com"
+  "sameAs": [
+    "https://github.com/GautierDorval/better-robots-txt",
+    "https://github.com/Pagup-com/better-robots-docs",
+    "https://wordpress.org/plugins/better-robots-txt/"
+  ]
 }

@@ -4,14 +4,10 @@
   "name": "Better Robots.txt",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "WordPress",
-  "url": "https://better-robots.com",
+  "url": "https://better-robots.com/",
   "downloadUrl": "https://wordpress.org/plugins/better-robots-txt/",
-  "sameAs": [
-    "https://wordpress.org/plugins/better-robots-txt/",
-    "https://github.com/GautierDorval/better-robots-txt",
-    "https://github.com/Pagup-com/better-robots-docs"
-  ],
-  "description": "Better Robots.txt is a WordPress plugin for guided robots.txt setup, AI-ready crawler governance, and final preview before publishing.",
+  "image": "https://better-robots.com/better-robots-banner-redesign-v1-1544x500.jpg",
+  "description": "Guided robots.txt setup for SEO, AI governance, and crawler control on WordPress.",
   "offers": [
     {
       "@type": "Offer",
@@ -23,27 +19,14 @@
     {
       "@type": "Offer",
       "name": "Pro",
+      "priceCurrency": "USD",
       "url": "https://checkout.freemius.com/plugin/2345/plan/3584/"
     },
     {
       "@type": "Offer",
-      "name": "Pro Trial",
-      "url": "https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid"
-    },
-    {
-      "@type": "Offer",
       "name": "Premium",
+      "priceCurrency": "USD",
       "url": "https://checkout.freemius.com/plugin/2345/plan/41928/"
-    },
-    {
-      "@type": "Offer",
-      "name": "Premium Trial",
-      "url": "https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid"
     }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Pagup",
-    "url": "https://better-robots.com"
-  }
+  ]
 }

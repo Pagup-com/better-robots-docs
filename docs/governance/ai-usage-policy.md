@@ -1,42 +1,59 @@
 ---
-title: "AI Usage Policy"
-description: "Public AI usage policy for the Better Robots.txt website and product surface."
-pageType: "docs"
-ogImage: "/og/governance.jpg"
+title: AI Usage Policy
+description: Understand search, ai-input, ai-train, and why Better Robots.txt treats AI usage as a governance question.
+schemaType: TechArticle
 ---
 
 # AI Usage Policy
 
-This page explains how Better Robots.txt presents AI-related guidance on the website and around the product.
+This page explains the logic behind AI-related settings in Better Robots.txt.
 
-## Scope
+## How LLMs may use a site
 
-This policy page applies to the public website at `https://better-robots.com` and to the explanatory content published here.
+AI systems may interact with websites in several different ways:
 
-It does not replace the plugin’s own generated signals on customer sites.
+### 1. Search indexing
+A system may crawl a page so it can appear in classic search results.
 
-## Current AI-facing surfaces
+### 2. Answer generation
+A system may use the page in real time to answer user questions or enrich an answer pipeline.
 
-- `robots.txt` for the website itself
-- `llms.txt`
-- `/.well-known/ai-governance.json`
-- public governance pages
-- public documentation pages
-- product and organization JSON-LD
+### 3. Model training
+A system may ingest the content to improve or train a model over time.
 
-## Intent
+### 4. Scraping or dataset collection
+A system may collect content without clear user-facing search or answer value.
 
-These surfaces are provided to:
-- improve clarity for compliant systems
-- reduce ambiguity around product meaning
-- expose official references and contact points
-- distinguish product facts from third-party summaries
+These uses are not identical, which is why a modern crawl policy should not treat them as if they were the same.
 
-## Important limitation
+## Why content signals matter
 
-This website may publish guidance for AI systems, but it does not claim to enforce behavior by force.
-Like `robots.txt`, these signals are primarily meaningful with compliant systems and good-faith crawlers.
+Signals such as `search`, `ai-input`, and `ai-train` help site owners express different preferences:
 
-## Contact
+- **search**: classic search indexing and discovery
+- **ai-input**: real-time answer generation or grounding usage
+- **ai-train**: training or model improvement usage
 
-Questions about this policy can be sent to [support@better-robots.com](mailto:support@better-robots.com).
+These signals are especially useful when you want to keep search visibility while being more restrictive about model training.
+
+## Why protecting a site may matter
+
+Site owners may want to limit some forms of use because of:
+
+- original editorial work
+- competitive intelligence
+- archive exposure
+- server load
+- AI training concerns
+- compliance or internal publishing policy
+
+## Important limit
+
+Better Robots.txt helps publish intent. It does not claim that every system will obey these signals.
+
+## Related references
+
+- [Governance overview](/governance)
+- [robots.txt examples](/robots-txt-examples)
+- [llms.txt](/llms.txt)
+- [ai-governance.json](/.well-known/ai-governance.json)

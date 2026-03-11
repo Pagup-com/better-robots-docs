@@ -1,28 +1,20 @@
 ---
-title: "Paramètres avancés"
-description: "Paramètres avancés dans Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Contrôles avancés
+description: Comprendre quand les contrôles avancés de Better Robots.txt sont utiles et pourquoi la plupart des sites devraient tout de même commencer avec un préréglage.
+schemaType: TechArticle
 ---
 
-# Paramètres avancés
+# Contrôles avancés
 
-**Emplacement :** `Étape 13 - Paramètres avancés`
+Les contrôles avancés deviennent utiles quand on comprend déjà bien les compromis.
 
-Il s’agit de l’étape experte pour la forme de sortie et les directives manuelles.
+## Exemples de décisions avancées
 
-## Contrôles disponibles
+- consolider ou non la sortie
+- ajouter des directives personnalisées
+- durcir certaines catégories de bots
+- aligner la politique du site avec la politique d’infrastructure
 
-- **Crawl Delay (seconds)**
-- **Consolidate User-agents**
-- **Custom Rules**
+## Recommandation
 
-## Ce que font ces réglages
-
-- `Crawl Delay` ajoute une valeur de délai pour les robots qui la respectent
-- `Custom Rules` vous permet d’ajouter vos propres directives
-- `Consolidate User-agents` regroupe les règles par `User-agent`
-
-## Notes sur les offres
-
-- `Crawl Delay` est disponible sur Pro et Premium
+Pour la plupart des sites, il faut commencer avec un préréglage puis n’utiliser les contrôles avancés que lorsque le besoin métier est clair.

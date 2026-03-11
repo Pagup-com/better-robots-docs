@@ -1,35 +1,31 @@
 ---
-title: "FAQ"
-description: "Frequently asked questions about Better Robots.txt, editions, AI controls, and setup."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: FAQ
+description: Get answers about Free vs paid editions, AI usage signals, screenshots, support, and the role of Better Robots.txt.
+schemaType: FAQPage
 ---
 
 # FAQ
 
-## Is Better Robots.txt free or paid?
-There is a free edition and paid editions.
-The interface labels features as Free, Pro, or Premium where relevant.
+## Is the free edition useful on its own?
 
-## Are all screenshots from the free version?
-No.
-This website may show screenshots from Free, Pro, and Premium. The plugin interface itself labels plan availability.
+Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.
 
-## Do I need Pro or Premium to use the plugin?
-No.
-The free edition is useful on its own. Pro and Premium add deeper governance and broader protection options.
+## Do screenshots only show the free edition?
 
-## Does the plugin guarantee that crawlers will obey?
-No.
-Better Robots.txt publishes rules and signals. Compliance still depends on the crawler.
+No. Screenshots on this site may show Free, Pro, or Premium capabilities.
 
-## Can I preview the final file before saving?
-Yes.
-The final preview is part of **Review & Save**.
+## Can I block AI crawlers?
 
-## Can I keep search engines allowed while restricting other bots?
-Yes.
-That is one of the main reasons to use the plugin.
+You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals rather than hard enforcement.
 
-## Where do I start?
-Use [Quick Start](/quick-start), then compare editions on [Pricing](/pricing).
+## Why not treat all crawlers the same?
+
+Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not all create the same value or risk profile.
+
+## Is Better Robots.txt a security product?
+
+No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.
+
+## Where do I get support?
+
+Use **support@better-robots.com**.

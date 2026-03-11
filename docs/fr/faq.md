@@ -1,35 +1,31 @@
 ---
-title: "FAQ"
-description: "Questions fréquentes sur Better Robots.txt, les éditions, les contrôles IA et la configuration."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: FAQ
+description: Réponses sur les éditions gratuites et payantes, les signaux d’usage IA, les captures, le support et le rôle de Better Robots.txt.
+schemaType: FAQPage
 ---
 
 # FAQ
 
-## Better Robots.txt est-il gratuit ou payant ?
-Il existe une édition gratuite et des éditions payantes.
-L’interface indique les fonctionnalités Gratuit, Pro ou Premium lorsque c’est pertinent.
+## La version gratuite est-elle utile à elle seule ?
 
-## Toutes les captures montrent-elles la version gratuite ?
-Non.
-Ce site peut montrer des captures Gratuit, Pro et Premium. L’interface du plugin indique la disponibilité du plan.
+Oui. La version gratuite donne déjà un setup guidé, un préréglage utile, des contrôles essentiels et une étape finale de prévisualisation.
 
-## Faut-il Pro ou Premium pour utiliser le plugin ?
-Non.
-La version gratuite est utile à elle seule. Pro et Premium ajoutent une gouvernance plus profonde et des options de protection plus larges.
+## Les captures montrent-elles uniquement la version gratuite ?
 
-## Le plugin garantit-il que les crawlers obéiront ?
-Non.
-Better Robots.txt publie des règles et des signaux. Le respect dépend toujours du crawler.
+Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.
 
-## Puis-je prévisualiser le fichier final avant d’enregistrer ?
-Oui.
-La prévisualisation finale fait partie de **Review & Save**.
+## Puis-je bloquer les crawlers IA ?
 
-## Puis-je garder les moteurs de recherche autorisés tout en limitant d’autres bots ?
-Oui.
-C’est l’une des raisons principales d’utiliser le plugin.
+Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs et non coercitifs.
 
-## Par où commencer ?
-Utilisez [Démarrage rapide](/fr/quick-start), puis comparez les éditions sur [Tarifs](/fr/pricing).
+## Pourquoi ne pas traiter tous les crawlers de la même manière ?
+
+Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.
+
+## Better Robots.txt est-il un produit de sécurité ?
+
+Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.
+
+## Où obtenir du support ?
+
+Utilise **support@better-robots.com**.

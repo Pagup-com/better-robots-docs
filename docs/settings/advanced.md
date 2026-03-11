@@ -1,28 +1,20 @@
 ---
-title: "Advanced Settings"
-description: "Advanced settings in Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Advanced Controls
+description: Learn when Better Robots.txt advanced controls are useful and why most sites should still start with a preset.
+schemaType: TechArticle
 ---
 
-# Advanced Settings
+# Advanced Controls
 
-**Location:** `Step 13 - Advanced Settings`
+Advanced controls are useful when you already understand the trade-offs.
 
-This is the expert step for output shaping and manual directives.
+## Examples of advanced decisions
 
-## Available Controls
+- whether to consolidate output
+- whether to add custom directives
+- how to handle stricter bot categories
+- how to align site policy with infrastructure policy
 
-- **Crawl Delay (seconds)**
-- **Consolidate User-agents**
-- **Custom Rules**
+## Recommendation
 
-## What These Settings Do
-
-- `Crawl Delay` adds a delay value for bots that respect it
-- `Custom Rules` lets you add your own directives
-- `Consolidate User-agents` groups rules by `User-agent`
-
-## Plan Notes
-
-- `Crawl Delay` is available on Pro and Premium
+For most sites, start with a preset and only use advanced controls when the business case is clear.

@@ -1,35 +1,35 @@
 ---
-title: "Installation"
-description: "Install Better Robots.txt and verify the first output."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Installation
+description: Install Better Robots.txt, start with the free edition or a trial, and validate the output after activation.
+schemaType: TechArticle
 ---
 
 # Installation
 
-## Install from WordPress.org
+## Install the free edition
 
-1. Go to **Plugins → Add New**
-2. Search for **Better Robots.txt**
-3. Install and activate the plugin
-4. Open the Better Robots.txt screen in WordPress
-5. Choose a preset and continue through the wizard
+The easiest way to start is to install the free edition from WordPress.org:
 
-## First verification
+[Download Better Robots.txt on WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
 
-After saving:
-- check `https://yoursite.com/robots.txt`
-- check `https://yoursite.com/llms.txt` if you enabled it
-- confirm sitemap lines and expected crawler rules
+## After activation
 
-## Important notes
+1. Open the Better Robots.txt page in WordPress
+2. Choose a preset
+3. Follow the setup flow
+4. Preview the output in the final review step
+5. Save changes
 
-- A physical `robots.txt` file may override the virtual output
-- The final preview is shown in **Review & Save**
-- Plan availability matters for some modules, so use [Pricing](/pricing) when in doubt
+## Trials and paid editions
 
-## Links
+If you already know you need deeper controls, use:
 
-- [Download the plugin](https://wordpress.org/plugins/better-robots-txt/)
-- [Quick Start](/quick-start)
-- [Settings Overview](/settings)
+- [Start Pro Trial](https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid)
+- [Start Premium Trial](https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid)
+
+## What to test after installation
+
+- Is your generated `robots.txt` visible on your site?
+- Did you choose the right preset?
+- Are search engines still allowed if they should be?
+- Are any paid-only controls visible but locked, and do you need them?

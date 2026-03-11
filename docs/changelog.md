@@ -1,24 +1,27 @@
 ---
-title: "Changelog"
-description: "Major public release notes for the current Better Robots.txt website and plugin generation."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Changelog
+description: Follow major documentation and site changes for Better Robots.txt.
+schemaType: TechArticle
 ---
 
 # Changelog
 
-## 6.9.1
-- major product redesign
-- new preset-based onboarding
-- guided 14-step settings flow
-- final Review & Save preview
-- clearer Free / Pro / Premium labeling
-- expanded AI & LLM governance
-- stronger bad bot, archive, WooCommerce, and output controls
+## Current direction
 
-## Website layer
-- new pricing and download pages
-- new governance section
-- new demo page
-- new machine-readable public files
-- improved SEO metadata, robots, sitemap, and JSON-LD
+This site documents the current Better Robots.txt experience built around:
+
+- presets
+- guided setup
+- Free / Pro / Premium clarity
+- AI-ready governance
+- review before publish
+- richer public documentation
+
+## 6.9.x documentation refresh
+
+- homepage repositioned around guided crawl governance
+- editions clarified
+- presets documented
+- examples added
+- contact and governance pages added
+- root-level machine-first files added

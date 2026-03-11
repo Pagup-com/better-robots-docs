@@ -1,32 +1,34 @@
 ---
-title: "Téléchargement"
-description: "Téléchargez la version gratuite ou démarrez un essai Pro ou Premium."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Télécharger
+description: Télécharger Better Robots.txt, démarrer un essai Pro ou Premium et voir la démo du workflow.
+schemaType: WebPage
 ---
 
 # Télécharger
 
-Utilisez les liens ci-dessous pour obtenir Better Robots.txt dans l’édition qui correspond à votre besoin.
+## Version gratuite
 
-<div class="br-grid br-grid-3">
-  <div class="br-card">
-    <h3>Gratuit</h3>
-    <p>Installez Better Robots.txt depuis le répertoire d’extensions WordPress.</p>
-    <p><a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Télécharger</a></p>
-  </div>
-  <div class="br-card">
-    <h3>Pro</h3>
-    <p>Démarrez un essai Pro ou achetez Pro directement.</p>
-    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid">Essai Pro</a></p>
-    <p><a class="br-button ghost" href="https://checkout.freemius.com/plugin/2345/plan/3584/">Acheter Pro</a></p>
-  </div>
-  <div class="br-card">
-    <h3>Premium</h3>
-    <p>Démarrez un essai Premium ou achetez Premium directement.</p>
-    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid">Essai Premium</a></p>
-    <p><a class="br-button ghost" href="https://checkout.freemius.com/plugin/2345/plan/41928/">Acheter Premium</a></p>
-  </div>
+[Télécharger Better Robots.txt sur WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
+
+## Éditions payantes
+
+### Pro
+- [Acheter Pro](https://checkout.freemius.com/plugin/2345/plan/3584/)
+- [Démarrer l’essai Pro](https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid)
+
+### Premium
+- [Acheter Premium](https://checkout.freemius.com/plugin/2345/plan/41928/)
+- [Démarrer l’essai Premium](https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid)
+
+## Voir le workflow
+
+<div class="video-frame">
+  <iframe src="https://player.vimeo.com/video/1169756981" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Vidéo de démonstration Better Robots.txt"></iframe>
 </div>
 
-Besoin d’aide pour choisir ? Voir [Tarifs](/fr/pricing) ou [Contact](/fr/contact).
+## Besoin d’aide pour choisir ?
+
+- [Comparer les éditions](/fr/pricing)
+- [Voir les préréglages](/fr/presets)
+- [Lire la gouvernance](/fr/governance)
+- [Contacter le support](/fr/contact)

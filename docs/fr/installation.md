@@ -1,35 +1,35 @@
 ---
-title: "Installation"
-description: "Installez Better Robots.txt et vérifiez la première sortie."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Installation
+description: Installer Better Robots.txt, commencer par la version gratuite ou un essai, puis valider la sortie après activation.
+schemaType: TechArticle
 ---
 
 # Installation
 
-## Installer depuis WordPress.org
+## Installer la version gratuite
 
-1. Allez dans **Extensions → Ajouter**
-2. Recherchez **Better Robots.txt**
-3. Installez puis activez l’extension
-4. Ouvrez l’écran Better Robots.txt dans WordPress
-5. Choisissez un preset puis suivez l’assistant
+La manière la plus simple de commencer est d’installer la version gratuite depuis WordPress.org :
 
-## Première vérification
+[Télécharger Better Robots.txt sur WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
 
-Après l’enregistrement :
-- vérifiez `https://votresite.com/robots.txt`
-- vérifiez `https://votresite.com/llms.txt` si vous l’avez activé
-- confirmez les lignes de sitemap et les règles crawler attendues
+## Après l’activation
 
-## Notes importantes
+1. Ouvre la page Better Robots.txt dans WordPress
+2. Choisis un préréglage
+3. Suis le flux de configuration
+4. Prévisualise la sortie à l’étape finale
+5. Enregistre les changements
 
-- Un fichier `robots.txt` physique peut prendre le dessus sur la sortie virtuelle
-- La prévisualisation finale est visible dans **Review & Save**
-- La disponibilité de certaines fonctionnalités dépend du plan ; utilisez [Tarifs](/fr/pricing) si nécessaire
+## Essais et éditions payantes
 
-## Liens
+Si tu sais déjà que tu as besoin de contrôles plus profonds, utilise :
 
-- [Télécharger l’extension](https://wordpress.org/plugins/better-robots-txt/)
-- [Démarrage rapide](/fr/quick-start)
-- [Vue d’ensemble des paramètres](/fr/settings)
+- [Démarrer l’essai Pro](https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid)
+- [Démarrer l’essai Premium](https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid)
+
+## Ce qu’il faut tester après l’installation
+
+- Le `robots.txt` généré est-il visible sur ton site ?
+- Le bon préréglage a-t-il été choisi ?
+- Les moteurs de recherche restent-ils autorisés si c’est souhaité ?
+- Certaines options payantes apparaissent-elles comme verrouillées, et en as-tu besoin ?

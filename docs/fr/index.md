@@ -1,154 +1,129 @@
 ---
+title: Better Robots.txt
+description: Configuration guidée de robots.txt pour le SEO, la gouvernance IA et le contrôle du crawl sur WordPress.
+schemaType: SoftwareApplication
 layout: home
-title: "Better Robots.txt"
-description: "Configuration guidée de robots.txt pour le SEO, la gouvernance IA et le contrôle des robots sur WordPress."
-pageType: "home"
-ogImage: "/og/home.jpg"
-
 hero:
   name: "Better Robots.txt"
-  text: "Configuration guidée de robots.txt pour le SEO, la gouvernance IA et le contrôle des robots"
-  tagline: "Remplacez le workflow robots.txt brut par une configuration structurée et vérifiable avant publication."
+  text: "Contrôle du crawl orienté IA pour WordPress"
+  tagline: "Préréglages, gouvernance des bots et prévisualisation avant publication pour les sites WordPress modernes."
   image:
-    src: /icon-128x128.png
-    alt: Better Robots.txt
+    src: /Logo-BetterRobots-256.png
+    alt: Logo Better Robots.txt
   actions:
     - theme: brand
       text: Télécharger la version gratuite
       link: https://wordpress.org/plugins/better-robots-txt/
     - theme: alt
-      text: Comparer les plans
-      link: /fr/pricing
+      text: Comparer les éditions
+      link: /fr/pricing/
     - theme: alt
       text: Voir la démo
-      link: /fr/demo
-
+      link: /fr/download/#voir-le-workflow
 features:
   - icon: "🧭"
-    title: "Assistant guidé en 14 étapes"
-    details: "Passez du choix du preset à la prévisualisation finale avec un vrai parcours guidé."
+    title: "Préréglages"
+    details: "Essential, AI-First, Fortress et Custom permettent de partir d’une politique claire au lieu d’un fichier vide."
   - icon: "🤖"
-    title: "Gouvernance IA prête pour le réel"
-    details: "Contrôlez l’entraînement IA, la recherche IA, publiez llms.txt et exposez des signaux machine-first."
+    title: "Gouvernance des bots"
+    details: "Contrôlez moteurs de recherche, IA, outils SEO, archive, mauvais bots et aperçus sociaux."
   - icon: "🛡️"
-    title: "Contrôle des robots par catégorie"
-    details: "Moteurs de recherche, IA, outils SEO, mauvais robots, archives, réseaux sociaux et plus."
-  - icon: "✅"
-    title: "Prévisualisation avant publication"
-    details: "La sortie finale se vérifie dans Review & Save avant d’être enregistrée."
+    title: "Vérifier avant publication"
+    details: "Prévisualisez le robots.txt généré avant d’enregistrer les changements sur votre site WordPress."
 ---
 
-<div class="br-badge-row">
-  <span class="br-badge free">Gratuit</span>
+
+<div class="badge-row">
+  <span class="br-badge free">Free</span>
   <span class="br-badge pro">Pro</span>
   <span class="br-badge premium">Premium</span>
-  <span class="br-badge">WordPress</span>
-  <span class="br-badge">AI-ready</span>
+  <span class="br-badge note">Search • IA • mauvais bots • Woo • social</span>
 </div>
 
-<div class="br-hero-banner">
-  <img src="/better-robots-banner-redesign-v1-1544x500.jpg" alt="Bannière Better Robots.txt" />
+<div class="figure-banner">
+  <img src="/better-robots-banner-redesign-v1-1544x500.jpg" alt="Bannière Better Robots.txt montrant la nouvelle interface à préréglages" />
 </div>
 
 ## Pourquoi Better Robots.txt est différent
 
-<div class="br-grid br-grid-3">
+<div class="feature-grid">
   <div class="br-card">
-    <h3>Pas un simple éditeur</h3>
-    <p>Better Robots.txt transforme un fichier brut en workflow guidé avec presets, explications et preview final.</p>
+    <h3>Pas un textarea brut</h3>
+    <p>Better Robots.txt transforme robots.txt en workflow guidé, avec préréglages, explications et étape finale de revue.</p>
   </div>
   <div class="br-card">
-    <h3>Conçu pour débutants et experts</h3>
-    <p>Les débutants démarrent avec un preset. Les experts contrôlent règles WordPress, IA, bots, sortie et directives personnalisées.</p>
+    <h3>Conçu pour le crawl moderne</h3>
+    <p>Moteurs, IA, outils SEO, archives et scrapers n’ont pas tous la même utilité ni le même niveau d’accès souhaitable.</p>
   </div>
   <div class="br-card">
-    <h3>Prêt pour l’IA, sans promesses creuses</h3>
-    <p>Publiez des signaux d’usage et de gouvernance, tout en restant clair sur ce qui est déclaratif et ce qui ne relève pas de l’enforcement.</p>
-  </div>
-</div>
-
-## Éditions en un coup d’œil
-
-<div class="br-grid br-grid-3">
-  <div class="br-card">
-    <h3>Gratuit</h3>
-    <p>Assistant guidé, preset Essential, protections WordPress de base, nettoyage simple et preview final.</p>
-    <p><a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Télécharger</a></p>
+    <h3>Utile aux débutants</h3>
+    <p>Tu peux commencer en sécurité avec un préréglage, puis vérifier le résultat avant publication.</p>
   </div>
   <div class="br-card">
-    <h3>Pro</h3>
-    <p>Ajoute AI-First, des contrôles IA &amp; LLM plus profonds, llms.txt, la protection contre les outils SEO et plus de gouvernance.</p>
-    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid">Essai Pro</a></p>
-  </div>
-  <div class="br-card">
-    <h3>Premium</h3>
-    <p>Débloque Fortress, des options archives / anti-scraping plus fortes, une meilleure couverture bad bots et des setups plus stricts.</p>
-    <p><a class="br-button secondary" href="https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid">Essai Premium</a></p>
+    <h3>Utile aux experts</h3>
+    <p>Les protections WordPress restent visibles, les éditions payantes ouvrent des contrôles plus profonds, et la sortie reste lisible.</p>
   </div>
 </div>
 
-## Voir le workflow en action
+## Quel préréglage choisir ?
 
-<div class="br-button-row">
-  <a class="br-button primary" href="/fr/demo">Voir la démo</a>
-  <a class="br-button ghost" href="/fr/wizard/">Explorer l’assistant</a>
-</div>
-
-## Captures
-
-<div class="br-shot-grid">
-  <figure class="br-shot">
-    <img src="/screenshots/step-0-mode-selection.jpg" alt="Étape 0 – sélection du preset" />
-    <figcaption><strong>Étape 0</strong> — Sélection du preset avec les parcours Gratuit, Pro et Premium.</figcaption>
-  </figure>
-  <figure class="br-shot">
-    <img src="/screenshots/step-2-ai-governance.jpg" alt="Étape 2 – gouvernance IA & LLM" />
-    <figcaption><strong>Étape 2</strong> — Gouvernance IA &amp; LLM avec contrôle de l’entraînement, de la recherche et des content signals.</figcaption>
-  </figure>
-  <figure class="br-shot">
-    <img src="/screenshots/step-8-ecommerce-optimization.jpg" alt="Étape 8 – optimisation e-commerce" />
-    <figcaption><strong>Étape 8</strong> — Nettoyage WooCommerce pour réduire le crawl de faible valeur.</figcaption>
-  </figure>
-  <figure class="br-shot">
-    <img src="/screenshots/step-14-review-save.jpg" alt="Étape 14 – vérification et enregistrement" />
-    <figcaption><strong>Étape 14</strong> — Prévisualisation finale avant enregistrement.</figcaption>
-  </figure>
-</div>
-
-## Mature, utile, transparent
-
-<div class="br-trust">
-  <div class="br-card"><strong>6 000+</strong><span>installations actives sur WordPress.org</span></div>
-  <div class="br-card"><strong>4.5/5</strong><span>note publique moyenne</span></div>
-  <div class="br-card"><strong>6.9.4</strong><span>version testée jusqu’à sur WordPress.org</span></div>
-  <div class="br-card"><strong>EN + FR</strong><span>site et documentation bilingues</span></div>
-</div>
-
-## Ce que Better Robots.txt est — et n’est pas
-
-<div class="br-two-col">
-  <div class="br-card">
-    <h3>Ce que c’est</h3>
-    <ul>
-      <li>Un workflow guidé robots.txt pour WordPress</li>
-      <li>Une couche de contrôle du crawl pour la recherche, l’IA, les bots et les archives</li>
-      <li>Un pont entre hygiène SEO et signaux de politique à l’ère de l’IA</li>
-      <li>Une manière de vérifier la sortie avant publication</li>
-    </ul>
+<div class="plan-grid">
+  <div class="br-plan">
+    <div class="br-badge free">Essential</div>
+    <p>Le meilleur point de départ pour la plupart des sites WordPress qui veulent un robots.txt plus propre, sans complexité.</p>
   </div>
-  <div class="br-card">
-    <h3>Ce que ce n’est pas</h3>
-    <ul>
-      <li>Pas un firewall</li>
-      <li>Pas un moteur d’anti-scraping forcé</li>
-      <li>Pas une garantie que tous les bots obéiront</li>
-      <li>Pas un remplacement à la protection infrastructurelle</li>
-    </ul>
+  <div class="br-plan">
+    <div class="br-badge pro">AI-First</div>
+    <p>Le meilleur choix pour les éditeurs et sites de contenu qui veulent une gouvernance IA sans couper la découverte.</p>
+  </div>
+  <div class="br-plan">
+    <div class="br-badge premium">Fortress</div>
+    <p>Le meilleur choix pour les sites orientés protection qui veulent des règles plus strictes pour l’archive, les bots et le crawl.</p>
+  </div>
+  <div class="br-plan">
+    <div class="br-badge pro">Custom</div>
+    <p>Le meilleur choix pour les utilisateurs avancés qui veulent construire leur politique module par module.</p>
   </div>
 </div>
 
-<div class="br-button-row">
-  <a class="br-button primary" href="https://wordpress.org/plugins/better-robots-txt/">Télécharger la version gratuite</a>
-  <a class="br-button secondary" href="/fr/pricing">Comparer les plans</a>
-  <a class="br-button ghost" href="/fr/governance/">Lire la gouvernance</a>
+<div class="home-links">
+  <a href="/fr/presets">Voir tous les préréglages →</a>
+  <a href="/fr/robots-txt-examples">Voir des exemples de robots.txt →</a>
+</div>
+
+## Voir le workflow
+
+<div class="video-frame">
+  <iframe src="https://player.vimeo.com/video/1169756981" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Vidéo de démonstration Better Robots.txt"></iframe>
+</div>
+
+## Pourquoi c’est important à l’ère de l’IA
+
+<div class="note-panel">
+  Les moteurs de recherche, les assistants IA, les services d’archive et les scrapers n’utilisent pas un site de la même manière. Certains indexent pour la recherche classique. Certains utilisent le contenu pour répondre en temps réel. Certains entraînent des modèles. D’autres copient. Better Robots.txt t’aide à publier une politique plus claire pour chaque catégorie.
+</div>
+
+## Commencer ici
+
+<div class="link-grid">
+  <div class="br-card">
+    <h3>Démarrage rapide</h3>
+    <p>Obtiens vite une configuration de départ sûre.</p>
+    <p><a href="/fr/quick-start">Ouvrir le démarrage rapide →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Tarifs et éditions</h3>
+    <p>Comprendre Free, Pro et Premium avant de choisir.</p>
+    <p><a href="/fr/pricing">Comparer les éditions →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Gouvernance</h3>
+    <p>Comprendre ce que le plugin est, ce qu’il n’est pas, et comment fonctionnent les signaux d’usage IA.</p>
+    <p><a href="/fr/governance">Lire la gouvernance →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Téléchargement</h3>
+    <p>Télécharger le plugin sur WordPress.org ou démarrer un essai.</p>
+    <p><a href="/fr/download">Voir les options →</a></p>
+  </div>
 </div>

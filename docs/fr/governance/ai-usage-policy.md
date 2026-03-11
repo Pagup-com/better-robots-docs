@@ -1,42 +1,59 @@
 ---
-title: "Politique d’usage IA"
-description: "Politique publique d’usage IA pour le site et la surface produit Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/governance.jpg"
+title: Politique d’usage IA
+description: Comprendre search, ai-input, ai-train, et pourquoi Better Robots.txt traite l’usage IA comme une question de gouvernance.
+schemaType: TechArticle
 ---
 
 # Politique d’usage IA
 
-Cette page explique comment Better Robots.txt présente une guidance liée à l’IA sur le site et autour du produit.
+Cette page explique la logique des réglages liés à l’IA dans Better Robots.txt.
 
-## Portée
+## Comment des LLM peuvent utiliser un site
 
-Cette politique s’applique au site public `https://better-robots.com` et au contenu explicatif publié ici.
+Les systèmes IA peuvent interagir avec un site de plusieurs façons :
 
-Elle ne remplace pas les signaux générés par l’extension sur les sites des utilisateurs.
+### 1. Indexation de recherche
+Un système peut crawler une page pour qu’elle apparaisse dans des résultats de recherche classiques.
 
-## Surfaces IA actuelles
+### 2. Génération de réponses
+Un système peut utiliser la page en temps réel pour répondre à une question ou enrichir une chaîne de réponse.
 
-- `robots.txt` pour le site lui-même
-- `llms.txt`
-- `/.well-known/ai-governance.json`
-- pages publiques de gouvernance
-- pages publiques de documentation
-- JSON-LD produit et organisation
+### 3. Entraînement de modèle
+Un système peut ingérer le contenu pour améliorer ou entraîner un modèle dans le temps.
 
-## Intention
+### 4. Scraping ou collecte de datasets
+Un système peut collecter du contenu sans valeur claire pour un moteur de recherche ou une réponse utilisateur.
 
-Ces surfaces existent pour :
-- améliorer la clarté pour les systèmes conformes
-- réduire l’ambiguïté autour du produit
-- exposer des références officielles et des points de contact
-- distinguer les faits produit des résumés tiers
+Ces usages ne sont pas identiques. C’est pourquoi une politique de crawl moderne ne doit pas les traiter comme s’ils étaient équivalents.
+
+## Pourquoi les content signals comptent
+
+Des signaux comme `search`, `ai-input` et `ai-train` aident à exprimer des préférences distinctes :
+
+- **search** : indexation et découverte pour la recherche classique
+- **ai-input** : usage en temps réel pour la génération de réponses ou le grounding
+- **ai-train** : usage pour l’entraînement ou l’amélioration d’un modèle
+
+Ces signaux sont particulièrement utiles quand on veut conserver la visibilité de recherche tout en étant plus restrictif sur l’entraînement.
+
+## Pourquoi protéger un site peut être important
+
+Un propriétaire de site peut vouloir limiter certains usages à cause :
+
+- d’un travail éditorial original
+- de l’intelligence concurrentielle
+- de l’exposition à l’archive
+- de la charge serveur
+- des préoccupations sur l’entraînement IA
+- d’une politique éditoriale ou de conformité interne
 
 ## Limite importante
 
-Ce site peut publier une guidance pour les systèmes IA, mais il ne prétend pas imposer un comportement par la force.
-Comme `robots.txt`, ces signaux sont surtout utiles avec les systèmes conformes et les crawlers de bonne foi.
+Better Robots.txt aide à publier une intention. Il ne prétend pas que tous les systèmes respecteront ces signaux.
 
-## Contact
+## Références liées
 
-Les questions liées à cette politique peuvent être envoyées à [support@better-robots.com](mailto:support@better-robots.com).
+- [Vue d’ensemble de la gouvernance](/fr/governance)
+- [Exemples de robots.txt](/fr/robots-txt-examples)
+- [llms.txt](/llms.txt)
+- [ai-governance.json](/.well-known/ai-governance.json)

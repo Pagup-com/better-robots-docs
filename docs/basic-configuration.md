@@ -1,41 +1,34 @@
 ---
-title: "Basic Configuration"
-description: "A safer starting configuration for Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Basic Configuration
+description: A safe starting configuration for most WordPress sites using Better Robots.txt.
+schemaType: TechArticle
 ---
 
 # Basic Configuration
 
-This page covers a safe starting setup for most sites.
+## A safe default path
 
-## A Simple First Pass
+For most WordPress websites:
 
-1. Open **Better Robots.txt**
-2. Choose `Mode 1: Essential` if you want the fastest low-risk setup
-3. Click **Configure**
-4. Review these steps first:
-   - `Search Engine Visibility`
-   - `AI & LLM Governance`
-   - `Global Settings`
-   - `E-commerce Optimization` if you use WooCommerce
-   - `Ads & Revenue` if you use ad verification files
-5. Check the preview in `Step 14 - Review & Save`
-6. Save from the sticky footer
+- choose **Essential**
+- keep search engines allowed
+- keep the final preview step in your workflow
+- avoid changing advanced directives on day one
 
-## Recommended Baseline Choices
+## Recommended first decisions
 
-- Keep `Virtual (WordPress-generated)` robots.txt unless you specifically need a physical file
-- Add a sitemap URL or enable sitemap auto-detection
-- Leave the core WordPress protection toggles enabled unless you have a reason to relax them
-- Keep CSS/JS allow rules enabled
-- Keep image allow rules enabled unless you intentionally want to stop image crawling
-- Keep `ads.txt` enabled if you rely on ad-network verification
+### Search engines
+Allow major search engines unless you have a specific reason not to.
 
-## Before You Publish
+### AI and LLM settings
+If you publish original content and want a measured AI-aware setup, consider **AI-First**.
 
-- Confirm `https://yoursite.com/robots.txt` is reachable
-- Confirm there is no conflicting physical `/robots.txt` file unless you intentionally use physical mode
-- Confirm the preview contains the rules you expect
+### Social preview bots
+Do not block them unless you know you no longer need social link previews.
 
-For the exact step-by-step order, use [Quick Start](/quick-start) and [Settings Overview](/settings).
+### WooCommerce cleanup
+Use it if your shop generates many low-value dynamic URLs.
+
+## Then iterate
+
+Better Robots.txt is designed so you can start safely and then move toward stricter or more detailed controls when the business case is clear.

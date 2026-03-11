@@ -1,44 +1,49 @@
 ---
-title: "Démarrage rapide"
-description: "Le chemin sûr le plus rapide dans Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Démarrage rapide
+description: Démarrer Better Robots.txt avec le préréglage le plus sûr, comprendre les éditions et ouvrir les bonnes pages ensuite.
+schemaType: TechArticle
 ---
 
 # Démarrage rapide
 
-Voici le chemin sûr le plus rapide dans Better Robots.txt.
+Pour beaucoup de sites, le point de départ le plus sûr est :
 
-## Étape 1 — Choisir une édition
-- **Gratuit** pour le parcours Essential
-- **Pro** pour AI-First et une gouvernance plus profonde
-- **Premium** pour Fortress et le setup le plus strict
+1. installer Better Robots.txt depuis WordPress.org
+2. ouvrir le wizard
+3. choisir **Essential**
+4. prévisualiser la sortie finale
+5. enregistrer les changements
 
-## Étape 2 — Choisir un preset
-- **Essential** pour la plupart des sites
-- **AI-First** si la gouvernance IA compte tôt
-- **Fortress** si la protection est prioritaire
-- **Custom** si vous savez déjà ce que vous voulez configurer
+## Quel préréglage est le plus sûr ?
 
-## Étape 3 — Passer par les étapes critiques
-Au minimum, examinez :
-- Visibilité des moteurs de recherche
-- Gouvernance IA & LLM
-- Paramètres globaux
-- Optimisation e-commerce si nécessaire
-- Vérification et enregistrement
+- **Essential** : le point de départ le plus sûr pour la plupart des sites
+- **AI-First** : le meilleur choix pour les éditeurs et sites riches en contenu
+- **Fortress** : le meilleur choix pour les configurations plus strictes et orientées protection
+- **Custom** : le meilleur choix pour les utilisateurs avancés
 
-## Étape 4 — Vérifier avant publication
-Utilisez **Review & Save** pour confirmer la sortie générée avant d’enregistrer.
+## Free, Pro et Premium
 
-## Étape 5 — Valider le résultat
-Vérifiez :
-- `/robots.txt`
-- `/llms.txt` si activé
-- les lignes de sitemap
-- les règles crawler attendues
+La version gratuite reste réellement utile.
 
-## Pages suivantes recommandées
-- [Installation](/fr/installation)
+Utilise-la quand tu veux :
+- un meilleur robots.txt par défaut
+- un setup guidé
+- une politique de crawl plus claire
+- une revue avant publication
+
+Passe à **Pro** quand tu veux :
+- des contrôles plus profonds sur l’IA et les outils SEO
+- des options de gouvernance plus détaillées
+- le support de `llms.txt`
+
+Passe à **Premium** quand tu veux :
+- la configuration la plus stricte
+- une couverture plus large contre les mauvais bots
+- les options d’archive et de crawl les plus restrictives
+
+## Pages à ouvrir ensuite
+
+- [Préréglages](/fr/presets)
 - [Tarifs](/fr/pricing)
-- [Vue d’ensemble de l’assistant](/fr/wizard/)
+- [Exemples de robots.txt](/fr/robots-txt-examples)
+- [Gouvernance](/fr/governance)

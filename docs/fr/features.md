@@ -1,49 +1,45 @@
 ---
-title: "Fonctionnalités"
-description: "Vue d’ensemble des fonctionnalités de Better Robots.txt pour la recherche, l’IA, les bots, WooCommerce et la sortie finale."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Fonctionnalités
+description: Explorer les fonctionnalités Better Robots.txt pour la recherche, l’IA, les outils SEO, les mauvais bots, WooCommerce et la prévisualisation avant publication.
+schemaType: TechArticle
 ---
 
 # Fonctionnalités
 
-Better Robots.txt est organisé par domaines de contrôle concrets, pas comme un simple éditeur de fichier brut.
+Better Robots.txt apporte une manière structurée de décider comment différentes catégories de crawlers doivent interagir avec un site WordPress.
 
-## Visibilité des moteurs de recherche
-Choisissez un niveau de visibilité ou un contrôle plus avancé pour décider jusqu’où exposer le site aux moteurs de recherche.
+## Principaux groupes de fonctionnalités
 
-## Gouvernance IA & LLM
-Définissez comment traiter les bots d’entraînement IA et les systèmes de recherche IA.
-Vous pouvez aussi publier une guidance machine-readable comme `llms.txt`.
+### Visibilité des moteurs de recherche
+Choisir le niveau de visibilité du site pour les moteurs de recherche classiques et vérifier l’impact avant publication.
 
-## Protection contre les outils SEO
-Limitez les crawlers d’outils comme Semrush, DotBot, Ahrefs et autres agents similaires lorsque le plan le permet.
+### Gouvernance IA & LLM
+Exprimer comment des systèmes IA peuvent utiliser le contenu, y compris la génération de réponses et les préférences liées à l’entraînement.
 
-## Protection contre les mauvais robots
-Activez une blocklist organisée, avec une version plus large dans les éditions supérieures.
+### Protection contre les outils SEO
+Contrôler l’accès des outils SEO tiers et des crawlers d’intelligence concurrentielle.
 
-## Contrôle de l’archivage et de Wayback
-Choisissez si des services d’archives peuvent stocker des copies publiques du site.
+### Protection contre les mauvais bots
+Bloquer plus clairement les crawlers abusifs ou de faible valeur.
 
-## Spam, flux et pièges d’exploration
-Réduisez le crawl de faible valeur sur les flux, la recherche interne, les paramètres de spam et les pièges.
+### Contrôle de l’archive et de Wayback
+Décider si le site doit rester disponible aux services d’archivage public.
 
-## Nettoyage WooCommerce
-Évitez que le panier, la commande, le compte, ou des paramètres dynamiques inutiles consomment le budget de crawl.
+### Spam, flux et pièges de crawl
+Réduire le bruit généré par les chemins de faible valeur, les crawlers de flux et les pièges de crawl.
 
-## Ressources et fichiers
-Décidez si CSS, JavaScript et images doivent recevoir des règles `Allow` explicites.
+### Nettoyage WooCommerce
+Éviter de gaspiller le budget de crawl sur le panier, le checkout, le compte et les URLs dynamiques de boutique.
 
-## Robots des réseaux sociaux
-Autorisez ou limitez les bots de prévisualisation selon vos besoins de partage.
+### Ressources et assets
+Contrôler l’exposition des fichiers CSS, JS et images.
 
-## Publicités et revenus
-Gardez `ads.txt` et `app-ads.txt` accessibles quand vous en avez besoin.
+### Crawlers sociaux
+Décider si les plateformes sociales doivent générer des aperçus enrichis quand un lien est partagé.
 
-## Review & Save
-Prévisualisez la sortie générée avant de la publier.
+### Review & Save
+Prévisualiser la sortie générée avant publication.
 
-## Éditions
-Certaines fonctionnalités sont disponibles partout, d’autres sont réservées aux plans Pro ou Premium.
-Utilisez la page tarifs pour comparer clairement Gratuit, Pro et Premium :
-[Comparer les plans](/fr/pricing)
+## Le vrai but de cet ensemble
+
+Le plugin ne cherche pas à “avoir l’air avancé”. Il cherche à rendre la politique de crawl plus claire, plus sûre et plus simple à comprendre.

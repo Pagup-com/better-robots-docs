@@ -1,44 +1,49 @@
 ---
-title: "Quick Start"
-description: "The fastest safe path through Better Robots.txt."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Quick Start
+description: Start Better Robots.txt with the safest preset, understand the editions, and move to the right next page.
+schemaType: TechArticle
 ---
 
 # Quick Start
 
-This is the fastest safe path through Better Robots.txt.
+For many websites, the safest start is:
 
-## Step 1 — Choose an edition
-- **Free** for the Essential path
-- **Pro** for AI-First and deeper governance
-- **Premium** for Fortress and the strictest protection-first setup
+1. Install Better Robots.txt from WordPress.org
+2. Open the setup wizard
+3. Choose **Essential**
+4. Review the final output
+5. Save changes
 
-## Step 2 — Pick a preset
-- **Essential** for most sites
-- **AI-First** if AI governance matters early
-- **Fortress** if protection is the priority
-- **Custom** if you already know what to configure manually
+## Which preset is safest?
 
-## Step 3 — Walk through the critical stages
-At minimum, review:
-- Search Engine Visibility
-- AI & LLM Governance
-- Global Settings
-- E-commerce Optimization (if relevant)
-- Review & Save
+- **Essential**: safest starting point for most sites
+- **AI-First**: best for publishers and content-heavy sites
+- **Fortress**: best for stricter protection-first setups
+- **Custom**: best for advanced users
 
-## Step 4 — Verify before publish
-Use **Review & Save** to confirm the generated output before saving.
+## Free, Pro, and Premium
 
-## Step 5 — Validate the result
-Check:
-- `/robots.txt`
-- `/llms.txt` if enabled
-- sitemap lines
-- expected crawler rules
+The free edition is intentionally useful on its own.
 
-## Recommended next pages
-- [Installation](/installation)
+Use it when you want:
+- a better default robots.txt
+- guided setup
+- clearer crawl policy
+- review before publish
+
+Move to **Pro** when you want:
+- deeper AI and SEO tool controls
+- more detailed governance options
+- llms.txt support
+
+Move to **Premium** when you want:
+- the strictest protection-oriented setup
+- broader bad bot coverage
+- the most restrictive archive and crawler options
+
+## Next pages to open
+
+- [Presets](/presets)
 - [Pricing](/pricing)
-- [Wizard Overview](/wizard/)
+- [robots.txt Examples](/robots-txt-examples)
+- [Governance](/governance)

@@ -1,49 +1,45 @@
 ---
-title: "Features"
-description: "Feature overview for Better Robots.txt across search, AI, bots, WooCommerce, and output control."
-pageType: "docs"
-ogImage: "/og/home.jpg"
+title: Features
+description: Explore Better Robots.txt features across search, AI governance, SEO tools, bad bots, WooCommerce, and review-before-publish workflow.
+schemaType: TechArticle
 ---
 
 # Features
 
-Better Robots.txt is organized around practical control areas rather than a single raw file editor.
+Better Robots.txt gives you a structured way to decide how different crawler categories should interact with a WordPress site.
 
-## Search engine visibility
-Choose between visibility levels or advanced control to decide how broadly you want to expose the site to search crawlers.
+## Main feature groups
 
-## AI & LLM governance
-Define how AI training bots and AI search systems should be treated.
-You can also publish optional machine-readable guidance such as `llms.txt`.
+### Search engine visibility
+Choose how visible your site should be to mainstream search engines and review the impact before publishing.
 
-## SEO tool protection
-Restrict SEO crawlers such as Semrush, DotBot, Ahrefs, and similar agents when your plan allows it.
+### AI & LLM governance
+Express how AI systems may use your content, including answer-generation and training-related preferences.
 
-## Bad bot protection
-Enable a curated blocklist and, on higher editions, expand the list further.
+### SEO tool protection
+Control how third-party SEO tools and intelligence crawlers can access your site.
 
-## Archive & Wayback control
-Choose whether archive services may store public copies of the site.
+### Bad bots protection
+Block known low-value or abusive crawlers more clearly.
 
-## Spam, feeds, and crawl traps
-Reduce low-value crawling from feed endpoints, search URLs, comment spam parameters, and trap parameters.
+### Archive & Wayback control
+Decide whether the site should remain available to public archival services.
 
-## WooCommerce cleanup
-Keep cart, checkout, account, and parameter-heavy store routes from consuming unnecessary crawl budget.
+### Spam, feeds, and crawl traps
+Reduce noise from low-value paths, feed crawlers, and crawl traps.
 
-## Resources & assets
-Decide whether CSS, JavaScript, and image rules should be explicitly allowed.
+### WooCommerce cleanup
+Avoid wasting crawl budget on cart, checkout, account, and dynamic store URLs.
 
-## Social media crawlers
-Allow or restrict social preview bots based on your sharing goals.
+### Resources & assets
+Control how CSS, JS, and image assets are exposed to crawlers.
 
-## Ads & revenue
-Keep `ads.txt` and `app-ads.txt` verification paths accessible when you need them.
+### Social media crawlers
+Decide whether social platforms should generate rich previews when links are shared.
 
-## Review & Save
-Preview the generated output before publishing it.
+### Review & Save
+Preview the generated output before you publish it.
 
-## Editions
-Some features are available in all editions, while others are reserved for Pro or Premium.
-Use the pricing page to compare Free, Pro, and Premium clearly:
-[Compare plans](/pricing)
+## The point of the feature set
+
+The plugin is not trying to look “advanced” for its own sake. It is trying to make crawl policy clearer, safer, and easier to reason about.
