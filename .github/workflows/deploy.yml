@@ -55,8 +55,14 @@ jobs:
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
 
+    - name: Validate content
+      run: node scripts/validate-content.mjs
+
     - name: Build
       run: pnpm docs:build
+
+    - name: Ensure Pages skips Jekyll
+      run: touch docs/.vitepress/dist/.nojekyll
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
