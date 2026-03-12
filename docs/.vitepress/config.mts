@@ -43,71 +43,211 @@ function globalSchemas() {
       name: 'Pagup',
       url: SITE_URL,
       email: SUPPORT_EMAIL,
-      sameAs: [GITHUB_REPO, PLUGIN_REPO]
+      sameAs: [GITHUB_REPO, PLUGIN_REPO, PLUGIN_URL]
     },
     {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
       name: 'Better Robots.txt',
       url: SITE_URL,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Pagup'
+      },
       inLanguage: ['en', 'fr']
     }
   ])
 }
 
+function breadcrumbSchema(path: string, title: string) {
+  const parts = path.split('/').filter(Boolean)
+  const items = [{
+    '@type': 'ListItem',
+    position: 1,
+    name: 'Home',
+    item: SITE_URL + '/'
+  }]
+
+  let current = ''
+  let position = 2
+  for (const part of parts) {
+    current += '/' + part
+    items.push({
+      '@type': 'ListItem',
+      position,
+      name: part === 'fr' ? 'FR' : part.replace(/-/g, ' '),
+      item: SITE_URL + current + '/'
+    })
+    position += 1
+  }
+
+  if (title && title !== 'Better Robots.txt' && parts.length > 0) {
+    items[items.length - 1].name = title
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items
+  }
+}
+
+function faqEntitiesFor(path: string) {
+  const map: Record<string, Array<{ question: string; answer: string }>> = {
+    '/faq/': [
+      { question: 'Is the free edition useful on its own?', answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.' },
+      { question: 'Do screenshots only show the free edition?', answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.' },
+      { question: 'Can I block AI crawlers?', answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.' },
+      { question: 'Why not treat all crawlers the same?', answer: 'Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not create the same value or risk profile.' },
+      { question: 'Is Better Robots.txt a security product?', answer: 'No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.' },
+      { question: 'Do I need to understand robots.txt to use the plugin?', answer: 'No. For many websites, a preset plus a final review is enough.' },
+      { question: 'Where do I get support?', answer: 'Use support@better-robots.com or see the Contact page.' }
+    ],
+    '/fr/faq/': [
+      { question: 'La version gratuite est-elle utile à elle seule ?', answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.' },
+      { question: 'Les captures montrent-elles uniquement la version gratuite ?', answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.' },
+      { question: 'Puis-je bloquer les crawlers IA ?', answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.' },
+      { question: 'Pourquoi ne pas traiter tous les crawlers de la même manière ?', answer: 'Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.' },
+      { question: 'Better Robots.txt est-il un produit de sécurité ?', answer: 'Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.' },
+      { question: 'Dois-je comprendre robots.txt pour utiliser le plugin ?', answer: 'Non. Pour beaucoup de sites, un preset plus une revue finale suffisent.' },
+      { question: 'Où obtenir du support ?', answer: 'Utilise support@better-robots.com ou consulte la page Contact.' }
+    ]
+  }
+  return map[path] || []
+}
+
 function pageSchema(path: string, title: string, description: string, pageType: string) {
   const url = `${SITE_URL}${path}`
-  if (pageType === 'home') {
-    return JSON.stringify([{
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'Better Robots.txt',
-      url,
-      downloadUrl: PLUGIN_URL,
-      operatingSystem: 'WordPress',
-      applicationCategory: 'BusinessApplication',
-      description
-    }])
+  const kind = pageType || 'WebPage'
+  const breadcrumb = breadcrumbSchema(path, title)
+
+  if (kind === 'home') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'Better Robots.txt',
+        url,
+        downloadUrl: PLUGIN_URL,
+        operatingSystem: 'WordPress',
+        applicationCategory: 'BusinessApplication',
+        description,
+        publisher: {
+          '@type': 'Organization',
+          name: 'Pagup'
+        }
+      },
+      breadcrumb
+    ])
   }
-  if (pageType === 'contact') {
-    return JSON.stringify([{
-      '@context': 'https://schema.org',
-      '@type': 'ContactPage',
-      name: title,
-      url,
-      description
-    }])
+
+  if (kind === 'contact' || kind === 'ContactPage') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        name: title,
+        url,
+        description
+      },
+      breadcrumb
+    ])
   }
-  if (pageType === 'about') {
-    return JSON.stringify([{
-      '@context': 'https://schema.org',
-      '@type': 'AboutPage',
-      name: title,
-      url,
-      description
-    }])
+
+  if (kind === 'about' || kind === 'AboutPage') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'AboutPage',
+        name: title,
+        url,
+        description
+      },
+      breadcrumb
+    ])
   }
-  if (pageType === 'video') {
-    return JSON.stringify([{
-      '@context': 'https://schema.org',
-      '@type': 'VideoObject',
-      name: 'Better Robots.txt demo',
-      embedUrl: 'https://player.vimeo.com/video/1169756981',
-      thumbnailUrl: `${SITE_URL}/og/demo.jpg`,
-      description,
-      publisher: {
-        '@type': 'Organization',
-        name: 'Pagup'
+
+  if (kind === 'video' || kind === 'VideoObject') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: 'Better Robots.txt demo',
+        embedUrl: 'https://player.vimeo.com/video/1169756981',
+        thumbnailUrl: `${SITE_URL}/og/demo.jpg`,
+        description,
+        publisher: {
+          '@type': 'Organization',
+          name: 'Pagup'
+        }
+      },
+      breadcrumb
+    ])
+  }
+
+  if (kind === 'FAQPage') {
+    const entities = faqEntitiesFor(path).map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer
       }
-    }])
+    }))
+
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        name: title,
+        url,
+        description,
+        mainEntity: entities
+      },
+      breadcrumb
+    ])
   }
-  return JSON.stringify([{
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: title,
-    url,
-    description
-  }])
+
+  if (kind === 'TechArticle' || kind === 'docs') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': 'TechArticle',
+        headline: title,
+        url,
+        description,
+        author: {
+          '@type': 'Organization',
+          name: 'Pagup'
+        }
+      },
+      breadcrumb
+    ])
+  }
+
+  if (kind === 'CollectionPage' || kind === 'WebPage') {
+    return JSON.stringify([
+      {
+        '@context': 'https://schema.org',
+        '@type': kind === 'CollectionPage' ? 'CollectionPage' : 'WebPage',
+        name: title,
+        url,
+        description
+      },
+      breadcrumb
+    ])
+  }
+
+  return JSON.stringify([
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: title,
+      url,
+      description
+    },
+    breadcrumb
+  ])
 }
 
 const enNav = [
@@ -308,7 +448,7 @@ export default defineConfig({
     const altEn = `${SITE_URL}${englishPath(path)}`
     const altFr = `${SITE_URL}${frenchPath(path)}`
     const locale = localeOf(path)
-    const pageType = context.pageData.frontmatter?.pageType || 'docs'
+    const pageType = context.pageData.frontmatter?.pageType || context.pageData.frontmatter?.schemaType || 'docs'
     const title = titleTemplate(context.title || context.pageData.title || 'Better Robots.txt')
     const description = context.description || context.pageData.description || (isFr
       ? 'Documentation officielle de Better Robots.txt pour WordPress.'
