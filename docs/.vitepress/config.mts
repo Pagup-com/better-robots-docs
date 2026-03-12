@@ -377,7 +377,7 @@ const enSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Examples Hub', link: '/examples' },
+      { text: 'Examples', link: '/examples' },
       { text: 'Migration Guide', link: '/examples/migration' },
       { text: 'Best Practices', link: '/best-practices' },
       { text: 'Troubleshooting', link: '/troubleshooting' },
@@ -443,7 +443,7 @@ const frSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Hub des exemples', link: '/fr/examples' },
+      { text: 'Exemples', link: '/fr/examples' },
       { text: 'Guide de migration', link: '/fr/examples/migration' },
       { text: 'Bonnes pratiques', link: '/fr/best-practices' },
       { text: 'Dépannage', link: '/fr/troubleshooting' },
@@ -489,8 +489,8 @@ export default defineConfig({
     }
   },
 
-  transformHead(context) {
-    const relativePath = context.pageData.relativePath || 'index.md'
+  transformHead({ pageData }) {
+    const relativePath = pageData.relativePath || 'index.md'
     const path = pageToPath(relativePath)
     const isFr = path === '/fr/' || path.startsWith('/fr/')
     const canonical = `${SITE_URL}${path}`
@@ -498,21 +498,20 @@ export default defineConfig({
     const altFr = `${SITE_URL}${frenchPath(path)}`
     const locale = localeOf(path)
     const pageType =
-      context.pageData.frontmatter?.pageType ||
-      context.pageData.frontmatter?.schemaType ||
+      pageData.frontmatter?.pageType ||
+      pageData.frontmatter?.schemaType ||
       'docs'
     const rawTitle =
-      context.pageData.frontmatter?.title ||
-      context.pageData.title ||
+      pageData.frontmatter?.title ||
+      pageData.title ||
       'Better Robots.txt'
     const title = titleTemplate(rawTitle)
     const description =
-      context.pageData.frontmatter?.description ||
-      context.pageData.description ||
+      pageData.frontmatter?.description ||
       (isFr
         ? 'Documentation officielle de Better Robots.txt pour WordPress.'
         : 'Official Better Robots.txt documentation for WordPress.')
-    const ogImage = context.pageData.frontmatter?.ogImage || DEFAULT_OG
+    const ogImage = pageData.frontmatter?.ogImage || DEFAULT_OG
 
     return [
       ['link', { rel: 'canonical', href: canonical }],
@@ -528,7 +527,7 @@ export default defineConfig({
       ['meta', { name: 'twitter:title', content: title }],
       ['meta', { name: 'twitter:description', content: description }],
       ['meta', { name: 'twitter:image', content: `${SITE_URL}${ogImage}` }],
-      ['script', { type: 'application/ld+json' }, pageSchema(path, title, description, pageType)]
+      ['script', { type: 'application/ld+json' }, pageSchema(path, rawTitle, description, pageType)]
     ]
   },
 
