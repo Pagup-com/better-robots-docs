@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "site": "https://better-robots.com/",
+  "name": "Better Robots.txt website governance",
+  "organization": "Pagup",
+  "contact": "support@better-robots.com",
+  "framework_reference": "https://interpretive-governance.org/",
+  "intent": {
+    "search_indexing": "allowed_for_compliant_systems",
+    "ai_input_or_retrieval": "case_by_case_by_published_policy",
+    "ai_training": "not_permitted_without_explicit_written_permission",
+    "broad_scraping": "not_permitted",
+    "archives": "site_policy_dependent"
+  },
+  "artifacts": {
+    "robots": "https://better-robots.com/robots.txt",
+    "llms": "https://better-robots.com/llms.txt",
+    "llms_full": "https://better-robots.com/llms-full.txt",
+    "ai_manifest": "https://better-robots.com/ai-manifest.json",
+    "humans": "https://better-robots.com/humans.txt",
+    "author": "https://better-robots.com/author.md",
+    "links": "https://better-robots.com/links.json"
+  },
+  "references": {
+    "plugin_directory": "https://wordpress.org/plugins/better-robots-txt/",
+    "product_governance_repository": "https://github.com/GautierDorval/better-robots-txt",
+    "website_repository": "https://github.com/Pagup-com/better-robots-docs",
+    "interpretive_governance": "https://interpretive-governance.org/",
+    "inferenslab": "https://inferenslab.org/"
+  },
+  "note": "These files and signals publish intent and do not replace infrastructure-level enforcement."
+}
