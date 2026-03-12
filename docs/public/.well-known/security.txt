@@ -1,0 +1,5 @@
+Contact: mailto:support@better-robots.com
+Preferred-Languages: en, fr
+Canonical: https://better-robots.com/.well-known/security.txt
+Policy: https://better-robots.com/contact/
+Expires: 2027-12-31T23:59:59.000Z
