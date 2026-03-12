@@ -1,7 +1,7 @@
 ---
 title: Contact
 description: Contacter le support Better Robots.txt en anglais ou en français pour les questions d’installation, de configuration, d’éditions et de documentation.
-schemaType: ContactPage
+pageType: contact
 ---
 
 # Contact
@@ -23,11 +23,12 @@ Si tu as besoin d’aide avec Better Robots.txt, l’adresse principale du suppo
 - administration serveur sur mesure
 - conseil SEO complet
 - durcissement WAF ou infrastructure
-- conseil juridique sur l’IA ou l’usage des données
+- conseil juridique
 
-## Liens utiles
+## Liens utiles avant de contacter le support
 
 - [Télécharger le plugin sur WordPress.org](https://wordpress.org/plugins/better-robots-txt/)
 - [Lire la page tarifs](/fr/pricing)
 - [Voir les exemples de robots.txt](/fr/robots-txt-examples)
 - [Lire la politique d’usage IA](/fr/governance/ai-usage-policy)
+- [Commencer avec le démarrage rapide](/fr/quick-start)

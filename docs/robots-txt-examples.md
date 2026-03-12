@@ -6,9 +6,9 @@ schemaType: TechArticle
 
 # robots.txt Examples
 
-These examples are illustrative. They show the kind of policy Better Robots.txt can help you publish. They are not one-size-fits-all legal or infrastructure advice.
+These examples are illustrative. They show the kind of policy Better Robots.txt can help you publish. They are not legal advice, server hardening, or one-size-fits-all defaults.
 
-## Example 1 — small business website
+## Example 1 — Small business website
 
 **Recommended preset:** Essential
 
@@ -18,12 +18,12 @@ Allow: /
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Why it works:
-- simple public site
-- no need for heavy restrictions
-- clear crawl access for search engines
+**Why this works**
+- The site is public and wants discovery.
+- There is no strong reason to become restrictive early.
+- The main goal is a cleaner, safer default policy.
 
-## Example 2 — content publisher with AI-aware policy
+## Example 2 — Content publisher with AI-aware policy
 
 **Recommended preset:** AI-First
 
@@ -35,10 +35,10 @@ Sitemap: https://example.com/sitemap.xml
 # Content-Signal: search=yes, ai-input=yes, ai-train=no
 ```
 
-Why it works:
-- keeps classic search open
-- expresses a more restrictive stance on model training
-- fits editorial publishing better than a blank default file
+**Why this works**
+- It keeps classic search open.
+- It expresses a more restrictive stance on model training.
+- It fits editorial publishing better than a blank default file.
 
 ## Example 3 — WooCommerce store
 
@@ -53,12 +53,12 @@ Disallow: /my-account/
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Why it works:
-- blocks low-value or private paths
-- helps reduce crawl waste
-- keeps product discovery clearer
+**Why this works**
+- It blocks low-value or private paths.
+- It helps reduce crawl waste.
+- It keeps product discovery clearer.
 
-## Example 4 — protection-first site
+## Example 4 — Protection-first site
 
 **Recommended preset:** Fortress
 
@@ -70,11 +70,19 @@ Disallow: /archive/
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Why it works:
-- stricter policy
-- protection-first mindset
-- better fit when archive and scraping exposure matter
+**Why this works**
+- It reflects a stricter policy.
+- It fits a protection-first mindset.
+- It makes more sense when archive and scraping exposure matter.
 
-## How to read these examples
+## How to use these examples
 
-Look at them as policy patterns, not as magical rules. The right robots.txt always depends on the site, its business model, and the trade-offs you accept.
+- Start from the business context that looks closest to yours.
+- Use the example to understand the logic, not to copy blindly.
+- Let the plugin generate the final file, then review it before publishing.
+
+## Continue
+
+- [Choose your preset](/presets)
+- [Compare plans](/pricing)
+- [Read governance](/governance/)

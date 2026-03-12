@@ -1,7 +1,7 @@
 ---
 title: Better Robots.txt
 description: Guided robots.txt setup for SEO, AI governance, and crawler control on WordPress.
-schemaType: SoftwareApplication
+pageType: home
 layout: home
 hero:
   name: "Better Robots.txt"
@@ -19,7 +19,7 @@ hero:
       link: /pricing/
     - theme: alt
       text: Watch Demo
-      link: /download/#watch-the-workflow
+      link: /demo/
 features:
   - icon: "🧭"
     title: "Presets"
@@ -32,7 +32,6 @@ features:
     details: "Preview the generated robots.txt before you save changes on your WordPress site."
 ---
 
-
 <div class="badge-row">
   <span class="br-badge free">Free</span>
   <span class="br-badge pro">Pro</span>
@@ -41,7 +40,7 @@ features:
 </div>
 
 <div class="figure-banner">
-  <img src="/better-robots-banner-redesign-v1-1544x500.jpg" alt="Better Robots.txt homepage banner showing the new preset-based interface" />
+  <img src="/better-robots-banner-redesign-v1-1544x500.jpg" alt="Better Robots.txt homepage banner showing the preset-based interface" />
 </div>
 
 ## Why Better Robots.txt feels different
@@ -70,19 +69,19 @@ features:
 <div class="plan-grid">
   <div class="br-plan">
     <div class="br-badge free">Essential</div>
-    <p>Best for most WordPress sites that want a cleaner robots.txt without complexity.</p>
+    <p><strong>Best for:</strong> most WordPress sites that want a cleaner robots.txt without complexity.</p>
   </div>
   <div class="br-plan">
     <div class="br-badge pro">AI-First</div>
-    <p>Best for publishers and content teams that want AI-ready governance without shutting down discovery.</p>
+    <p><strong>Best for:</strong> publishers and content teams that want AI-ready governance without shutting down discovery.</p>
   </div>
   <div class="br-plan">
     <div class="br-badge premium">Fortress</div>
-    <p>Best for protection-first sites that want stricter archive, bot, and crawl controls.</p>
+    <p><strong>Best for:</strong> protection-first sites that want stricter archive, bot, and crawl controls.</p>
   </div>
   <div class="br-plan">
     <div class="br-badge pro">Custom</div>
-    <p>Best for advanced users who want to build their own policy module by module.</p>
+    <p><strong>Best for:</strong> advanced users who want to build their own policy module by module.</p>
   </div>
 </div>
 
@@ -91,16 +90,41 @@ features:
   <a href="/robots-txt-examples">See robots.txt examples →</a>
 </div>
 
-## Watch the workflow
-
-<div class="video-frame">
-  <iframe src="https://player.vimeo.com/video/1169756981" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Better Robots.txt demo video"></iframe>
-</div>
-
 ## Why this matters in the AI era
 
 <div class="note-panel">
   Search engines, AI assistants, archive services, and scrapers do not all use your site the same way. Some index pages for classic search. Some use pages to answer questions in real time. Some train models. Some simply copy. Better Robots.txt helps you state a clearer crawl policy for each category.
+</div>
+
+## Built for real website types
+
+<div class="link-grid">
+  <div class="br-card">
+    <h3>Small business sites</h3>
+    <p>Start with Essential and keep things simple.</p>
+    <p><a href="/presets">Choose a preset →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Publishers and content teams</h3>
+    <p>Use AI-First when AI usage policy matters to your business.</p>
+    <p><a href="/robots-txt-examples">See examples →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>WooCommerce stores</h3>
+    <p>Use cleanup rules to reduce crawl waste on low-value paths.</p>
+    <p><a href="/robots-txt-examples">See store examples →</a></p>
+  </div>
+  <div class="br-card">
+    <h3>Protection-first sites</h3>
+    <p>Use Fortress when archive and scraping exposure matter more.</p>
+    <p><a href="/pricing">Compare editions →</a></p>
+  </div>
+</div>
+
+## Watch the workflow
+
+<div class="video-frame">
+  <iframe src="https://player.vimeo.com/video/1169756981" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Better Robots.txt demo video"></iframe>
 </div>
 
 ## Start here
@@ -119,7 +143,7 @@ features:
   <div class="br-card">
     <h3>Governance</h3>
     <p>Learn what the plugin is, what it is not, and how AI usage signals work.</p>
-    <p><a href="/governance">Read governance →</a></p>
+    <p><a href="/governance/">Read governance →</a></p>
   </div>
   <div class="br-card">
     <h3>Download</h3>

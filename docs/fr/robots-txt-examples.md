@@ -1,16 +1,16 @@
 ---
 title: Exemples de robots.txt
-description: Voir des exemples Better Robots.txt pour les éditeurs, les boutiques WooCommerce et les configurations orientées protection.
+description: Consultez des exemples Better Robots.txt pour les éditeurs, les boutiques WooCommerce et les configurations orientées protection.
 schemaType: TechArticle
 ---
 
 # Exemples de robots.txt
 
-Ces exemples sont illustratifs. Ils montrent le type de politique que Better Robots.txt peut aider à publier. Ils ne remplacent pas une analyse spécifique du site ni une décision d’infrastructure.
+Ces exemples sont illustratifs. Ils montrent le type de politique que Better Robots.txt peut t’aider à publier. Ils ne remplacent ni un conseil juridique, ni un durcissement serveur, ni une réflexion adaptée à ton site.
 
-## Exemple 1 — site vitrine
+## Exemple 1 — Site vitrine / petite entreprise
 
-**Préréglage recommandé :** Essential
+**Preset recommandé :** Essential
 
 ```txt
 User-agent: *
@@ -18,14 +18,14 @@ Allow: /
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Pourquoi c’est pertinent :
-- site public simple
-- pas besoin de restrictions lourdes
-- accès clair pour les moteurs de recherche
+**Pourquoi c’est pertinent**
+- Le site est public et veut être découvert.
+- Il n’y a pas de raison forte de devenir restrictif trop tôt.
+- L’objectif principal est une politique par défaut plus propre et plus sûre.
 
-## Exemple 2 — site de contenu avec politique orientée IA
+## Exemple 2 — Site de contenu avec politique IA plus claire
 
-**Préréglage recommandé :** AI-First
+**Preset recommandé :** AI-First
 
 ```txt
 User-agent: *
@@ -35,14 +35,14 @@ Sitemap: https://example.com/sitemap.xml
 # Content-Signal: search=yes, ai-input=yes, ai-train=no
 ```
 
-Pourquoi c’est pertinent :
-- laisse la recherche classique ouverte
-- exprime une position plus restrictive sur l’entraînement des modèles
-- mieux adapté à un site éditorial qu’un fichier par défaut vide
+**Pourquoi c’est pertinent**
+- La recherche classique reste ouverte.
+- La position sur l’entraînement des modèles est plus restrictive.
+- Cela correspond mieux à un contexte éditorial qu’un simple fichier par défaut.
 
-## Exemple 3 — boutique WooCommerce
+## Exemple 3 — Boutique WooCommerce
 
-**Préréglage recommandé :** Essential ou Pro selon l’échelle
+**Preset recommandé :** Essential ou Pro selon l’ampleur
 
 ```txt
 User-agent: *
@@ -53,14 +53,14 @@ Disallow: /my-account/
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Pourquoi c’est pertinent :
-- bloque les chemins privés ou de faible valeur
-- aide à réduire le gaspillage de crawl
-- garde une meilleure lisibilité pour les pages produits
+**Pourquoi c’est pertinent**
+- On bloque des chemins privés ou de faible valeur.
+- On réduit le gaspillage de crawl.
+- On garde une meilleure clarté pour la découverte produit.
 
-## Exemple 4 — site orienté protection
+## Exemple 4 — Site orienté protection
 
-**Préréglage recommandé :** Fortress
+**Preset recommandé :** Fortress
 
 ```txt
 User-agent: *
@@ -70,11 +70,19 @@ Disallow: /archive/
 Sitemap: https://example.com/sitemap.xml
 ```
 
-Pourquoi c’est pertinent :
-- politique plus stricte
-- logique protection-first
-- meilleur ajustement quand l’archive et l’exposition au scraping comptent
+**Pourquoi c’est pertinent**
+- La politique est plus stricte.
+- Le raisonnement est protection-first.
+- C’est plus cohérent quand l’archive ou le scraping sont des enjeux.
 
-## Comment lire ces exemples
+## Comment utiliser ces exemples
 
-Il faut les lire comme des modèles de politique, pas comme des règles magiques. Le bon robots.txt dépend toujours du site, de son modèle économique et des compromis acceptés.
+- Pars du contexte métier qui ressemble au tien.
+- Utilise l’exemple pour comprendre la logique, pas pour copier aveuglément.
+- Laisse le plugin générer le fichier final, puis vérifie-le avant publication.
+
+## Continuer
+
+- [Choisir un preset](/fr/presets)
+- [Comparer les plans](/fr/pricing)
+- [Lire la gouvernance](/fr/governance/)
