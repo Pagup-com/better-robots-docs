@@ -113,10 +113,10 @@ function pageSchema(path: string, title: string, description: string, pageType: 
 const enNav = [
   { text: 'Home', link: '/' },
   { text: 'Features', link: '/features' },
+  { text: 'Presets', link: '/presets' },
+  { text: 'Examples', link: '/robots-txt-examples' },
   { text: 'Pricing', link: '/pricing' },
   { text: 'Download', link: '/download' },
-  { text: 'Quick Start', link: '/quick-start' },
-  { text: 'Settings', link: '/settings' },
   { text: 'Governance', link: '/governance/' },
   { text: 'Contact', link: '/contact' }
 ]
@@ -124,10 +124,10 @@ const enNav = [
 const frNav = [
   { text: 'Accueil', link: '/fr/' },
   { text: 'Fonctionnalités', link: '/fr/features' },
+  { text: 'Presets', link: '/fr/presets' },
+  { text: 'Exemples', link: '/fr/robots-txt-examples' },
   { text: 'Tarifs', link: '/fr/pricing' },
   { text: 'Télécharger', link: '/fr/download' },
-  { text: 'Démarrage rapide', link: '/fr/quick-start' },
-  { text: 'Paramètres', link: '/fr/settings' },
   { text: 'Gouvernance', link: '/fr/governance/' },
   { text: 'Contact', link: '/fr/contact' }
 ]
@@ -138,6 +138,8 @@ const enSidebar = [
     items: [
       { text: 'About', link: '/about' },
       { text: 'Features', link: '/features' },
+      { text: 'Presets', link: '/presets' },
+      { text: 'Robots.txt Examples', link: '/robots-txt-examples' },
       { text: 'Pricing', link: '/pricing' },
       { text: 'Download', link: '/download' },
       { text: 'Demo', link: '/demo' },
@@ -187,7 +189,7 @@ const enSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Examples', link: '/examples' },
+      { text: 'Examples Hub', link: '/examples' },
       { text: 'Migration Guide', link: '/examples/migration' },
       { text: 'Best Practices', link: '/best-practices' },
       { text: 'Troubleshooting', link: '/troubleshooting' },
@@ -202,6 +204,8 @@ const frSidebar = [
     items: [
       { text: 'À propos', link: '/fr/about' },
       { text: 'Fonctionnalités', link: '/fr/features' },
+      { text: 'Presets', link: '/fr/presets' },
+      { text: 'Exemples de robots.txt', link: '/fr/robots-txt-examples' },
       { text: 'Tarifs', link: '/fr/pricing' },
       { text: 'Télécharger', link: '/fr/download' },
       { text: 'Démo', link: '/fr/demo' },
@@ -221,7 +225,7 @@ const frSidebar = [
   {
     text: 'Assistant et paramètres',
     items: [
-      { text: 'Vue d’ensemble de l’assistant', link: '/fr/wizard/' },
+      { text: 'Vue d’ensemble du wizard', link: '/fr/wizard/' },
       { text: 'Vue d’ensemble des paramètres', link: '/fr/settings' },
       { text: 'Sélection du mode', link: '/fr/settings/mode-selection' },
       { text: 'Visibilité des moteurs de recherche', link: '/fr/settings/search-visibility' },
@@ -251,7 +255,7 @@ const frSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Exemples', link: '/fr/examples' },
+      { text: 'Hub des exemples', link: '/fr/examples' },
       { text: 'Guide de migration', link: '/fr/examples/migration' },
       { text: 'Bonnes pratiques', link: '/fr/best-practices' },
       { text: 'Dépannage', link: '/fr/troubleshooting' },
