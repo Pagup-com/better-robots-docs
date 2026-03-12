@@ -56,7 +56,7 @@ jobs:
       run: pnpm install --frozen-lockfile
 
     - name: Validate content
-      run: echo "Skipping validation temporarily"
+     run: node scripts/validate-content.mjs
   
     - name: Build
       run: pnpm docs:build
