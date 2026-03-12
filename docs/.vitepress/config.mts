@@ -7,9 +7,10 @@ const GITHUB_REPO = 'https://github.com/Pagup-com/better-robots-docs'
 const PLUGIN_REPO = 'https://github.com/GautierDorval/better-robots-txt'
 const PLUGIN_URL = 'https://wordpress.org/plugins/better-robots-txt/'
 
-function pageToPath(page: string) {
-  let clean = page.replace(/\\/g, '/').replace(/\.md$/, '')
+function pageToPath(relativePath: string) {
+  let clean = relativePath.replace(/\\/g, '/').replace(/\.md$/, '')
   if (clean === 'index') return '/'
+  if (clean === 'fr/index') return '/fr/'
   if (clean.endsWith('/index')) clean = clean.slice(0, -('/index'.length))
   return `/${clean}/`
 }
@@ -61,22 +62,26 @@ function globalSchemas() {
 
 function breadcrumbSchema(path: string, title: string) {
   const parts = path.split('/').filter(Boolean)
-  const items = [{
-    '@type': 'ListItem',
-    position: 1,
-    name: 'Home',
-    item: SITE_URL + '/'
-  }]
+
+  const items: Array<Record<string, string | number>> = [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: `${SITE_URL}/`
+    }
+  ]
 
   let current = ''
   let position = 2
+
   for (const part of parts) {
     current += '/' + part
     items.push({
       '@type': 'ListItem',
       position,
       name: part === 'fr' ? 'FR' : part.replace(/-/g, ' '),
-      item: SITE_URL + current + '/'
+      item: `${SITE_URL}${current}/`
     })
     position += 1
   }
@@ -95,30 +100,73 @@ function breadcrumbSchema(path: string, title: string) {
 function faqEntitiesFor(path: string) {
   const map: Record<string, Array<{ question: string; answer: string }>> = {
     '/faq/': [
-      { question: 'Is the free edition useful on its own?', answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.' },
-      { question: 'Do screenshots only show the free edition?', answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.' },
-      { question: 'Can I block AI crawlers?', answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.' },
-      { question: 'Why not treat all crawlers the same?', answer: 'Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not create the same value or risk profile.' },
-      { question: 'Is Better Robots.txt a security product?', answer: 'No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.' },
-      { question: 'Do I need to understand robots.txt to use the plugin?', answer: 'No. For many websites, a preset plus a final review is enough.' },
-      { question: 'Where do I get support?', answer: 'Use support@better-robots.com or see the Contact page.' }
+      {
+        question: 'Is the free edition useful on its own?',
+        answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.'
+      },
+      {
+        question: 'Do screenshots only show the free edition?',
+        answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.'
+      },
+      {
+        question: 'Can I block AI crawlers?',
+        answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.'
+      },
+      {
+        question: 'Why not treat all crawlers the same?',
+        answer: 'Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not create the same value or risk profile.'
+      },
+      {
+        question: 'Is Better Robots.txt a security product?',
+        answer: 'No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.'
+      },
+      {
+        question: 'Do I need to understand robots.txt to use the plugin?',
+        answer: 'No. For many websites, a preset plus a final review is enough.'
+      },
+      {
+        question: 'Where do I get support?',
+        answer: 'Use support@better-robots.com or see the Contact page.'
+      }
     ],
     '/fr/faq/': [
-      { question: 'La version gratuite est-elle utile à elle seule ?', answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.' },
-      { question: 'Les captures montrent-elles uniquement la version gratuite ?', answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.' },
-      { question: 'Puis-je bloquer les crawlers IA ?', answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.' },
-      { question: 'Pourquoi ne pas traiter tous les crawlers de la même manière ?', answer: 'Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.' },
-      { question: 'Better Robots.txt est-il un produit de sécurité ?', answer: 'Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.' },
-      { question: 'Dois-je comprendre robots.txt pour utiliser le plugin ?', answer: 'Non. Pour beaucoup de sites, un preset plus une revue finale suffisent.' },
-      { question: 'Où obtenir du support ?', answer: 'Utilise support@better-robots.com ou consulte la page Contact.' }
+      {
+        question: 'La version gratuite est-elle utile à elle seule ?',
+        answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.'
+      },
+      {
+        question: 'Les captures montrent-elles uniquement la version gratuite ?',
+        answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.'
+      },
+      {
+        question: 'Puis-je bloquer les crawlers IA ?',
+        answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.'
+      },
+      {
+        question: 'Pourquoi ne pas traiter tous les crawlers de la même manière ?',
+        answer: 'Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.'
+      },
+      {
+        question: 'Better Robots.txt est-il un produit de sécurité ?',
+        answer: 'Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.'
+      },
+      {
+        question: 'Dois-je comprendre robots.txt pour utiliser le plugin ?',
+        answer: 'Non. Pour beaucoup de sites, un preset plus une revue finale suffisent.'
+      },
+      {
+        question: 'Où obtenir du support ?',
+        answer: 'Utilise support@better-robots.com ou consulte la page Contact.'
+      }
     ]
   }
+
   return map[path] || []
 }
 
 function pageSchema(path: string, title: string, description: string, pageType: string) {
   const url = `${SITE_URL}${path}`
-  const kind = pageType || 'WebPage'
+  const kind = pageType || 'docs'
   const breadcrumb = breadcrumbSchema(path, title)
 
   if (kind === 'home') {
@@ -419,7 +467,7 @@ export default defineConfig({
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['meta', { property: 'og:site_name', content: 'Better Robots.txt' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['script', { type: 'application/ld+json' }, globalSchemas()],
+    ['script', { type: 'application/ld+json' }, globalSchemas()]
   ],
 
   locales: {
@@ -436,23 +484,34 @@ export default defineConfig({
       description: 'Contrôle du crawl et gouvernance bot / IA pour WordPress.',
       themeConfig: {
         nav: frNav,
-        sidebar: frSidebar,
+        sidebar: frSidebar
       }
     }
   },
 
   transformHead(context) {
-    const path = pageToPath(context.page)
+    const relativePath = context.pageData.relativePath || 'index.md'
+    const path = pageToPath(relativePath)
     const isFr = path === '/fr/' || path.startsWith('/fr/')
     const canonical = `${SITE_URL}${path}`
     const altEn = `${SITE_URL}${englishPath(path)}`
     const altFr = `${SITE_URL}${frenchPath(path)}`
     const locale = localeOf(path)
-    const pageType = context.pageData.frontmatter?.pageType || context.pageData.frontmatter?.schemaType || 'docs'
-    const title = titleTemplate(context.title || context.pageData.title || 'Better Robots.txt')
-    const description = context.description || context.pageData.description || (isFr
-      ? 'Documentation officielle de Better Robots.txt pour WordPress.'
-      : 'Official Better Robots.txt documentation for WordPress.')
+    const pageType =
+      context.pageData.frontmatter?.pageType ||
+      context.pageData.frontmatter?.schemaType ||
+      'docs'
+    const rawTitle =
+      context.pageData.frontmatter?.title ||
+      context.pageData.title ||
+      'Better Robots.txt'
+    const title = titleTemplate(rawTitle)
+    const description =
+      context.pageData.frontmatter?.description ||
+      context.pageData.description ||
+      (isFr
+        ? 'Documentation officielle de Better Robots.txt pour WordPress.'
+        : 'Official Better Robots.txt documentation for WordPress.')
     const ogImage = context.pageData.frontmatter?.ogImage || DEFAULT_OG
 
     return [
@@ -479,14 +538,24 @@ export default defineConfig({
     sidebar: enSidebar,
     socialLinks: [
       { icon: 'github', link: GITHUB_REPO },
-      { icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15a7 7 0 1 1 0 14a7 7 0 0 1 0-14z"/><path d="M5.5 10a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0zm4.5-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6z"/></svg>' }, link: SITE_URL },
-      { icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1 15h-2v-2h2zm2.071-7.071l-.9.92A2.98 2.98 0 0 0 13 13h-2v-.5a4 4 0 0 1 1.172-2.828l1.24-1.26A1.5 1.5 0 1 0 10 7H8a3.5 3.5 0 1 1 7.071 2.929z"/></svg>' }, link: `mailto:${SUPPORT_EMAIL}` }
+      {
+        icon: {
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 18a8 8 0 1 0 0-16a8 8 0 0 0 0 16zm0-15a7 7 0 1 1 0 14a7 7 0 0 1 0-14z"/><path d="M5.5 10a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0zm4.5-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6z"/></svg>'
+        },
+        link: SITE_URL
+      },
+      {
+        icon: {
+          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm1 15h-2v-2h2zm2.071-7.071l-.9.92A2.98 2.98 0 0 0 13 13h-2v-.5a4 4 0 0 1 1.172-2.828l1.24-1.26A1.5 1.5 0 1 0 10 7H8a3.5 3.5 0 1 1 7.071 2.929z"/></svg>'
+        },
+        link: `mailto:${SUPPORT_EMAIL}`
+      }
     ],
     search: { provider: 'local' },
     footer: {
       message: 'Better Robots.txt — human-friendly, machine-first documentation for WordPress crawl governance.',
       copyright: '© 2026 Pagup'
     },
-    outline: { level: [2, 3] },
+    outline: { level: [2, 3] }
   }
 })
