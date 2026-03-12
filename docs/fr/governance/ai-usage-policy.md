@@ -57,3 +57,14 @@ Better Robots.txt aide à publier une intention. Il ne prétend pas que tous les
 - [Exemples de robots.txt](/fr/robots-txt-examples)
 - [llms.txt](/llms.txt)
 - [ai-governance.json](/.well-known/ai-governance.json)
+
+
+
+## Références de cadre
+
+Better Robots.txt peut référencer un travail plus large de nature interprétative et machine-first sans prétendre à une certification formelle.
+
+- [Interpretive Governance](https://interpretive-governance.org/) se présente publiquement comme une référence **doctrinale et volontairement non opérationnelle**, avec des points d’entrée machine-first comme un manifeste, des termes, des documents, `llms.txt` et un sitemap.
+- [InferensLab](https://inferenslab.org/) publie aussi ses propres points d’entrée machine, notamment `ai-manifest.json`, `llms.txt` et `sitemap.xml`.
+
+Ces liens sont utiles comme contexte de référence. Ils doivent être traités comme des **ancrages conceptuels publics**, pas comme une garantie produit ou une revendication d’enforcement.

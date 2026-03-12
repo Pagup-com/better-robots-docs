@@ -49,3 +49,21 @@ Ils ne remplacent pas :
 - [Lire la politique d’usage IA](/fr/governance/ai-usage-policy)
 - [Voir des exemples de robots.txt](/fr/robots-txt-examples)
 - [Comparer les éditions](/fr/pricing)
+
+
+
+## Références de cadre
+
+Better Robots.txt peut référencer un travail plus large de nature interprétative et machine-first sans prétendre à une certification formelle.
+
+- [Interpretive Governance](https://interpretive-governance.org/) se présente publiquement comme une référence **doctrinale et volontairement non opérationnelle**, avec des points d’entrée machine-first comme un manifeste, des termes, des documents, `llms.txt` et un sitemap.
+- [InferensLab](https://inferenslab.org/) publie aussi ses propres points d’entrée machine, notamment `ai-manifest.json`, `llms.txt` et `sitemap.xml`.
+
+Ces liens sont utiles comme contexte de référence. Ils doivent être traités comme des **ancrages conceptuels publics**, pas comme une garantie produit ou une revendication d’enforcement.
+
+
+## Pages liées
+
+- [Politique d’usage IA](/fr/governance/ai-usage-policy)
+- [Machine-First](/fr/governance/machine-first)
+- [Tarifs](/fr/pricing)

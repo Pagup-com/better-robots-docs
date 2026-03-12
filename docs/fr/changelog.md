@@ -1,16 +1,25 @@
 ---
 title: Journal des changements
-description: Suivre les principaux changements de documentation et de site pour Better Robots.txt.
+description: Suivez l’évolution de la documentation et du site public Better Robots.txt.
 schemaType: TechArticle
 ---
 
+
 # Journal des changements
 
-## Orientation actuelle
+## 2026-03 — Lot 3 : extension du contenu
 
-Ce site documente l’expérience actuelle de Better Robots.txt construite autour :
+Cette vague renforce le site autour de :
+- cas d’usage orientés métier
+- meilleures bonnes pratiques
+- dépannage plus clair
+- références de gouvernance plus solides
+- liens publics plus propres entre Better Robots.txt, le cadre de gouvernance et les références machine-first connexes
 
-- des préréglages
+## 2026-03 — Direction actuelle
+
+Le site documente l’expérience actuelle de Better Robots.txt construite autour :
+- des presets
 - d’un setup guidé
 - d’une meilleure clarté Free / Pro / Premium
 - d’une gouvernance orientée IA
@@ -21,7 +30,7 @@ Ce site documente l’expérience actuelle de Better Robots.txt construite autou
 
 - homepage repositionnée autour de la gouvernance guidée du crawl
 - éditions clarifiées
-- préréglages documentés
-- exemples ajoutés
+- presets documentés
+- exemples de robots.txt ajoutés
 - pages contact et gouvernance ajoutées
 - fichiers machine-first publiés à la racine

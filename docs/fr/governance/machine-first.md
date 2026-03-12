@@ -33,3 +33,9 @@ Ces fichiers aident les machines à comprendre :
 
 Ces fichiers ne remplacent pas la documentation humaine.
 Ils la complètent.
+
+
+## Surfaces de référence
+
+- [Interpretive Governance](https://interpretive-governance.org/)
+- [InferensLab](https://inferenslab.org/)

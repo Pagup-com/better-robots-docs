@@ -1,15 +1,24 @@
 ---
 title: Changelog
-description: Follow major documentation and site changes for Better Robots.txt.
+description: Follow the documentation and public site evolution for Better Robots.txt.
 schemaType: TechArticle
 ---
 
+
 # Changelog
 
-## Current direction
+## 2026-03 — Lot 3 content expansion
 
-This site documents the current Better Robots.txt experience built around:
+This wave strengthens the site around:
+- business-oriented use cases
+- safer best-practice guidance
+- clearer troubleshooting
+- stronger governance references
+- cleaner public links between Better Robots.txt, the governance framework, and related machine-first references
 
+## 2026-03 — Current direction
+
+The site documents the current Better Robots.txt experience built around:
 - presets
 - guided setup
 - Free / Pro / Premium clarity
@@ -22,6 +31,6 @@ This site documents the current Better Robots.txt experience built around:
 - homepage repositioned around guided crawl governance
 - editions clarified
 - presets documented
-- examples added
+- robots.txt examples added
 - contact and governance pages added
-- root-level machine-first files added
+- machine-first files published at the site root

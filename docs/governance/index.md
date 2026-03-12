@@ -21,23 +21,7 @@ A modern website may be visited by:
 
 These categories do not all serve the same purpose, and they should not automatically receive the same treatment.
 
-## How automated systems use a website
-
-### Search indexing
-A system may crawl a page so it can appear in classic search results.
-
-### AI answer generation
-A system may use a page to answer user questions in real time or to retrieve passages for generated answers.
-
-### AI training
-A system may use public content to improve or train models over time.
-
-### Archive, analysis, and scraping
-A system may collect content for archives, SEO tooling, benchmarking, or large-scale extraction.
-
-These are not the same use cases. A site owner may reasonably want to express different preferences for each one.
-
-## What Better Robots.txt helps you express
+## What the plugin helps you express
 
 Better Robots.txt helps you express:
 
@@ -51,7 +35,8 @@ Better Robots.txt helps you express:
 
 robots.txt, llms.txt, and similar signals are policy signals.
 
-They are useful because they express intent clearly. They are not the same thing as:
+They are useful because they express intent clearly.
+They are not the same thing as:
 
 - WAF rules
 - IP blocking
@@ -59,18 +44,26 @@ They are useful because they express intent clearly. They are not the same thing
 - access control
 - legal enforcement
 
-## Why a site owner may want protection
-
-A site owner may want more protection because:
-
-- the site contains original editorial work
-- the site contains commercial or sensitive material
-- broad crawling wastes server resources
-- low-value bots create noise
-- training use is not the same as search visibility
-
-## Continue
+## Next steps
 
 - [Read the AI Usage Policy](/governance/ai-usage-policy)
-- [See robots.txt examples](/robots-txt-examples)
+- [See robots.txt Examples](/robots-txt-examples)
 - [Compare editions](/pricing)
+
+
+
+## Framework references
+
+Better Robots.txt can reference broader interpretive and machine-first work without claiming formal certification.
+
+- [Interpretive Governance](https://interpretive-governance.org/) is presented publicly as a **doctrinal and intentionally non-operational** reference with machine-first entrypoints such as a manifest, terms, documents, `llms.txt`, and a sitemap.
+- [InferensLab](https://inferenslab.org/) publishes its own machine entrypoints, including `ai-manifest.json`, `llms.txt`, and `sitemap.xml`.
+
+These links are useful as reference context. They should be treated as **public conceptual anchors**, not as a product guarantee or enforcement claim.
+
+
+## Related pages
+
+- [AI Usage Policy](/governance/ai-usage-policy)
+- [Machine-First](/governance/machine-first)
+- [Pricing](/pricing)

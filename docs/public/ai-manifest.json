@@ -10,5 +10,9 @@
     "pro_trial": "https://checkout.freemius.com/plugin/2345/plan/3584/?trial=paid",
     "premium": "https://checkout.freemius.com/plugin/2345/plan/41928/",
     "premium_trial": "https://checkout.freemius.com/plugin/2345/plan/41928/?trial=paid"
-  }
+  },
+  "reference_frameworks": [
+    "https://interpretive-governance.org/",
+    "https://inferenslab.org/"
+  ]
 }

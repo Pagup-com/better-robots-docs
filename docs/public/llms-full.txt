@@ -17,3 +17,7 @@ The product is designed to help website owners publish a clearer crawl policy fo
 
 ## Important note
 Signals such as robots.txt, llms.txt, and AI usage signals are useful because they express intent clearly. They are not the same thing as forced access control.
+
+## Reference frameworks
+- Interpretive Governance: https://interpretive-governance.org/
+- InferensLab: https://inferenslab.org/

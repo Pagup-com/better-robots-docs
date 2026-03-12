@@ -33,3 +33,9 @@ These files help machines understand:
 
 These files do not replace the human-facing documentation.
 They complement it.
+
+
+## Reference surfaces
+
+- [Interpretive Governance](https://interpretive-governance.org/)
+- [InferensLab](https://inferenslab.org/)
