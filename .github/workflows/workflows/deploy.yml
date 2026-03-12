@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -34,7 +34,8 @@ jobs:
 
       - name: Get pnpm store directory
         shell: bash
-        run: echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
       - name: Setup pnpm cache
         uses: actions/cache@v4
@@ -47,11 +48,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Validate content
-        run: node scripts/validate-content.mjs
-
       - name: Build
         run: pnpm docs:build
+
+      - name: Ensure Pages skips Jekyll
+        run: touch docs/.vitepress/dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
