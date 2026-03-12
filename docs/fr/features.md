@@ -4,6 +4,7 @@ description: Explorer les fonctionnalités Better Robots.txt pour la recherche, 
 schemaType: TechArticle
 ---
 
+
 # Fonctionnalités
 
 Better Robots.txt apporte une manière structurée de décider comment différentes catégories de crawlers doivent interagir avec un site WordPress.
@@ -40,6 +41,13 @@ Décider si les plateformes sociales doivent générer des aperçus enrichis qua
 ### Review & Save
 Prévisualiser la sortie générée avant publication.
 
-## Le vrai but de cet ensemble
+## Pourquoi c’est important
 
 Le plugin ne cherche pas à “avoir l’air avancé”. Il cherche à rendre la politique de crawl plus claire, plus sûre et plus simple à comprendre.
+
+## Pages suivantes
+
+- [Presets](/fr/presets)
+- [Tarifs](/fr/pricing)
+- [Exemples de robots.txt](/fr/robots-txt-examples)
+- [Gouvernance](/fr/governance/)

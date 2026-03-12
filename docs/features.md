@@ -4,6 +4,7 @@ description: Explore Better Robots.txt features across search, AI governance, SE
 schemaType: TechArticle
 ---
 
+
 # Features
 
 Better Robots.txt gives you a structured way to decide how different crawler categories should interact with a WordPress site.
@@ -40,6 +41,13 @@ Decide whether social platforms should generate rich previews when links are sha
 ### Review & Save
 Preview the generated output before you publish it.
 
-## The point of the feature set
+## Why this matters
 
-The plugin is not trying to look “advanced” for its own sake. It is trying to make crawl policy clearer, safer, and easier to reason about.
+The plugin does not try to look “advanced” for its own sake. It is built to make crawl policy clearer, safer, and easier to reason about.
+
+## Next pages
+
+- [Presets](/presets)
+- [Pricing](/pricing)
+- [Robots.txt Examples](/robots-txt-examples)
+- [Governance](/governance/)
