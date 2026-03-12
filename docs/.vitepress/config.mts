@@ -7,8 +7,8 @@ const GITHUB_REPO = 'https://github.com/Pagup-com/better-robots-docs'
 const PLUGIN_REPO = 'https://github.com/GautierDorval/better-robots-txt'
 const PLUGIN_URL = 'https://wordpress.org/plugins/better-robots-txt/'
 
-function pageToPath(relativePath: string) {
-  let clean = relativePath.replace(/\\/g, '/').replace(/\.md$/, '')
+function pageToPath(page: string) {
+  let clean = page.replace(/\\/g, '/').replace(/\.md$/, '')
   if (clean === 'index') return '/'
   if (clean === 'fr/index') return '/fr/'
   if (clean.endsWith('/index')) clean = clean.slice(0, -('/index'.length))
@@ -62,26 +62,24 @@ function globalSchemas() {
 
 function breadcrumbSchema(path: string, title: string) {
   const parts = path.split('/').filter(Boolean)
-
   const items: Array<Record<string, string | number>> = [
     {
       '@type': 'ListItem',
       position: 1,
       name: 'Home',
-      item: `${SITE_URL}/`
+      item: SITE_URL + '/'
     }
   ]
 
   let current = ''
   let position = 2
-
   for (const part of parts) {
     current += '/' + part
     items.push({
       '@type': 'ListItem',
       position,
       name: part === 'fr' ? 'FR' : part.replace(/-/g, ' '),
-      item: `${SITE_URL}${current}/`
+      item: SITE_URL + current + '/'
     })
     position += 1
   }
@@ -100,73 +98,30 @@ function breadcrumbSchema(path: string, title: string) {
 function faqEntitiesFor(path: string) {
   const map: Record<string, Array<{ question: string; answer: string }>> = {
     '/faq/': [
-      {
-        question: 'Is the free edition useful on its own?',
-        answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.'
-      },
-      {
-        question: 'Do screenshots only show the free edition?',
-        answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.'
-      },
-      {
-        question: 'Can I block AI crawlers?',
-        answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.'
-      },
-      {
-        question: 'Why not treat all crawlers the same?',
-        answer: 'Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not create the same value or risk profile.'
-      },
-      {
-        question: 'Is Better Robots.txt a security product?',
-        answer: 'No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.'
-      },
-      {
-        question: 'Do I need to understand robots.txt to use the plugin?',
-        answer: 'No. For many websites, a preset plus a final review is enough.'
-      },
-      {
-        question: 'Where do I get support?',
-        answer: 'Use support@better-robots.com or see the Contact page.'
-      }
+      { question: 'Is the free edition useful on its own?', answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.' },
+      { question: 'Do screenshots only show the free edition?', answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.' },
+      { question: 'Can I block AI crawlers?', answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.' },
+      { question: 'Why not treat all crawlers the same?', answer: 'Because search engines, AI systems, archive services, SEO tools, and abusive crawlers do not create the same value or risk profile.' },
+      { question: 'Is Better Robots.txt a security product?', answer: 'No. It helps you publish crawl policy. It does not replace WAF rules, authentication, or infrastructure controls.' },
+      { question: 'Do I need to understand robots.txt to use the plugin?', answer: 'No. For many websites, a preset plus a final review is enough.' },
+      { question: 'Where do I get support?', answer: 'Use support@better-robots.com or see the Contact page.' }
     ],
     '/fr/faq/': [
-      {
-        question: 'La version gratuite est-elle utile à elle seule ?',
-        answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.'
-      },
-      {
-        question: 'Les captures montrent-elles uniquement la version gratuite ?',
-        answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.'
-      },
-      {
-        question: 'Puis-je bloquer les crawlers IA ?',
-        answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.'
-      },
-      {
-        question: 'Pourquoi ne pas traiter tous les crawlers de la même manière ?',
-        answer: 'Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.'
-      },
-      {
-        question: 'Better Robots.txt est-il un produit de sécurité ?',
-        answer: 'Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.'
-      },
-      {
-        question: 'Dois-je comprendre robots.txt pour utiliser le plugin ?',
-        answer: 'Non. Pour beaucoup de sites, un preset plus une revue finale suffisent.'
-      },
-      {
-        question: 'Où obtenir du support ?',
-        answer: 'Utilise support@better-robots.com ou consulte la page Contact.'
-      }
+      { question: 'La version gratuite est-elle utile à elle seule ?', answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.' },
+      { question: 'Les captures montrent-elles uniquement la version gratuite ?', answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.' },
+      { question: 'Puis-je bloquer les crawlers IA ?', answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.' },
+      { question: 'Pourquoi ne pas traiter tous les crawlers de la même manière ?', answer: 'Parce que moteurs de recherche, systèmes IA, services d’archive, outils SEO et crawlers abusifs n’apportent pas la même valeur ni le même niveau de risque.' },
+      { question: 'Better Robots.txt est-il un produit de sécurité ?', answer: 'Non. Il aide à publier une politique de crawl. Il ne remplace pas des règles WAF, une authentification ou des contrôles d’infrastructure.' },
+      { question: 'Dois-je comprendre robots.txt pour utiliser le plugin ?', answer: 'Non. Pour beaucoup de sites, un preset plus une revue finale suffisent.' },
+      { question: 'Où obtenir du support ?', answer: 'Utilise support@better-robots.com ou consulte la page Contact.' }
     ]
   }
-
   return map[path] || []
 }
 
 function pageSchema(path: string, title: string, description: string, pageType: string) {
   const url = `${SITE_URL}${path}`
-  const kind = pageType || 'docs'
+  const kind = pageType || 'WebPage'
   const breadcrumb = breadcrumbSchema(path, title)
 
   if (kind === 'home') {
@@ -377,7 +332,7 @@ const enSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Examples', link: '/examples' },
+      { text: 'Examples Hub', link: '/examples' },
       { text: 'Migration Guide', link: '/examples/migration' },
       { text: 'Best Practices', link: '/best-practices' },
       { text: 'Troubleshooting', link: '/troubleshooting' },
@@ -443,7 +398,7 @@ const frSidebar = [
   {
     text: 'Guides',
     items: [
-      { text: 'Exemples', link: '/fr/examples' },
+      { text: 'Hub des exemples', link: '/fr/examples' },
       { text: 'Guide de migration', link: '/fr/examples/migration' },
       { text: 'Bonnes pratiques', link: '/fr/best-practices' },
       { text: 'Dépannage', link: '/fr/troubleshooting' },
@@ -481,37 +436,26 @@ export default defineConfig({
       label: 'Français',
       lang: 'fr',
       title: 'Better Robots.txt',
-      description: 'Contrôle du crawl et gouvernance bot / IA pour WordPress.',
-      themeConfig: {
-        nav: frNav,
-        sidebar: frSidebar
-      }
+      description: 'Contrôle du crawl et gouvernance bot / IA pour WordPress.'
     }
   },
 
   transformHead({ pageData }) {
-    const relativePath = pageData.relativePath || 'index.md'
-    const path = pageToPath(relativePath)
+    const path = pageToPath(pageData.relativePath)
     const isFr = path === '/fr/' || path.startsWith('/fr/')
     const canonical = `${SITE_URL}${path}`
     const altEn = `${SITE_URL}${englishPath(path)}`
     const altFr = `${SITE_URL}${frenchPath(path)}`
     const locale = localeOf(path)
-    const pageType =
-      pageData.frontmatter?.pageType ||
-      pageData.frontmatter?.schemaType ||
-      'docs'
-    const rawTitle =
-      pageData.frontmatter?.title ||
-      pageData.title ||
-      'Better Robots.txt'
-    const title = titleTemplate(rawTitle)
+    const pageType = pageData.frontmatter?.pageType || pageData.frontmatter?.schemaType || 'docs'
+    const title = titleTemplate((pageData.frontmatter?.title as string) || pageData.title || 'Better Robots.txt')
     const description =
-      pageData.frontmatter?.description ||
+      (pageData.frontmatter?.description as string) ||
+      pageData.description ||
       (isFr
         ? 'Documentation officielle de Better Robots.txt pour WordPress.'
         : 'Official Better Robots.txt documentation for WordPress.')
-    const ogImage = pageData.frontmatter?.ogImage || DEFAULT_OG
+    const ogImage = (pageData.frontmatter?.ogImage as string) || DEFAULT_OG
 
     return [
       ['link', { rel: 'canonical', href: canonical }],
@@ -527,7 +471,7 @@ export default defineConfig({
       ['meta', { name: 'twitter:title', content: title }],
       ['meta', { name: 'twitter:description', content: description }],
       ['meta', { name: 'twitter:image', content: `${SITE_URL}${ogImage}` }],
-      ['script', { type: 'application/ld+json' }, pageSchema(path, rawTitle, description, pageType)]
+      ['script', { type: 'application/ld+json' }, pageSchema(path, title, description, pageType)]
     ]
   },
 
