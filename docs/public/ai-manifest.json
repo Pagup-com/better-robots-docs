@@ -14,5 +14,13 @@
   "reference_frameworks": [
     "https://interpretive-governance.org/",
     "https://inferenslab.org/"
-  ]
+  ],
+  "machine_files": {
+    "robots": "https://better-robots.com/robots.txt",
+    "llms": "https://better-robots.com/llms.txt",
+    "llms_full": "https://better-robots.com/llms-full.txt",
+    "ai_governance": "https://better-robots.com/.well-known/ai-governance.json",
+    "humans": "https://better-robots.com/humans.txt",
+    "links": "https://better-robots.com/links.json"
+  }
 }

@@ -10,5 +10,6 @@
   "docs_repo": "https://github.com/Pagup-com/better-robots-docs",
   "product_repo": "https://github.com/GautierDorval/better-robots-txt",
   "interpretive_governance": "https://interpretive-governance.org/",
-  "inferenslab": "https://inferenslab.org/"
+  "inferenslab": "https://inferenslab.org/",
+  "ai_governance": "https://better-robots.com/.well-known/ai-governance.json"
 }

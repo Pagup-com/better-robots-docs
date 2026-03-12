@@ -23,6 +23,19 @@ function toUrl(file) {
   return null
 }
 
+function alternatesFor(url, allUrls) {
+  const normalized = url.replace(siteUrl, '')
+  const isFr = normalized === '/fr/' || normalized.startsWith('/fr/')
+  const enPath = isFr ? normalized.replace(/^\/fr/, '') || '/' : normalized
+  const frPath = isFr ? normalized : (normalized === '/' ? '/fr/' : `/fr${normalized}`)
+  const out = []
+  const enUrl = `${siteUrl}${enPath}`
+  const frUrl = `${siteUrl}${frPath}`
+  if (allUrls.has(enUrl)) out.push({ hreflang: 'en', href: enUrl })
+  if (allUrls.has(frUrl)) out.push({ hreflang: 'fr', href: frUrl })
+  return out
+}
+
 async function main() {
   await fs.mkdir(distDir, { recursive: true })
   await fs.writeFile(path.join(distDir, '.nojekyll'), '', 'utf8')
@@ -35,9 +48,27 @@ async function main() {
     .filter(Boolean)
     .sort()
 
+  const pageSet = new Set(pages)
   const lastmod = new Date().toISOString()
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages.map(url => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${url === siteUrl + '/' ? '1.0' : '0.7'}</priority>\n  </url>`).join('\n')}\n</urlset>\n`
-  await fs.writeFile(path.join(distDir, 'sitemap.xml'), xml, 'utf8')
+  const xml = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
+  ]
+
+  for (const url of pages) {
+    xml.push('  <url>')
+    xml.push(`    <loc>${url}</loc>`)
+    for (const alt of alternatesFor(url, pageSet)) {
+      xml.push(`    <xhtml:link rel="alternate" hreflang="${alt.hreflang}" href="${alt.href}" />`)
+    }
+    xml.push(`    <lastmod>${lastmod}</lastmod>`)
+    xml.push('    <changefreq>weekly</changefreq>')
+    xml.push(`    <priority>${url === siteUrl + '/' ? '1.0' : '0.7'}</priority>`)
+    xml.push('  </url>')
+  }
+
+  xml.push('</urlset>')
+  await fs.writeFile(path.join(distDir, 'sitemap.xml'), xml.join('\n'), 'utf8')
 }
 
 main().catch(err => {
