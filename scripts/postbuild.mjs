@@ -44,6 +44,9 @@ async function main() {
   const pages = files
     .filter(file => file.endsWith('.html'))
     .filter(file => !file.endsWith('/404.html'))
+    .filter(file => !file.includes('/public/'))
+    .filter(file => !file.endsWith('/README.html'))
+    .filter(file => !file.endsWith('/pro.html'))
     .map(toUrl)
     .filter(Boolean)
     .sort()

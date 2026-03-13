@@ -16,10 +16,10 @@ hero:
       link: https://wordpress.org/plugins/better-robots-txt/
     - theme: alt
       text: Comparer les plans
-      link: /fr/pricing/
+      link: /fr/pricing
     - theme: alt
       text: Voir la démo
-      link: /fr/demo/
+      link: /fr/demo
 features:
   - icon: "🧭"
     title: "Presets"

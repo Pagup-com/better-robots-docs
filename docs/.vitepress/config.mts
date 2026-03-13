@@ -97,7 +97,7 @@ function breadcrumbSchema(path: string, title: string) {
 
 function faqEntitiesFor(path: string) {
   const map: Record<string, Array<{ question: string; answer: string }>> = {
-    '/faq/': [
+    '/faq': [
       { question: 'Is the free edition useful on its own?', answer: 'Yes. The free edition already gives you guided setup, a useful preset, core controls, and a final preview step.' },
       { question: 'Do screenshots only show the free edition?', answer: 'No. Screenshots on this site may show Free, Pro, or Premium capabilities.' },
       { question: 'Can I block AI crawlers?', answer: 'You can configure AI-related behavior and publish AI usage preferences, but these remain declarative signals, not hard enforcement.' },
@@ -106,7 +106,7 @@ function faqEntitiesFor(path: string) {
       { question: 'Do I need to understand robots.txt to use the plugin?', answer: 'No. For many websites, a preset plus a final review is enough.' },
       { question: 'Where do I get support?', answer: 'Use support@better-robots.com or see the Contact page.' }
     ],
-    '/fr/faq/': [
+    '/fr/faq': [
       { question: 'La version gratuite est-elle utile à elle seule ?', answer: 'Oui. La version gratuite donne déjà un setup guidé, un preset utile, des contrôles essentiels et une étape finale de prévisualisation.' },
       { question: 'Les captures montrent-elles uniquement la version gratuite ?', answer: 'Non. Les captures affichées sur ce site peuvent montrer des fonctions Free, Pro ou Premium.' },
       { question: 'Puis-je bloquer les crawlers IA ?', answer: 'Tu peux configurer le comportement lié à l’IA et publier des préférences d’usage, mais ces signaux restent déclaratifs, pas coercitifs.' },
@@ -138,6 +138,13 @@ function pageSchema(path: string, title: string, description: string, pageType: 
         publisher: {
           '@type': 'Organization',
           name: 'Pagup'
+        },
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          name: 'Free edition',
+          url: PLUGIN_URL
         }
       },
       breadcrumb
@@ -178,6 +185,7 @@ function pageSchema(path: string, title: string, description: string, pageType: 
         name: 'Better Robots.txt demo',
         embedUrl: 'https://player.vimeo.com/video/1169756981',
         thumbnailUrl: `${SITE_URL}/og/demo.jpg`,
+        uploadDate: '2026-03-01',
         description,
         publisher: {
           '@type': 'Organization',
