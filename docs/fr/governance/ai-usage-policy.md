@@ -53,7 +53,7 @@ Better Robots.txt aide à publier une intention. Il ne prétend pas que tous les
 
 ## Références liées
 
-- [Vue d’ensemble de la gouvernance](/fr/governance)
+- [Vue d’ensemble de la gouvernance](/fr/governance/)
 - [Exemples de robots.txt](/fr/robots-txt-examples)
 - [llms.txt](/llms.txt)
 - [ai-governance.json](/.well-known/ai-governance.json)

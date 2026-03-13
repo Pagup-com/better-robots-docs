@@ -53,7 +53,7 @@ Better Robots.txt helps publish intent. It does not claim that every system will
 
 ## Related references
 
-- [Governance overview](/governance)
+- [Governance overview](/governance/)
 - [robots.txt examples](/robots-txt-examples)
 - [llms.txt](/llms.txt)
 - [ai-governance.json](/.well-known/ai-governance.json)
