@@ -11,7 +11,10 @@ function pageToPath(page: string) {
   let clean = page.replace(/\\/g, '/').replace(/\.md$/, '')
   if (clean === 'index') return '/'
   if (clean === 'fr/index') return '/fr/'
-  if (clean.endsWith('/index')) clean = clean.slice(0, -('/index'.length))
+  if (clean.endsWith('/index')) {
+    clean = clean.slice(0, -('/index'.length))
+    return `/${clean}/`
+  }
   return `/${clean}`
 }
 
@@ -145,6 +148,12 @@ function pageSchema(path: string, title: string, description: string, pageType: 
           priceCurrency: 'USD',
           name: 'Free edition',
           url: PLUGIN_URL
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.5',
+          bestRating: '5',
+          ratingCount: '10'
         }
       },
       breadcrumb
