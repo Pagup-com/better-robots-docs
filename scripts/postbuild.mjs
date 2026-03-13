@@ -19,7 +19,7 @@ function toUrl(file) {
   const rel = file.replace(distDir, '').replace(/\\/g, '/')
   if (rel === '/index.html') return `${siteUrl}/`
   if (rel.endsWith('/index.html')) return `${siteUrl}${rel.replace(/index\.html$/, '')}`
-  if (rel.endsWith('.html')) return `${siteUrl}${rel.replace(/\.html$/, '/')}`
+  if (rel.endsWith('.html')) return `${siteUrl}${rel.replace(/\.html$/, '')}`
   return null
 }
 

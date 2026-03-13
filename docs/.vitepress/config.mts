@@ -12,7 +12,7 @@ function pageToPath(page: string) {
   if (clean === 'index') return '/'
   if (clean === 'fr/index') return '/fr/'
   if (clean.endsWith('/index')) clean = clean.slice(0, -('/index'.length))
-  return `/${clean}/`
+  return `/${clean}`
 }
 
 function englishPath(path: string) {
